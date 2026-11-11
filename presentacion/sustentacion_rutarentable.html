@@ -376,6 +376,8 @@ h2{font-size:64px;font-weight:700;line-height:1.1}
 .s-limites h3.g{color:var(--g2)}
 .s-limites ul{list-style:none;display:flex;flex-direction:column;gap:9px}
 .s-limites li{font-size:24px;line-height:1.38;color:var(--soft);padding-left:34px;position:relative}
+.s-limites ul.two{display:grid;grid-template-columns:1fr 1fr;gap:22px 56px}
+.s-limites ul.two li{font-size:28px;line-height:1.4}
 .s-limites li::before{content:"";position:absolute;left:0;top:11px;width:14px;height:14px;border-radius:3px;background:var(--y)}
 
 /* 14 Cierre */
@@ -779,33 +781,23 @@ body.pres #pp{display:block}
 </section>
 
 <!-- 13 Límites -->
-<section class="slide alt dense s-limites" data-s="limites" data-title="Limitaciones y proyección">
-  <div class="head"><p class="eyebrow">Limitaciones y proyección</p><h2>Lo que no resuelve y cómo seguiría en ML II</h2></div>
+<section class="slide alt dense s-limites" data-s="limites" data-title="Limitaciones">
+  <div class="head"><p class="eyebrow">Limitaciones</p><h2>Lo que el modelo no resuelve</h2></div>
   <div class="cols">
     <div class="card">
-      <h3 class="r">Limitaciones</h3>
-      <ul>
+      <h3 class="r">Limitaciones reales, dichas de frente</h3>
+      <ul class="two">
         <li class="b" data-b="1">Un solo mes (diciembre de 2025): la variable mes no se pudo usar.</li>
         <li class="b" data-b="2">Solo camión rígido de 2 ejes y viajes de un trayecto.</li>
         <li class="b" data-b="3">Etiqueta sensible a la carrocería: 42,5 % de los errores está a ±10 % del costo.</li>
-        <li class="b" data-b="4">El costo de referencia no es la utilidad real del transportador.</li>
+        <li class="b" data-b="4">El costo de referencia no es la utilidad real del transportador ni incluye imprevistos.</li>
         <li class="b" data-b="5">Solo vemos viajes ejecutados: las ofertas rechazadas no quedan en el RNDC, así que el riesgo de las peores ofertas puede estar subestimado (piloto: registrar todas las ofertas).</li>
         <li class="b" data-b="6">La frase “6 de cada 10” se apoya en una calibración razonable (desviación máxima 3,7 puntos por decil): es una guía, no una probabilidad exacta.</li>
       </ul>
     </div>
-    <div class="card">
-      <h3 class="g">Proyección a ML II</h3>
-      <ul>
-        <li class="b" data-b="7">Modelos aditivos penalizados (GAM) para las curvas de km y kilos.</li>
-        <li class="b" data-b="8">Boosting para interacciones ruta × mercancía.</li>
-        <li class="b" data-b="9">Calibración y aprendizaje sensible al costo.</li>
-        <li class="b" data-b="10">Validación temporal con varios meses del RNDC y del SICE-TAC.</li>
-        <li class="b" data-b="11">Modelo del pago para estimar qué tan seguido se paga al menos un valor dado.</li>
-      </ul>
-    </div>
   </div>
   <footer class="foot"><p>Hosmer-Lemeshow rechaza con n grande; la desviación máxima por decil es 3,7 puntos</p><p>13</p></footer>
-  <aside class="notes">Daniel. Somos honestos con los límites. Entrenamos con un solo mes, diciembre de 2025, así que la variable mes no se pudo usar; el siguiente paso es validar con otro mes. Solo cubre camión rígido de dos ejes. La etiqueta depende de cómo aproximamos el costo por carrocería: casi la mitad de los errores está en viajes a menos de 10 % del costo, donde la etiqueta es frágil. Y el costo de referencia no es la utilidad real. En Machine Learning II seguiríamos con GAM penalizados, boosting para interacciones, calibración, aprendizaje sensible al costo y validación con varios meses. Unos 50 segundos. Además, solo vemos viajes ejecutados: las ofertas rechazadas no quedan en el RNDC, por eso proponemos un piloto que registre todas las ofertas. Y la frase de 6 de cada 10 es una guía apoyada en una calibración razonable, no una probabilidad exacta.</aside>
+  <aside class="notes">Daniel. Somos honestos con los límites. Entrenamos con un solo mes, diciembre de 2025, así que la variable mes no se pudo usar; el siguiente paso es validar con otro mes. Solo cubre camión rígido de dos ejes. La etiqueta depende de cómo aproximamos el costo por carrocería: casi la mitad de los errores está en viajes a menos de 10 % del costo, donde la etiqueta es frágil. El costo de referencia no es la utilidad real ni incluye imprevistos. Solo vemos viajes ejecutados: las ofertas rechazadas no quedan en el RNDC, por eso proponemos un piloto que registre todas las ofertas. Y la frase de 6 de cada 10 es una guía apoyada en una calibración razonable, no una probabilidad exacta. Unos 50 segundos.</aside>
 </section>
 
 <!-- 14 Cierre -->
