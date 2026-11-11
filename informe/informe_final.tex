@@ -230,7 +230,7 @@ El modelo se desplegó como una aplicación de Streamlit \cite{streamlit}, RutaR
 
 La coherencia entre entrenamiento y uso se garantiza de tres formas. Primero, se guarda el \texttt{Pipeline} completo ya ajustado (imputación, logaritmo, splines, estandarización, one-hot y regresión logística), de modo que la aplicación no reimplementa ninguna transformación. Segundo, el archivo desplegado es el modelo evaluado en la prueba: el notebook verifica que, recargado, produce las mismas probabilidades. Tercero, \texttt{metadatos.json} guarda el umbral, los rangos de kilómetros y kilos del entrenamiento y las categorías válidas; la aplicación solo ofrece categorías conocidas y advierte cuando una entrada cae fuera del rango visto, donde la predicción es una extrapolación.
 
-Se ejecuta con \texttt{pip install -r requirements.txt} y \texttt{streamlit run app.py} desde la carpeta de la aplicación.
+Está publicada en \url{https://ruta-rentable.streamlit.app} (Streamlit Community Cloud) y en local se ejecuta con \texttt{pip install -r requirements.txt} y \texttt{streamlit run app.py} desde la carpeta de la aplicación.
 
 \IfFileExists{captura_app.png}{%
 \begin{figure}[H]
@@ -257,7 +257,7 @@ Se ejecuta con \texttt{pip install -r requirements.txt} y \texttt{streamlit run 
 
 La regresión logística con splines superó al logaritmo en los 10 folds, corrigió en buena parte la falta de linealidad y conservó la lectura en odds ratios. En prueba alcanzó un AUC de 0,784, cercano al 0,81 del artículo, y el umbral de 0,44, elegido por costo en pesos, evita más pérdida que el de Youden. La distancia, el peso y la carga refrigerada son los factores que más mueven el riesgo, y los errores se concentran cerca del punto de equilibrio. El modelo sirve para priorizar ofertas en camión rígido de dos ejes; extenderlo exige, ante todo, validarlo con otros meses.
 
-\textbf{Código.} Se entregan los notebooks 01 a 04 y la aplicación con el modelo exportado. Todo el flujo usa la semilla 42 y se construyó con pandas \cite{pandas}, scikit-learn \cite{sklearn}, statsmodels y Streamlit; el mapa de la aplicación usa los centroides municipales de la DIVIPOLA \cite{divipola}.
+\textbf{Código.} Se entregan los notebooks 01 a 04 y la aplicación con el modelo exportado. Todo el flujo usa la semilla 42 y se construyó con pandas \cite{pandas}, scikit-learn \cite{sklearn}, statsmodels y Streamlit; el mapa de la aplicación usa los centroides municipales de la DIVIPOLA \cite{divipola}. Código, datos y pruebas: \url{https://github.com/PachecoDa/RUTA-RENTABLE}.
 
 \begin{thebibliography}{9}
 \small
