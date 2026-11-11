@@ -5,7 +5,11 @@ from pathlib import Path
 warnings.filterwarnings("ignore")
 sys.stdout.reconfigure(encoding="utf-8")
 
-PKG = Path(sys.argv[1]); APP = PKG / "app"
+PKG = Path(sys.argv[1]).resolve(); APP = PKG / "app"
+# Carpeta de datos: tercer argumento opcional; si no, <paquete>/datos; si no existe, ../3. Entrega 2 (corregida)/datos
+_cand = ([Path(sys.argv[3]).resolve()] if len(sys.argv) > 3 else []) + [PKG / "datos", PKG.parent / "3. Entrega 2 (corregida)" / "datos"]
+DATOS = next((p for p in _cand if (p / "conjunto_prueba_reservado.csv").exists()), _cand[0])
+print("Datos:", DATOS)
 os.chdir(APP); sys.path.insert(0, str(APP))
 import numpy as np, pandas as pd, joblib, sklearn
 from sklearn.metrics import roc_auc_score, confusion_matrix
@@ -25,7 +29,7 @@ chk("1.1 versión de scikit-learn igual a la del entrenamiento", vers["sklearn"]
 # 2. Integridad del artefacto
 t0 = time.perf_counter(); modelo = joblib.load(APP / "modelo_final.joblib"); t_load = time.perf_counter() - t0
 chk("2.1 el modelo carga", modelo is not None, f"{t_load*1000:.0f} ms, {type(modelo).__name__} con pasos {[n for n, _ in modelo.steps]}")
-te = pd.read_csv(PKG / "datos" / "conjunto_prueba_reservado.csv"); X, y = te[COLS], te["RENTABLE"].values
+te = pd.read_csv(DATOS / "conjunto_prueba_reservado.csv"); X, y = te[COLS], te["RENTABLE"].values
 p0 = modelo.predict_proba(X)[:, list(modelo.classes_).index(0)]
 auc = roc_auc_score((y == 0).astype(int), p0)
 chk("2.2 AUC en prueba igual al reportado (0,784)", abs(auc - meta["auc_prueba"]) < 1e-9 and round(auc, 3) == 0.784, f"{auc:.4f}")
@@ -140,6 +144,69 @@ for b in at.button:
         b.click().run(); app_ok(at, f"8.6 botón {b.label}")
 cmp_btn = next(b for b in at.button if b.key == "btn_comparar")
 cmp_btn.click().run(); app_ok(at, "8.7 comparador de ofertas")
+
+# 9. Guía de negociación (costo de referencia, mercado y oferta; nada de esto entra al modelo)
+sic = pd.read_csv(DATOS / "sicetac_costos_c2_dic2025.csv")
+def fuente(o, d):
+    f = sic[(sic["ORIGEN"] == o * 1000) & (sic["DESTINO"] == d * 1000)]
+    return f.iloc[0] if len(f) else None
+co = da.costo_referencia(11001, 5001, "Carga Normal")
+src = fuente(11001, 5001) if fuente(11001, 5001) is not None else fuente(5001, 11001)
+chk("9.1 Bogotá-Medellín tiene costo de referencia = COSTO_GENERAL del SICE-TAC", co is not None and src is not None
+    and co["costo"] == round(src["COSTO_GENERAL"]), f"{da.pesos(co['costo']) if co else '-'} ({co['km'] if co else '-'} km, "
+    f"{co['horas'] if co else '-'} h logísticas, sentido invertido={co['invertida'] if co else '-'})")
+cr = da.costo_referencia(11001, 5001, "Refrigerada")
+chk("9.2 carga refrigerada usa COSTO_REFRIGERADA", cr is not None and cr["costo"] == round(src["COSTO_REFRIGERADA"])
+    and cr["costo"] > co["costo"], f"{da.pesos(cr['costo']) if cr else '-'}")
+me = da.mercado(11001, 5001, "BOGOTA D. C.", "ANTIOQUIA", 429)
+chk("9.3 Bogotá-Medellín tiene rango de mercado con n >= 5", me is not None and me["n"] >= 5 and me["p25"] <= me["mediana"] <= me["p75"],
+    f"n={me['n'] if me else '-'}, {da.pesos(me['p25']) if me else '-'} a {da.pesos(me['p75']) if me else '-'}, base={me['nivel'] if me else '-'}")
+vb, va = da.veredicto(co["costo"] - 250000, co, me), da.veredicto(co["costo"] + 400000, co, me)
+chk("9.4 oferta por debajo del costo -> no cubre", vb["cubre"] is False and "no cubre" in vb["frase"] and vb["nivel"] == "rojo", vb["frase"][:110])
+chk("9.5 oferta por encima del costo -> cubre", va["cubre"] is True and "cubre" in va["frase"] and "no cubre" not in va["frase"], va["frase"][:110])
+chk("9.6 sin oferta no hay veredicto", da.veredicto(None, co, me) is None and da.veredicto("", co, me) is None)
+cost_tab = da.cargar_costos(); cods = mun["cod_municipio"].astype(int).tolist()
+sin = next((o, d) for o in cods for d in cods if o != d and (o, d) not in cost_tab and (d, o) not in cost_tab)
+chk("9.7 ruta sin costo -> None y mensaje de 'no hay costo'", da.costo_referencia(*sin, "Carga Normal") is None
+    and "No hay costo de referencia" in da.SIN_COSTO and "sicetac.mintransporte.gov.co" in da.SIN_COSTO, f"par {sin}")
+# En el SICE-TAC de diciembre de 2025 todos los pares vienen en los dos sentidos; se simula que falta uno
+from unittest import mock
+n_un_sentido = sum(1 for (o, d) in cost_tab if (d, o) not in cost_tab)
+sin_ida = {k: v for k, v in cost_tab.items() if k != (11001, 5001)}
+with mock.patch.object(da, "cargar_costos", return_value=sin_ida):
+    ci = da.costo_referencia(11001, 5001, "Carga Normal")
+chk("9.8 si falta el sentido pedido se usa el contrario (y se marca)", ci is not None and ci["invertida"] and ci["costo"] == cost_tab[(5001, 11001)][2],
+    f"Bogotá->Medellín simulado sin dato: usa Medellín->Bogotá {da.pesos(ci['costo']) if ci else '-'}; pares en un solo sentido en la tabla: {n_un_sentido}")
+cober = sum(1 for o, d in cost_tab) ; mer_mun, mer_dep = da.cargar_mercado()
+chk("9.9 tablas de la guía pequeñas (< 2 MB)", all((APP / f).stat().st_size < 2e6 for f in ("costos_rutas.csv", "mercado_rutas.csv")),
+    f"{cober} rutas con costo, {len(mer_mun)} pares de municipios y {sum(len(v) for v in mer_dep.values())} grupos depto-km con mercado")
+for f in ["ofertas_semana_transportador.csv", "ofertas_cooperativa.csv"]:
+    df = da.leer_csv(APP / "ejemplos" / f); Xo, vista, err = da.preparar_ofertas(df)
+    res = da.evaluar(modelo, Xo, vista, meta["umbral_costo"])
+    nuevas = ["costo_referencia", "mercado_p25", "mercado_mediana", "mercado_p75", "cubre_costo", "diferencia_vs_costo", "posicion_mercado"]
+    con = int(res["pago_ofrecido"].notna().sum()); vc = res["cubre_costo"].value_counts().to_dict()
+    ok = (list(Xo.columns) == COLS and all(c in res.columns for c in nuevas) and con == int(df.iloc[:, -1].notna().sum())
+          and {"Sí", "No"} <= set(vc) and res["costo_referencia"].notna().all() and res["prob_no_rentable"].is_monotonic_increasing
+          and np.allclose(res.sort_index()["prob_no_rentable"].sort_values().values, np.sort(modelo.predict_proba(Xo)[:, 0].round(4))))
+    chk(f"9.10 {f} con columna de oferta", ok, f"{con} con valor; cubre_costo {vc}; posición {res['posicion_mercado'].value_counts().to_dict()}")
+ej = da.leer_csv(APP / "ejemplo_lote.csv"); Xe, ve, ee = da.preparar_ofertas(ej)
+ej2 = ej.assign(PAGO_OFRECIDO=[1, 5_000_000, None, 99_999_999, 2_000_000]); Xe2, _, _ = da.preparar_ofertas(ej2)
+pe, pe2 = modelo.predict_proba(Xe)[:, 0].round(3).tolist(), modelo.predict_proba(Xe2)[:, 0].round(3).tolist()
+chk("9.11 ejemplo_lote.csv: mismas probabilidades, con o sin columna de oferta", pe == pe2 == [0.555, 0.619, 0.48, 0.362, 0.119]
+    and list(Xe2.columns) == COLS, str(pe2))
+at2 = AppTest.from_file(str(APP / "app.py"), default_timeout=120).run()
+p_antes = next(m.value for m in at2.markdown if "De cada 10 viajes" in m.value)
+oi = next(n for n in at2.number_input if "te ofrecen" in n.label.lower())
+oi.set_value(int(co["costo"] - 250000)).run(); txt = " ".join(m.value for m in at2.markdown)
+app_ok(at2, "9.12 app: oferta por debajo del costo", "dice 'no cubre'" if "no cubre el costo de referencia" in txt else "SIN veredicto")
+p_despues = next(m.value for m in at2.markdown if "De cada 10 viajes" in m.value)
+chk("9.13 app: la oferta no cambia el riesgo", p_antes == p_despues and "no cubre el costo de referencia" in txt and "Pide al menos" in txt)
+oi.set_value(int(co["costo"] + 400000)).run(); txt = " ".join(m.value for m in at2.markdown)
+app_ok(at2, "9.14 app: oferta por encima del costo", "dice 'cubre'" if "cubre el costo de referencia con" in txt else "SIN veredicto")
+cmp2 = next(b for b in at2.button if b.key == "btn_comparar"); cmp2.click().run()
+txt = " ".join(m.value for m in at2.markdown) + " ".join(w.value for w in at2.warning)
+app_ok(at2, "9.15 comparador con valor ofrecido", "marca 'No cubre el costo'" if "No cubre el costo" in txt else "SIN marca")
+chk("9.16 comparador: la fila con oferta baja queda marcada", "No cubre el costo" in txt and "no cubre (−$" in txt)
 
 print("\nRESUMEN:", sum(ok for _, ok, _ in RES), "de", len(RES), "pruebas OK")
 json.dump([{"prueba": n, "ok": o, "detalle": d} for n, o, d in RES], open(Path(sys.argv[2]), "w", encoding="utf-8"), ensure_ascii=False, indent=1)

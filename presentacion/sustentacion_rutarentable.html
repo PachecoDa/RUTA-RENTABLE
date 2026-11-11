@@ -92,7 +92,36 @@ h2{font-size:64px;font-weight:700;line-height:1.1}
 .hlbox{position:absolute!important;inset:-3px;border:3px solid var(--y);border-radius:14px;background:rgba(245,184,0,.10);opacity:0;transition:opacity .5s;pointer-events:none;padding:0!important}
 .hlbox.in{opacity:1}
 .tr:has(.hlbox.in)>div{color:var(--y)}
-.s-articulo .tr{grid-template-columns:18% 41% 41%}
+.s-articulo .tr{grid-template-columns:16% 42% 42%}
+.s-articulo .tbl{font-size:24px}
+.s-articulo .tr>div{padding:8px 20px;line-height:1.3}
+.mline{border:2px solid var(--y);background:rgba(245,184,0,.08);border-radius:16px;padding:16px 26px;font-size:26px;line-height:1.4;color:var(--soft)}
+.mline b{color:var(--y)}
+.fc2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.fc2>div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 24px;font-size:24px;line-height:1.35;color:var(--soft)}
+.fc2 b{display:block;color:var(--txt);font-size:26px;margin-bottom:4px}
+.fc2 .c1{border-left:6px solid var(--y)}
+.fc2 .c2{border-left:6px solid var(--g)}
+.s-decision .tbl{font-size:24px!important}
+.s-decision .tbl .tr>div{padding:7px 18px}
+.s-decision .bnote{font-size:24px;color:var(--mut);margin-top:-14px}
+.unew{grid-column:1 / -1;font-size:24px;line-height:1.35;color:var(--soft);background:rgba(245,184,0,.08);border-left:6px solid var(--y);border-radius:10px;padding:8px 16px}
+.unew b{color:var(--y)}
+.tradu{display:flex;flex-direction:column;gap:6px;font-size:24px;line-height:1.3;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px}
+.tradu span{padding-left:22px;position:relative}
+.tradu span::before{content:"";position:absolute;left:0;top:9px;width:12px;height:12px;border-radius:3px}
+.tradu .o::before{background:var(--g)}
+.tradu .x::before{background:var(--r)}
+.tradu .d::before{background:var(--a)}
+.dnote{flex:1;margin:0 28px;font-size:24px;line-height:1.3;color:var(--mut)}
+.dstrip{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.dstrip>div{display:flex;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 16px;font-size:24px;line-height:1.25;color:var(--soft)}
+.dstrip i{flex:none;width:38px;height:38px;border-radius:50%;background:var(--y);color:#11161C;font-style:normal;font-weight:800;font-family:var(--fh);display:grid;place-items:center}
+.dstrip b{color:var(--txt)}
+.rec{position:relative;z-index:2;background:var(--card);border:1px solid var(--line);border-left:6px solid var(--y);border-radius:18px;padding:18px 28px;display:flex;flex-direction:column;gap:10px}
+.rec h3{font-size:30px;color:var(--y)}
+.rec .rg{display:grid;grid-template-columns:1fr 1fr;gap:8px 32px}
+.rec .rg p{font-size:24px;line-height:1.35;color:var(--soft)}
 
 /* 4 Momento */
 .tl{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
@@ -104,6 +133,7 @@ h2{font-size:64px;font-weight:700;line-height:1.1}
 .tcol.in .tnode{background:var(--y);border-color:var(--y);color:#11161C;box-shadow:0 0 24px 4px rgba(245,184,0,.35)}
 .tcol.in .tcard{opacity:1;border-color:var(--y)}
 .tcol.last.in .tcard{background:var(--y);color:#11161C;font-weight:600}
+.s-momento{gap:32px}
 .s-momento .two{display:flex;gap:32px}
 .s-momento .two>div{flex:1;border-radius:20px;padding:30px 32px;display:flex;flex-direction:column;gap:12px}
 .s-momento .two h3{font-size:32px;font-weight:700;line-height:1.2}
@@ -114,17 +144,18 @@ h2{font-size:64px;font-weight:700;line-height:1.1}
 .s-momento .pre h3{color:var(--g2)}
 
 /* 5 Datos */
-.fun{display:flex;flex-direction:column;gap:14px}
+.fun{display:flex;flex-direction:column;gap:9px}
 .fr{display:flex;align-items:center;gap:24px}
 .fr .lb{width:560px;font-size:26px;color:var(--soft)}
-.fr .bar{position:relative;width:860px;height:40px}
+.fr .bar{position:relative;width:860px;height:34px}
 .fr .bar i{position:absolute;left:0;top:0;bottom:0;width:var(--w);background:#3A4756;border-radius:8px;transform-origin:left center;transform:scaleX(0);transition:transform .9s var(--ease);transition-delay:var(--d)}
 .slide.active .fr .bar i{transform:scaleX(1)}
 .fr .v{font-size:26px;font-weight:600;min-width:120px}
 .fr.fin .lb,.fr.fin .v{color:var(--y);font-weight:600}
 .fr.fin .bar i{background:var(--y)}
-.s-datos .formula{padding:28px 36px}
-.s-datos .formula p{font-size:28px;line-height:1.4;color:var(--soft)}
+.s-datos{gap:24px}
+.s-datos .formula{padding:16px 30px}
+.s-datos .formula p{font-size:26px;line-height:1.4;color:var(--soft)}
 .s-datos .formula b{color:var(--txt)}
 
 /* 6 Flujo */
@@ -159,17 +190,17 @@ h2{font-size:64px;font-weight:700;line-height:1.1}
 
 /* 8 Umbral */
 .ucards{display:flex;gap:32px}
-.ucards>div{flex:1;align-self:stretch;padding:20px 30px;display:flex;flex-direction:column;gap:6px;border-radius:20px;background:var(--card)}
+.ucards>div{flex:1;align-self:stretch;padding:14px 28px;display:flex;flex-direction:column;gap:6px;border-radius:20px;background:var(--card)}
 .ucards .fn{border-left:6px solid var(--r)}
 .ucards .fp{border-left:6px solid var(--y)}
 .ucards .t{font-size:26px;font-weight:600}
 .ucards .fn .t{color:var(--r2)}
 .ucards .fp .t{color:var(--y)}
-.ucards .m{font-family:var(--fh);font-size:54px;font-weight:800;line-height:1.1}
+.ucards .m{font-family:var(--fh);font-size:48px;font-weight:800;line-height:1.1}
 .ucards p.d{font-size:24px;line-height:1.35;color:var(--mut)}
-.upanel{padding:26px 32px;display:grid;grid-template-columns:880px 1fr;column-gap:48px;row-gap:14px}
+.upanel{padding:18px 32px;display:grid;grid-template-columns:880px 1fr;column-gap:48px;row-gap:10px}
 .abtns{display:flex;gap:14px}
-.rwrap{position:relative;margin-top:54px;height:60px}
+.rwrap{position:relative;margin-top:50px;height:56px}
 .rbar{position:absolute;inset:0;border-radius:12px;overflow:hidden;background:#0B0F14;border:1px solid var(--line)}
 .zone{position:absolute;top:0;bottom:0;display:flex;align-items:center;font-size:24px;font-weight:600;transition:all .6s var(--ease);white-space:nowrap;overflow:hidden}
 .zone.acc{left:0;background:rgba(34,197,94,.16);color:var(--g2);padding-left:18px}
@@ -181,7 +212,7 @@ h2{font-size:64px;font-weight:700;line-height:1.1}
 .mk.ma b{bottom:calc(100% + 6px);background:var(--y);color:#11161C}
 .mk.my::before{background:repeating-linear-gradient(180deg,#A7B4C2 0 8px,transparent 8px 14px)}
 .mk.my b{top:calc(100% + 6px);background:#2B3646;color:var(--txt);font-weight:600}
-.rscale{position:relative;height:30px;margin-top:46px;font-size:24px;color:var(--dim)}
+.rscale{position:relative;height:30px;margin-top:42px;font-size:24px;color:var(--dim)}
 .rscale span{position:absolute;transform:translateX(-50%)}
 .rlab{font-size:24px;color:var(--mut);margin-top:6px}
 .mets{display:flex;flex-direction:column;gap:14px}
@@ -283,27 +314,27 @@ h2{font-size:64px;font-weight:700;line-height:1.1}
 .s-frase .foot{color:#5C4A00}
 
 /* 12 Demo */
-.s-demo{gap:24px}
+.s-demo{gap:16px}
 .dhead{display:flex;align-items:center;justify-content:space-between}
 .presets{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .presets.ctl button{border-radius:16px;text-align:left;padding:14px 20px;display:flex;flex-direction:column;align-items:flex-start;gap:2px}
 .presets button b{font-family:var(--fh);font-size:26px}
 .presets button span{font-size:24px;font-weight:400;color:var(--mut)}
 .presets button.on span{color:#3A2E00}
-.drow{display:flex;gap:32px;height:440px}
-.dres{flex:1;padding:28px;display:flex;gap:28px}
+.drow{display:flex;gap:32px;height:412px}
+.dres{flex:1;padding:20px 26px;display:flex;gap:26px}
 .sema{width:110px;flex:none;padding:16px;border-radius:24px;background:#0B0F14;display:flex;flex-direction:column;gap:14px;align-self:flex-start}
 .sema i{display:block;width:78px;height:78px;border-radius:50%;background:#26303B;transition:all .4s}
 .sema i.lr.on{background:var(--r);box-shadow:0 0 44px 10px rgba(239,68,68,.55)}
 .sema i.lg.on{background:var(--g);box-shadow:0 0 44px 10px rgba(34,197,94,.5)}
-.dtxt{flex:1;display:flex;flex-direction:column;gap:6px;min-width:0}
+.dtxt{flex:1;display:flex;flex-direction:column;gap:3px;min-width:0}
 .droute{font-size:24px;color:var(--mut)}
 .dverd{font-size:44px;font-weight:800;line-height:1.1}
 .dverd.hi{color:var(--r2)}
 .dverd.lo{color:var(--g2)}
 .dsub{font-size:26px;color:var(--soft)}
 .dwhy{font-size:24px;color:var(--mut)}
-.dfreq{font-family:var(--fh);font-size:28px;line-height:1.3;margin-top:10px}
+.dfreq{font-family:var(--fh);font-size:28px;line-height:1.3;margin-top:4px}
 .dfreq em{font-style:normal;color:var(--y)}
 .dtrucks{display:flex;gap:10px;margin-top:8px}
 .dtrucks svg{width:50px;height:38px;animation:pop .35s var(--ease) both;animation-delay:calc(var(--i) * .07s + .25s)}
@@ -339,12 +370,13 @@ h2{font-size:64px;font-weight:700;line-height:1.1}
 /* 13 Límites */
 .s-limites .cols{display:flex;gap:48px;align-items:flex-start}
 .s-limites .cols>div{flex:1;padding:34px 36px;display:flex;flex-direction:column;gap:18px}
-.s-limites h3{font-size:36px}
+.s-limites h3{font-size:32px}
+.s-limites .cols>div{padding:24px 30px!important;gap:12px!important}
 .s-limites h3.r{color:var(--r2)}
 .s-limites h3.g{color:var(--g2)}
-.s-limites ul{list-style:none;display:flex;flex-direction:column;gap:14px}
-.s-limites li{font-size:28px;line-height:1.45;color:var(--soft);padding-left:34px;position:relative}
-.s-limites li::before{content:"";position:absolute;left:0;top:15px;width:14px;height:14px;border-radius:3px;background:var(--y)}
+.s-limites ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.s-limites li{font-size:24px;line-height:1.38;color:var(--soft);padding-left:34px;position:relative}
+.s-limites li::before{content:"";position:absolute;left:0;top:11px;width:14px;height:14px;border-radius:3px;background:var(--y)}
 
 /* 14 Cierre */
 .s-cierre{padding:104px 128px 0}
@@ -355,10 +387,11 @@ h2{font-size:64px;font-weight:700;line-height:1.1}
 .s-cierre.active .truck.off{animation:drive-out 2.8s cubic-bezier(.6,0,.4,1) both}
 @keyframes drive-out{from{left:1380px}to{left:2150px}}
 .concl{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;position:relative;z-index:2}
-.concl>div{display:flex;flex-direction:column;gap:12px;border-top:4px solid var(--y);padding-top:24px}
-.concl h3{font-size:38px;font-weight:700;line-height:1.2}
-.concl p{font-size:28px;line-height:1.4;color:var(--soft)}
-.s-cierre h1{position:absolute;left:128px;bottom:250px;font-size:116px;font-weight:800;line-height:1.05;z-index:2}
+.concl>div{display:flex;flex-direction:column;gap:8px;border-top:4px solid var(--y);padding-top:16px}
+.concl h3{font-size:34px;font-weight:700;line-height:1.2}
+.concl p{font-size:26px;line-height:1.4;color:var(--soft)}
+.s-cierre{gap:24px}
+.s-cierre h1{position:absolute;left:128px;bottom:214px;font-size:96px;font-weight:800;line-height:1.05;z-index:2}
 .s-cierre h1 span{color:var(--y)}
 
 /* ---------- Controles comunes ---------- */
@@ -461,19 +494,21 @@ body.pres #pp{display:block}
 </section>
 
 <!-- 03 Artículo -->
-<section class="slide alt s-articulo" data-s="articulo" data-title="El artículo base">
+<section class="slide alt dense s-articulo" data-s="articulo" data-title="El artículo base">
   <div class="head"><p class="eyebrow">El artículo base</p><h2>Reconstruimos su objetivo en Colombia, no su código</h2></div>
   <div class="tbl">
     <div class="tr th z"><div></div><div>Grzelak et al. (2024), Polonia</div><div>Nuestro proyecto, Colombia</div></div>
     <div class="tr b" data-b="1"><div class="k">Pregunta</div><div>¿La orden dará ganancia antes de aceptarla?</div><div>¿La oferta cubrirá el costo antes de negociar?</div></div>
     <div class="tr z b" data-b="2"><div class="k">Datos</div><div>13.000 órdenes de una pyme, vehículos de hasta 3,5 t</div><div>20.868 viajes reales RNDC + SICE-TAC, camión rígido de 2 ejes</div></div>
-    <div class="tr b" data-b="3"><div class="k">Modelo</div><div>Regresión logística, selección backward</div><div>Logística con splines; comparada con KNN, Naive Bayes, LDA y QDA</div></div>
-    <div class="tr z b" data-b="4"><div class="k">Validación</div><div>10 particiones</div><div>10 folds agrupados por ruta y prueba reservada</div></div>
-    <div class="tr b" data-b="5"><div class="k">Umbral</div><div>Índice de Youden</div><div>Costo del error en pesos</div></div>
-    <div class="tr z b" data-b="6"><div class="k">AUC en prueba</div><div>0,81</div><div>0,784 (IC 95 % 0,766 a 0,801)</div><div class="hlbox" data-b="7"></div></div>
+    <div class="tr b" data-b="3"><div class="k">Qué es rentable</div><div>Orden de al menos 500 PLN (monto fijo)</div><div>Pago ≥ costo SICE-TAC de la ruta</div></div>
+    <div class="tr z b" data-b="4"><div class="k">Predictores</div><div>Kilometraje diario, velocidad, consumo de combustible y tiempo de operación (se conocen después del viaje), peso, día y mes</div><div>Solo lo que se sabe al llegar la oferta: km, kilos, mercancía, naturaleza, departamentos</div></div>
+    <div class="tr b" data-b="5"><div class="k">Modelo</div><div>Regresión logística, selección backward</div><div>Logística con splines; comparada con KNN, Naive Bayes, LDA y QDA</div></div>
+    <div class="tr z b" data-b="6"><div class="k">Validación</div><div>10 particiones</div><div>10 folds agrupados por ruta y prueba reservada</div></div>
+    <div class="tr b" data-b="7"><div class="k">Umbral</div><div>Índice de Youden</div><div>Costo del error en pesos</div></div>
+    <div class="tr z b" data-b="8"><div class="k">AUC en prueba</div><div>0,81</div><div>0,784 (IC 95 % 0,766 a 0,801)</div><div class="hlbox" data-b="9"></div></div>
   </div>
   <footer class="foot"><p>Fuente: Grzelak et al. (2024), Logistics 8(2), 46</p><p>03</p></footer>
-  <aside class="notes">Daniel. El artículo de Grzelak y coautores, 2024, estudia pymes de transporte en Polonia que aceptan órdenes por intuición. Con 13 mil órdenes ajustan una regresión logística y logran un AUC de 0,81 en prueba, con el punto de corte de Youden. Nosotros no copiamos su código: reconstruimos su objetivo en Colombia con datos oficiales, comparamos varios modelos del curso y cambiamos dos cosas que explicamos más adelante: la validación por ruta y el umbral elegido por costo. Unos 50 segundos.</aside>
+  <aside class="notes">Daniel. El artículo de Grzelak y coautores, 2024, estudia pymes de transporte en Polonia que aceptan órdenes por intuición. Con 13 mil órdenes ajustan una regresión logística y logran un AUC de 0,81 en prueba, con el punto de corte de Youden. Nosotros no copiamos su código: reconstruimos su objetivo en Colombia con datos oficiales, comparamos varios modelos del curso y cambiamos dos cosas que explicamos más adelante: la validación por ruta y el umbral elegido por costo. Unos 50 segundos. El artículo explica qué hace rentable una orden ya ejecutada; nosotros llevamos esa idea al momento en que se decide.</aside>
 </section>
 
 <!-- 04 Momento -->
@@ -490,6 +525,7 @@ body.pres #pp{display:block}
     <div class="lab b from-l" data-b="5"><h3>Construyen la etiqueta, nunca entran al modelo</h3><p>Valor pagado y costo de referencia SICE-TAC. Rentable = pagado ≥ costo.</p></div>
     <div class="pre b from-r" data-b="6"><h3>Predictores, conocidos al llegar la oferta</h3><p>Kilómetros, kilos, capítulo de mercancía, naturaleza de la carga, departamento de origen y de destino.</p></div>
   </div>
+  <p class="mline b" data-b="7">Con el precio ya pactado, basta comparar contra el costo SICE-TAC (así construimos la etiqueta). <b>RutaRentable sirve antes:</b> para decidir si negociar, cuánto pedir y qué oferta priorizar.</p>
   <footer class="foot"><p>Clase positiva: viaje no rentable</p><p>04</p></footer>
   <aside class="notes">Daniel. Esta es la respuesta a la observación de la primera entrega. Si ya se conocen el pago y el costo, basta compararlos. Por eso el modelo trabaja antes: cuando llega la oferta se conocen la ruta, los kilos y la mercancía, pero no el flete final. Pago y costo solo construyen la etiqueta y jamás entran como predictores, así no hay fuga. La clase positiva es el viaje no rentable, porque es el que queremos detectar. Unos 60 segundos. Aquí le paso a Harold.</aside>
 </section>
@@ -498,14 +534,15 @@ body.pres #pp{display:block}
 <section class="slide alt s-datos" data-s="datos" data-title="Datos">
   <div class="head"><p class="eyebrow">Datos</p><h2>De 197.548 registros a 20.868 viajes comparables</h2></div>
   <div class="fun">
-    <div class="fr"><p class="lb">RNDC diciembre 2025, todos los vehículos</p><div class="bar"><i style="--w:860px;--d:.25s"></i></div><p class="v" data-run="count" data-to="197548" data-delay="250">197.548</p></div>
+    <div class="fr"><p class="lb">RNDC diciembre 2025, todos</p><div class="bar"><i style="--w:860px;--d:.25s"></i></div><p class="v" data-run="count" data-to="197548" data-delay="250">197.548</p></div>
     <div class="fr"><p class="lb">Camión rígido de 2 ejes</p><div class="bar"><i style="--w:382px;--d:.55s"></i></div><p class="v" data-run="count" data-to="87741" data-delay="550">87.741</p></div>
-    <div class="fr"><p class="lb">Operación general, un solo viaje por fila</p><div class="bar"><i style="--w:192px;--d:.85s"></i></div><p class="v" data-run="count" data-to="44197" data-delay="850">44.197</p></div>
+    <div class="fr"><p class="lb">Operación general, un viaje por fila</p><div class="bar"><i style="--w:192px;--d:.85s"></i></div><p class="v" data-run="count" data-to="44197" data-delay="850">44.197</p></div>
     <div class="fr"><p class="lb">Pago, km, kilos y naturaleza válidos</p><div class="bar"><i style="--w:164px;--d:1.15s"></i></div><p class="v" data-run="count" data-to="37643" data-delay="1150">37.643</p></div>
     <div class="fr"><p class="lb">Con ruta en el SICE-TAC</p><div class="bar"><i style="--w:92px;--d:1.45s"></i></div><p class="v" data-run="count" data-to="21094" data-delay="1450">21.094</p></div>
     <div class="fr fin"><p class="lb">Conjunto final: 4.146 rutas</p><div class="bar"><i style="--w:91px;--d:1.75s"></i></div><p class="v" data-run="count" data-to="20868" data-delay="1750">20.868</p></div>
   </div>
   <div class="card formula b" data-b="1"><p><b>Costo de referencia</b> = valor de movilización + valor hora × horas logísticas (4 h si el tránsito dura hasta 8 h; 8 h si dura más), con la mediana entre carrocerías. Rentable si lo pagado lo iguala o supera: 67,7 %.</p></div>
+  <div class="fc2 b" data-b="2"><div class="c1"><b>Flete (RNDC)</b>Lo que se le pagó al vehículo: precio negociado.</div><div class="c2"><b>Costo de referencia (SICE-TAC)</b>Combustible, peajes, llantas, mantenimiento, conductor, seguros, vehículo y horas de espera. No incluye imprevistos (paros, varadas, inseguridad).</div></div>
   <footer class="foot"><p>Fuentes: RNDC y SICE-TAC, Ministerio de Transporte</p><p>05</p></footer>
   <aside class="notes">Harold. Partimos de casi 198 mil registros del RNDC de diciembre. Nos quedamos con el camión rígido de dos ejes, operación general y una fila por viaje, para que el pago sea comparable con el costo de un viaje. Cruzamos con el SICE-TAC por origen, destino y tipo de carga, y quitamos errores de digitación. Quedan 20.868 viajes en 4.146 rutas. El costo de referencia suma movilización más las horas logísticas que reconoce la circular del Ministerio: 4 horas en rutas cortas y 8 en las largas. Unos 60 segundos.</aside>
 </section>
@@ -544,11 +581,16 @@ body.pres #pp{display:block}
     <div class="lcol">
       <div class="tbl" style="font-size:28px">
         <div class="tr th z"><div style="color:var(--mut)">Mismos 10 folds</div><div class="n" style="color:var(--mut)">AUC</div><div class="n" style="color:var(--mut)">PR-AUC</div><div class="n" style="color:var(--mut)">Brier</div></div>
-        <div class="tr b" data-b="1"><div>Logística con logaritmo</div><div class="n">0,775 ± 0,021</div><div class="n">0,595</div><div class="n">0,176</div></div>
-        <div class="tr z b" data-b="2"><div>Logística con splines</div><div class="n">0,798 ± 0,016</div><div class="n">0,636</div><div class="n">0,166</div><div class="hlbox" data-b="4"></div></div>
+        <div class="tr b" data-b="1"><div>Línea base (siempre rentable)</div><div class="n">0,500</div><div class="n">0,323</div><div class="n">–</div></div>
+        <div class="tr z b" data-b="1"><div>Naive Bayes</div><div class="n">0,605</div><div class="n">0,407</div><div class="n">–</div></div>
+        <div class="tr b" data-b="2"><div>LDA</div><div class="n">0,771</div><div class="n">0,592</div><div class="n">–</div></div>
+        <div class="tr z b" data-b="2"><div>QDA</div><div class="n">0,763</div><div class="n">0,589</div><div class="n">–</div></div>
+        <div class="tr b" data-b="3"><div>Logística con logaritmo</div><div class="n">0,775 ± 0,021</div><div class="n">0,595</div><div class="n">0,176</div></div>
+        <div class="tr z b" data-b="3"><div>Logística con splines</div><div class="n">0,798 ± 0,016</div><div class="n">0,636</div><div class="n">0,166</div><div class="hlbox" data-b="4"></div></div>
         <div class="tr b" data-b="3"><div>KNN (k = 61)</div><div class="n">0,788 ± 0,018</div><div class="n">0,625</div><div class="n">0,169</div></div>
       </div>
-      <p class="why b" data-b="4">Por qué: con logaritmo no se cumplía la linealidad del logit. Al pasar de 8 horas de tránsito la proporción de viajes rentables cae de 81 % a 62 %, justo donde las horas logísticas del costo pasan de 4 a 8. Una recta no sigue ese salto; los splines sí.</p>
+      <p class="bnote b" data-b="3">Mismos 10 folds agrupados por ruta. Brier solo para los tres finalistas (–: no calculado).</p>
+      <p class="why b" data-b="4" style="font-size:26px">Por qué: con logaritmo no se cumplía la linealidad del logit. Al pasar de 8 horas de tránsito la proporción de viajes rentables cae de 81 % a 62 %, justo donde las horas logísticas del costo pasan de 4 a 8. Una recta no sigue ese salto; los splines sí.</p>
     </div>
     <div class="fcard card b zoom" data-b="5" data-run="folds">
       <p class="ten"><span class="fnum">10</span>/10</p>
@@ -563,7 +605,7 @@ body.pres #pp{display:block}
 </section>
 
 <!-- 08 Umbral -->
-<section class="slide dense s-umbral" style="gap:28px" data-s="umbral" data-title="Umbral de decisión">
+<section class="slide dense s-umbral" style="gap:22px" data-s="umbral" data-title="Umbral de decisión">
   <div class="head"><p class="eyebrow">Umbral de decisión</p><h2>El umbral sale de los pesos que cuesta cada error</h2></div>
   <div class="ucards">
     <div class="fn b" data-b="1"><p class="t">Aceptar un viaje malo (falso negativo)</p><p class="m">$348.253</p><p class="d">faltante medio para cubrir el costo</p></div>
@@ -582,7 +624,7 @@ body.pres #pp{display:block}
         <div class="mk ma" id="mkA" style="left:44%"><b id="mkAl">Umbral 0,440</b></div>
       </div>
       <div class="rscale"><span style="left:0;transform:none">0</span><span style="left:50%">0,5</span><span style="right:0;transform:none">1</span></div>
-      <p class="rlab">Riesgo estimado: por encima del umbral, la oferta se marca.</p>
+      <p class="rlab">Barra amarilla: umbral con el α elegido · Marca gris: Youden (artículo).</p>
     </div>
     <div class="mets">
       <div class="met"><p class="ml"><span>Sensibilidad</span><span><b id="vS">59,9 %</b><small>Youden 74,3 %</small></span></p><div class="tr2"><i id="bS" style="width:59.9%"></i><u style="left:74.3%"></u></div></div>
@@ -590,10 +632,11 @@ body.pres #pp{display:block}
       <div class="met"><p class="ml"><span>Ofertas marcadas</span><span><b id="vF">30,7 %</b><small>Youden 43,2 %</small></span></p><div class="tr2"><i id="bF" style="width:30.7%"></i><u style="left:43.2%"></u></div></div>
       <p class="ucost" id="uCost">Costo por oferta: <b>$49.836</b> con α = 0,5 (elegido) frente a $58.691 con Youden.</p>
     </div>
-    <p class="ucap">Barra amarilla: umbral con el α elegido · Marca gris: Youden (artículo). Los costos por oferta no son comparables entre valores de α, porque α cambia la definición del costo.</p>
+    <p class="unew"><b>Si aceptar un viaje malo costara 3 veces más que perder uno bueno (α ≈ 0,25):</b> umbral 0,375, se detecta el 68 % de los viajes malos y se marca el 37 % de las ofertas.</p>
+    <p class="ucap">Los costos por oferta no son comparables entre valores de α, porque α cambia la definición del costo.</p>
   </div>
   <footer class="foot"><p>Sensibilidad del supuesto: con α = 0,25 el umbral sería 0,375; con α = 1, 0,575</p><p>08</p></footer>
-  <aside class="notes">Harold. Segundo punto del docente: elegir el umbral desde el costo del negocio. Con la auditoría medimos en pesos cuánto cuesta cada error. Aceptar un viaje malo cuesta en promedio 348 mil pesos que faltan para cubrir el costo. Marcar uno bueno arriesga su margen, 468 mil en promedio, pero no completo: al marcarlo el transportador contraoferta y a veces el viaje se queda, por eso alfa es 0,5, un supuesto explícito. El umbral que minimiza el costo es 0,44. Youden, el del artículo, pesa igual los dos errores y marca demasiadas ofertas. Mostramos cómo cambia con alfa 0,25 y 1. Unos 70 segundos. Le paso a Daniel.</aside>
+  <aside class="notes">Harold. Segundo punto del docente: elegir el umbral desde el costo del negocio. Con la auditoría medimos en pesos cuánto cuesta cada error. Aceptar un viaje malo cuesta en promedio 348 mil pesos que faltan para cubrir el costo. Marcar uno bueno arriesga su margen, 468 mil en promedio, pero no completo: al marcarlo el transportador contraoferta y a veces el viaje se queda, por eso alfa es 0,5, un supuesto explícito. El umbral que minimiza el costo es 0,44. Youden, el del artículo, pesa igual los dos errores y marca demasiadas ofertas. Mostramos cómo cambia con alfa 0,25 y 1. Unos 70 segundos. Le paso a Daniel. Si preguntan qué cambia si el costo es 3 a 1: 348.253 ÷ (3 × 468.662) ≈ 0,25 = α; el umbral baja a 0,375, se detecta el 68 % de los viajes malos y se marca el 37 % de las ofertas.</aside>
 </section>
 
 <!-- 09 Prueba -->
@@ -624,6 +667,7 @@ body.pres #pp{display:block}
         <div class="rh">Real no rentable</div><div class="cell bad">531<small>Error</small></div><div class="cell ok">818<small>Correcto</small></div>
       </div>
       <p class="c">Columnas: decisión del modelo con umbral 0,44. Filas: lo que pasó en realidad.</p>
+      <div class="tradu"><span class="o">818 ofertas malas detectadas</span><span class="x">531 se escapan</span><span class="d">544 buenas oportunidades puestas en duda (19 % de las buenas)</span></div>
     </div>
   </div>
   <footer class="foot"><p>Umbral 0,44 · prueba reservada, evaluada una sola vez</p><p>09</p></footer>
@@ -683,7 +727,7 @@ body.pres #pp{display:block}
 
 <!-- 12 Demo -->
 <section class="slide s-demo" data-s="demo" data-title="Demo: RutaRentable">
-  <div class="dhead"><h2>Demo: RutaRentable</h2><p class="pill" style="font-size:26px">ruta-rentable.streamlit.app</p></div>
+  <div class="dhead"><h2>Demo: RutaRentable</h2><p class="dnote">El modelo sirve antes del precio; con precio, la app compara contra el costo.</p><p class="pill" style="font-size:26px">ruta-rentable.streamlit.app</p></div>
   <div class="presets ctl" role="group" aria-label="Ofertas de ejemplo">
     <button data-p="0" class="on"><b>Bogotá → Medellín</b><span>4.500 kg · productos varios</span></button>
     <button data-p="1"><b>Bogotá → Medellín</b><span>9.000 kg · carga completa</span></button>
@@ -712,6 +756,12 @@ body.pres #pp{display:block}
       </div>
     </div>
   </div>
+  <div class="dstrip" aria-label="Las cuatro piezas de la app">
+    <div><i>1</i><span><b>Riesgo</b> (modelo)</span></div>
+    <div><i>2</i><span><b>Piso:</b> costo de referencia SICE-TAC</span></div>
+    <div><i>3</i><span><b>Mercado:</b> rango pagado en viajes parecidos</span></div>
+    <div><i>4</i><span><b>Tu oferta:</b> ¿cubre el costo?</span></div>
+  </div>
   <div class="dact ctl">
     <a class="btn" href="https://ruta-rentable.streamlit.app" target="_blank" rel="noopener">Abrir la app en línea</a>
     <span class="note">ruta-rentable.streamlit.app · si estuvo inactiva, tarda unos 30 s en despertar.</span>
@@ -729,7 +779,7 @@ body.pres #pp{display:block}
 </section>
 
 <!-- 13 Límites -->
-<section class="slide alt s-limites" data-s="limites" data-title="Limitaciones y proyección">
+<section class="slide alt dense s-limites" data-s="limites" data-title="Limitaciones y proyección">
   <div class="head"><p class="eyebrow">Limitaciones y proyección</p><h2>Lo que no resuelve y cómo seguiría en ML II</h2></div>
   <div class="cols">
     <div class="card">
@@ -739,20 +789,23 @@ body.pres #pp{display:block}
         <li class="b" data-b="2">Solo camión rígido de 2 ejes y viajes de un trayecto.</li>
         <li class="b" data-b="3">Etiqueta sensible a la carrocería: 42,5 % de los errores está a ±10 % del costo.</li>
         <li class="b" data-b="4">El costo de referencia no es la utilidad real del transportador.</li>
+        <li class="b" data-b="5">Solo vemos viajes ejecutados: las ofertas rechazadas no quedan en el RNDC, así que el riesgo de las peores ofertas puede estar subestimado (piloto: registrar todas las ofertas).</li>
+        <li class="b" data-b="6">La frase “6 de cada 10” se apoya en una calibración razonable (desviación máxima 3,7 puntos por decil): es una guía, no una probabilidad exacta.</li>
       </ul>
     </div>
     <div class="card">
       <h3 class="g">Proyección a ML II</h3>
       <ul>
-        <li class="b" data-b="5">Modelos aditivos penalizados (GAM) para las curvas de km y kilos.</li>
-        <li class="b" data-b="6">Boosting para interacciones ruta × mercancía.</li>
-        <li class="b" data-b="7">Calibración y aprendizaje sensible al costo.</li>
-        <li class="b" data-b="8">Validación temporal con varios meses del RNDC y del SICE-TAC.</li>
+        <li class="b" data-b="7">Modelos aditivos penalizados (GAM) para las curvas de km y kilos.</li>
+        <li class="b" data-b="8">Boosting para interacciones ruta × mercancía.</li>
+        <li class="b" data-b="9">Calibración y aprendizaje sensible al costo.</li>
+        <li class="b" data-b="10">Validación temporal con varios meses del RNDC y del SICE-TAC.</li>
+        <li class="b" data-b="11">Modelo del pago para estimar qué tan seguido se paga al menos un valor dado.</li>
       </ul>
     </div>
   </div>
   <footer class="foot"><p>Hosmer-Lemeshow rechaza con n grande; la desviación máxima por decil es 3,7 puntos</p><p>13</p></footer>
-  <aside class="notes">Daniel. Somos honestos con los límites. Entrenamos con un solo mes, diciembre de 2025, así que la variable mes no se pudo usar; el siguiente paso es validar con otro mes. Solo cubre camión rígido de dos ejes. La etiqueta depende de cómo aproximamos el costo por carrocería: casi la mitad de los errores está en viajes a menos de 10 % del costo, donde la etiqueta es frágil. Y el costo de referencia no es la utilidad real. En Machine Learning II seguiríamos con GAM penalizados, boosting para interacciones, calibración, aprendizaje sensible al costo y validación con varios meses. Unos 50 segundos.</aside>
+  <aside class="notes">Daniel. Somos honestos con los límites. Entrenamos con un solo mes, diciembre de 2025, así que la variable mes no se pudo usar; el siguiente paso es validar con otro mes. Solo cubre camión rígido de dos ejes. La etiqueta depende de cómo aproximamos el costo por carrocería: casi la mitad de los errores está en viajes a menos de 10 % del costo, donde la etiqueta es frágil. Y el costo de referencia no es la utilidad real. En Machine Learning II seguiríamos con GAM penalizados, boosting para interacciones, calibración, aprendizaje sensible al costo y validación con varios meses. Unos 50 segundos. Además, solo vemos viajes ejecutados: las ofertas rechazadas no quedan en el RNDC, por eso proponemos un piloto que registre todas las ofertas. Y la frase de 6 de cada 10 es una guía apoyada en una calibración razonable, no una probabilidad exacta.</aside>
 </section>
 
 <!-- 14 Cierre -->
@@ -765,10 +818,19 @@ body.pres #pp{display:block}
     <div class="b" data-b="2"><h3>Decidir por costo paga</h3><p>El umbral en pesos reduce 48,7 % las pérdidas; Youden, 39,2 %.</p></div>
     <div class="b" data-b="3"><h3>Útil para quien maneja</h3><p>RutaRentable lo vuelve un semáforo que cualquiera entiende.</p></div>
   </div>
-  <h1 class="b zoom" data-b="4">Gracias. <span>¿Preguntas?</span></h1>
-  <p class="b" data-b="4" style="position:relative;z-index:2;font-size:28px;color:#C9D3DD">App: <b style="color:#F5B800">ruta-rentable.streamlit.app</b> · Código: <b style="color:#F5B800">github.com/PachecoDa/RUTA-RENTABLE</b></p>
+  <div class="rec b" data-b="4">
+    <h3>Recomendación: sí, bajo condiciones.</h3>
+    <div class="rg">
+      <p>Para negociar y priorizar, no para rechazar automáticamente.</p>
+      <p>Solo camión rígido de 2 ejes y rutas dentro del rango visto.</p>
+      <p>Piloto con transportadores registrando todas las ofertas y recalibración con meses nuevos.</p>
+      <p>Usuario secundario: la empresa transportadora (modo archivo CSV).</p>
+    </div>
+  </div>
+  <h1 class="b zoom" data-b="5">Gracias. <span>¿Preguntas?</span></h1>
+  <p class="b" data-b="5" style="position:relative;z-index:2;font-size:26px;color:#C9D3DD">App: <b style="color:#F5B800">ruta-rentable.streamlit.app</b> · Código: <b style="color:#F5B800">github.com/PachecoDa/RUTA-RENTABLE</b></p>
   <footer class="foot onroad"><p>RutaRentable · Machine Learning I</p><p>14</p></footer>
-  <aside class="notes">Daniel cierra. Tres ideas. Primero, sí hay señal antes de conocer el flete: un AUC de 0,784 en 4.173 viajes de rutas nuevas. Segundo, decidir el umbral por costo y no por Youden ahorra más plata. Tercero, el valor está en llevarlo a quien decide en la carretera, y eso es RutaRentable. Gracias, quedamos atentos a sus preguntas. Ambos deben poder responder sobre cualquier parte: odds frente a probabilidad, fuga, partición por ruta y alfa.</aside>
+  <aside class="notes">Daniel cierra. Tres ideas. Primero, sí hay señal antes de conocer el flete: un AUC de 0,784 en 4.173 viajes de rutas nuevas. Segundo, decidir el umbral por costo y no por Youden ahorra más plata. Tercero, el valor está en llevarlo a quien decide en la carretera, y eso es RutaRentable. Gracias, quedamos atentos a sus preguntas. Ambos deben poder responder sobre cualquier parte: odds frente a probabilidad, fuga, partición por ruta y alfa. Si preguntan: si ya llega una oferta con precio cerrado, ¿por qué necesitaría el modelo? Con precio cerrado basta comparar contra el costo SICE-TAC, y la app lo hace; el modelo sirve antes, para decidir si negociar, cuánto pedir y qué oferta priorizar. ¿Lo recomendamos? Solo bajo ciertas condiciones: para negociar y priorizar, no para rechazar automáticamente; solo camión rígido de 2 ejes y rutas dentro del rango visto; con un piloto que registre todas las ofertas y recalibración con meses nuevos.</aside>
 </section>
 
 <div id="counter" aria-live="polite">01 / 14</div>
@@ -864,7 +926,7 @@ var runners={
     var dots=$$('.fd i',el),num=$('.fnum',el);
     if(RM||INSTANT){dots.forEach(function(x){x.classList.add('on')});num.textContent='10';return}
     dots.forEach(function(x){x.classList.remove('on')});num.textContent='0';
-    dots.forEach(function(x,k){later(function(){x.classList.add('on');num.textContent=k+1},450+k*190)});
+    dots.forEach(function(x,k){later(function(){x.classList.add('on');num.textContent=k+1},250+k*110)});
   }
 };
 function runEl(e){
@@ -1015,7 +1077,7 @@ var dc=$('.s-demo');
 
 
 /* 14 Cierre: el camión se va */
-hooks.cierre={step:function(s,o,sl){var t=$('.truck',sl);if(s<4){t.classList.remove('off');return}if(INSTANT)t.classList.add('off');else later(function(){t.classList.add('off')},900)}};
+hooks.cierre={step:function(s,o,sl){var t=$('.truck',sl);if(s<5){t.classList.remove('off');return}if(INSTANT)t.classList.add('off');else later(function(){t.classList.add('off')},900)}};
 
 /* ---------- Motor de navegación ---------- */
 var cur=-1,step=0,slideStart=Date.now(),t0=Date.now();

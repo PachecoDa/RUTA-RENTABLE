@@ -103,12 +103,93 @@ def fijar_kilos(valor):
     st.session_state["kg"] = float(valor)
 
 
+ENLACE_SICETAC = f'<a href="{datos.SICETAC_URL}" target="_blank">sicetac.mintransporte.gov.co</a>'
+QUE_INCLUYE = """
+El costo de referencia del SICE-TAC (Ministerio de Transporte) suma lo que cuesta mover un camión rígido de 2 ejes por
+esa ruta:
+
+- combustible y peajes;
+- llantas, lubricantes y mantenimiento;
+- salario y prestaciones del conductor;
+- seguros y depreciación del vehículo;
+- horas de cargue, descargue y espera (4 horas si el tránsito es de 8 horas o menos; 8 horas si es más largo).
+
+**No incluye imprevistos:** paros o bloqueos, varadas fuera de lo normal, inseguridad, esperas excesivas. Si te
+pagan apenas el costo, cualquier imprevisto es pérdida.
+"""
+
+
+def guia_negociacion(mo, md, origen, destino, km, nat):
+    """Tarjeta 'Tu guía para negociar' de la pestaña Revisa una oferta. No usa el modelo."""
+    nom_o, nom_d = mo["etiqueta"].split(" (")[0], md["etiqueta"].split(" (")[0]
+    html(estilo.titulo("trato", "Tu guía para negociar"))
+    html('<div class="rr-aviso"><b>El riesgo es para antes de tener precio;</b> con un precio en la mano, '
+         'compáralo contra el costo de referencia.</div>')
+    co = datos.costo_referencia(mo["cod_municipio"], md["cod_municipio"], nat)
+    me = datos.mercado(mo["cod_municipio"], md["cod_municipio"], origen, destino, km)
+    if co:
+        nota = (f"Lo que cuesta hacer el viaje en condiciones normales{' con carga refrigerada' if co['refrigerada'] else ''}, por la ruta "
+                f"oficial de {miles(co['km'])} km y con {co['horas']} horas de cargue, descargue y espera.")
+        if co["invertida"]:
+            nota += f" El SICE-TAC no trae esta ruta en este sentido; usamos la de {nom_d} a {nom_o}."
+        nota += f" Valores de diciembre de 2025; consulta el valor vigente en el SICE-TAC: {ENLACE_SICETAC}."
+        piso = ("Piso: costo de referencia", datos.pesos(co["costo"]), nota)
+    else:
+        piso = ("Piso: costo de referencia", "Sin dato",
+                datos.SIN_COSTO.replace("sicetac.mintransporte.gov.co", ENLACE_SICETAC))
+    if me:
+        merc = ("Mercado: lo que se pagó", f"{datos.pesos(me['p25'])} a {datos.pesos(me['p75'])}",
+                f"Viajes así se pagaron normalmente entre <b>{datos.pesos(me['p25'])}</b> y "
+                f"<b>{datos.pesos(me['p75'])}</b> (mediana <b>{datos.pesos(me['mediana'])}</b>). {me['base']}")
+    else:
+        merc = ("Mercado: lo que se pagó", "Sin dato", datos.SIN_MERCADO)
+    html(estilo.guia(piso, merc))
+    with st.expander("¿Qué incluye el costo de referencia?"):
+        st.markdown(QUE_INCLUYE)
+    oferta = st.number_input("¿Cuánto te ofrecen? (opcional)", min_value=0, max_value=50_000_000, value=None,
+                             step=50_000, key="oferta", placeholder="Por ejemplo: 1850000",
+                             help="El valor total del flete en pesos, sin puntos. No cambia el riesgo de arriba.")
+    v = datos.veredicto(oferta, co, me)
+    if v:
+        detalles = [f"Te ofrecen: {datos.pesos(oferta)}."]
+        if v["cubre"] is not None:
+            signo = "+" if v["diferencia"] >= 0 else "−"
+            detalles.append(f"Frente al costo de referencia: {'cubre' if v['cubre'] else 'no cubre'} "
+                            f"({signo}{datos.pesos(abs(v['diferencia']))}, {pct(v['porcentaje'])}).")
+        if v["posicion"]:
+            detalles.append(f"Frente al mercado: {v['posicion']} (lo normal va de {datos.pesos(me['p25'])} a "
+                            f"{datos.pesos(me['p75'])}).")
+        html(estilo.veredicto(v["nivel"], v["frase"], detalles))
+    st.caption("Es una guía con datos de diciembre de 2025, no una garantía. El precio final lo acuerdas tú.")
+
+
+def texto_guia(r):
+    """Línea de costo, mercado y oferta para una tarjeta del comparador."""
+    partes = [f"Costo de referencia: <b>{'sin dato' if pd.isna(r['costo_referencia']) else datos.pesos(r['costo_referencia'])}</b>",
+              f"Mercado (mediana): <b>{'sin dato' if pd.isna(r['mercado_mediana']) else datos.pesos(r['mercado_mediana'])}</b>"]
+    if pd.notna(r["pago_ofrecido"]):
+        t = f"Te ofrecen <b>{datos.pesos(r['pago_ofrecido'])}</b>"
+        if r["cubre_costo"] == "Sí":
+            t += f": cubre (+{datos.pesos(r['diferencia_vs_costo'])})"
+        elif r["cubre_costo"] == "No":
+            t += f": no cubre (−{datos.pesos(-r['diferencia_vs_costo'])})"
+        partes.append(t)
+    return " · ".join(partes)
+
+
 def mostrar_ranking(res, umbral):
-    filas = [{"nivel": r.nivel, "ruta": r.Ruta, "detalle": r.Detalle,
-              "frase": datos.frase_frecuencia(r.prob_no_rentable, html=False)} for r in res.itertuples()]
+    filas = [{"nivel": r["nivel"], "ruta": r["Ruta"], "detalle": r["Detalle"],
+              "frase": datos.frase_frecuencia(r["prob_no_rentable"], html=False), "guia": texto_guia(r),
+              "alerta": "No cubre el costo" if r["cubre_costo"] == "No" else ""} for r in res.to_dict("records")]
     html(estilo.ranking(filas))
     if res.iloc[0]["nivel"] == "rojo":
         st.warning("Ojo: hasta la mejor de la lista sale con riesgo alto. Pide más flete o busca otra oferta.")
+    n_no = int((res["cubre_costo"] == "No").sum())
+    if n_no:
+        st.warning(f"{n_no} {'oferta no cubre' if n_no == 1 else 'ofertas no cubren'} el costo de referencia. "
+                   "Antes de aceptar, pide al menos ese valor.")
+    html('<p class="rr-nota">Orden por riesgo (modelo, sin precio). El costo de referencia y el mercado son datos de '
+         'diciembre de 2025: una guía, no una garantía.</p>')
 
 
 def resumen_y_tabla(res, umbral, nombre_descarga):
@@ -124,12 +205,36 @@ def resumen_y_tabla(res, umbral, nombre_descarga):
              f'peor. Límite usado: {pct(umbral, 1)}.</p>')
     with b:
         st.plotly_chart(barras_resumen(conteo), config={"displayModeBar": False}, key=f"barras_{nombre_descarga}")
+    # Guía de negociación: ofertas con valor que no cubren el costo de referencia
+    con_valor = int(res["pago_ofrecido"].notna().sum())
+    n_no, n_si = int((res["cubre_costo"] == "No").sum()), int((res["cubre_costo"] == "Sí").sum())
+    sin_costo = int(res["costo_referencia"].isna().sum())
+    if con_valor:
+        html(estilo.kpis([
+            ("trato", "Con valor ofrecido", miles(con_valor), f"de {miles(len(res))} ofertas"),
+            ("semaforo", "No cubren el costo", miles(n_no), "pedir al menos el costo de referencia"),
+            ("semaforo", "Sí cubren el costo", miles(n_si), "comparar con el mercado"),
+        ]))
+        if n_no:
+            st.warning(f"{miles(n_no)} de las {miles(con_valor)} ofertas con valor ofrecido no cubren el costo de "
+                       "referencia (columna cubre_costo = No).")
+    else:
+        html('<p class="rr-nota">Si agregas una columna con el valor ofrecido (PAGO_OFRECIDO, OFERTA, TE_OFRECEN o '
+             'VALOR_OFRECIDO), te decimos cuáles no cubren el costo de referencia.</p>')
+    if sin_costo:
+        html(f'<p class="rr-nota">{miles(sin_costo)} ofertas sin costo de referencia: la ruta no está en el SICE-TAC '
+             'de diciembre de 2025 o el archivo no trae los municipios.</p>')
     tabla = res.drop(columns=["nivel"]).rename(columns={
         "prob_no_rentable": "Probabilidad de no cubrir el costo", "semaforo": "Semáforo",
         "de_cada_10_no_cubren": "De cada 10 no cubren", "decision": "Qué hacer"})
     color = {"Verde": estilo.VERDE, "Amarillo": estilo.AMBAR, "Rojo": estilo.ROJO}
+    plata = {c: (lambda v: "" if pd.isna(v) else datos.pesos(v)) for c in
+             ("pago_ofrecido", "costo_referencia", "mercado_p25", "mercado_mediana", "mercado_p75")}
+    plata["diferencia_vs_costo"] = lambda v: "" if pd.isna(v) else ("+" if v >= 0 else "−") + datos.pesos(abs(v))
     st.dataframe(tabla.style.map(lambda v: f"color:{color.get(v, estilo.TEXTO)};font-weight:700",
-                                 subset=["Semáforo"]).format({"Probabilidad de no cubrir el costo": "{:.3f}"}),
+                                 subset=["Semáforo"])
+                 .map(lambda v: f"color:{estilo.ROJO};font-weight:700" if v == "No" else "", subset=["cubre_costo"])
+                 .format({"Probabilidad de no cubrir el costo": "{:.3f}", **plata}),
                  width="stretch", hide_index=True)
     buf = io.StringIO()
     res.drop(columns=["nivel"]).to_csv(buf, index=False)
@@ -286,6 +391,10 @@ with tab1:
                  f"<b>{f'{odds:.2f}'.replace('.', ',')}</b> que no lo cubren. Las odds son p / (1 − p); no son una "
                  "probabilidad.</div>")
 
+    # Guía para negociar: costo de referencia, mercado y la oferta. Nada de esto entra al modelo.
+    with st.container(key="tarjeta_guia"):
+        guia_negociacion(mo, md, origen, destino, km, nat)
+
 # ---------------- Compara tus ofertas ----------------
 with tab2, st.container(key="tarjeta_comparar"):
     html(estilo.titulo("lista", "¿Te llegaron varias ofertas? Mira cuál te conviene"))
@@ -297,6 +406,7 @@ with tab2, st.container(key="tarjeta_comparar"):
         "Destino": [por_codigo.get(c, etiquetas[1]) for c in (5001, 8001, 15001)],
         "Kilos": [9000, 3000, 5000],
         "Mercancía": [x if x in top_mer else top_mer[0] for x in ("Productos varios", "Mudanzas", "Avena")],
+        "Te ofrecen ($)": pd.array([1_700_000, None, None], dtype="Int64"),
     })
     tabla = st.data_editor(
         ejemplo, num_rows="dynamic", width="stretch", hide_index=True, key="editor_ofertas",
@@ -305,9 +415,13 @@ with tab2, st.container(key="tarjeta_comparar"):
             "Destino": st.column_config.SelectboxColumn("Destino", options=etiquetas, required=True),
             "Kilos": st.column_config.NumberColumn("Kilos", min_value=1, max_value=12000, step=100, required=True),
             "Mercancía": st.column_config.SelectboxColumn("Mercancía", options=top_mer, required=True),
+            "Te ofrecen ($)": st.column_config.NumberColumn(
+                "Te ofrecen ($)", min_value=0, max_value=50_000_000, step=50_000, format="$%d",
+                help="Opcional. Valor total del flete en pesos. No cambia el riesgo; se compara con el costo de referencia."),
         })
     html(estilo.pista("Para agregar otra oferta usa la última fila de la tabla. El tipo de carga (normal, "
-                      "refrigerada...) se toma del más común para cada mercancía."))
+                      "refrigerada...) se toma del más común para cada mercancía. La columna \"Te ofrecen\" es "
+                      "opcional: si la llenas, te decimos si cubre el costo de referencia."))
     if st.button("Comparar", type="primary", key="btn_comparar"):
         st.session_state["ofertas_cmp"] = pd.DataFrame(tabla).copy()
     if "ofertas_cmp" in st.session_state:
@@ -328,7 +442,12 @@ with tab3, st.container(key="tarjeta_lote"):
         "Sube un archivo CSV en cualquiera de estos dos formatos:\n"
         "- **Sencillo:** columnas `Origen`, `Destino` (municipios), `Kilos` y `Mercancia`. Los kilómetros se "
         "calculan solos; `Kilometros` y `Naturaleza` son opcionales.\n"
-        "- **Técnico:** las 6 columnas del modelo: " + ", ".join(f"`{c}`" for c in COLS) + "."
+        "- **Técnico:** las 6 columnas del modelo: " + ", ".join(f"`{c}`" for c in COLS) + ". Opcionales "
+        "`CODMUNICIPIOORIGEN` y `CODMUNICIPIODESTINO` (código DIVIPOLA) para el costo de referencia y el mercado de "
+        "la ruta exacta.\n"
+        "- **Opcional en los dos:** una columna con el valor ofrecido en pesos (`PAGO_OFRECIDO`, `OFERTA`, "
+        "`TE_OFRECEN` o `VALOR_OFRECIDO`). El resultado dice si cubre el costo de referencia y dónde queda frente "
+        "al mercado. Ese valor no entra al modelo."
     )
     d1, d2, _ = st.columns([1, 1, 1])
     for colu, nombre, texto in ((d1, "ofertas_semana_transportador.csv", "Ejemplo: 8 ofertas de una semana"),
@@ -374,6 +493,14 @@ Ministerio de Transporte (SICE-TAC).
 - El peso: las cargas livianas tienen más riesgo (500 kg: 2,69 veces las odds de 4.500 kg) y las pesadas menos
   (10.000 kg: 0,15 veces).
 
+**El modelo y el SICE-TAC.** El SICE-TAC dice cuánto cuesta el viaje; el flete es lo que se pagó; RutaRentable
+dice, antes de negociar, qué tan seguido viajes como este se pagan por debajo de ese costo. El costo de referencia, el
+rango del mercado y el valor que te ofrecen se muestran como guía, pero nunca entran al modelo.
+
+**Qué tanto creerle a la frase "de cada 10".** Se apoya en que el modelo está razonablemente calibrado: en validación,
+la diferencia entre lo que predijo y lo que pasó fue de máximo 3,7 puntos por decil. Es una guía, no una probabilidad
+exacta.
+
 **Para qué casos sirve.** Camión rígido de 2 ejes, en Colombia, viajes de un solo trayecto. Se entrenó con
 20.868 viajes del RNDC y los costos SICE-TAC de diciembre de 2025.
 
@@ -389,6 +516,8 @@ suponiendo que marcar de más cuesta la mitad del margen del viaje (α = {str(me
 
 **Limitaciones.**
 - Solo un mes de datos (diciembre de 2025): no recoge temporadas ni cambios de precios.
+- En el RNDC solo están los viajes que sí se hicieron. Las ofertas que los transportadores rechazaron (seguramente
+  las peores) no aparecen, así que el riesgo y el rango del mercado pueden verse mejores de lo que son.
 - El costo de referencia se aproximó según el tipo de carrocería, no con los costos de cada camión.
 - Cerca del límite el resultado es incierto: muchos viajes se pagan casi igual al costo. Por eso existe el amarillo.
 - Es una probabilidad, no una certeza. No reemplaza tu experiencia ni la negociación.

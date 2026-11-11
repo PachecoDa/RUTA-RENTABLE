@@ -1,6 +1,6 @@
 Python 3.12.10 {'sklearn': '1.8.0', 'pandas': '3.1.1', 'numpy': '2.5.4', 'streamlit': '1.67.0', 'plotly': '7.1.0', 'pydeck': '0.9.3', 'joblib': '1.6.0'}
 [OK ] 1.1 versión de scikit-learn igual a la del entrenamiento  1.8.0 vs 1.8.0
-[OK ] 2.1 el modelo carga  510 ms, Pipeline con pasos ['pre', 'clf']
+[OK ] 2.1 el modelo carga  247 ms, Pipeline con pasos ['pre', 'clf']
 [OK ] 2.2 AUC en prueba igual al reportado (0,784)  0.7839
 [OK ] 2.3 matriz de confusión con umbral 0,44 igual a la del informe  [[2280, 544], [531, 818]]
 [OK ] 2.4 umbral de los metadatos = 0,44  0.44
@@ -22,8 +22,8 @@ Python 3.12.10 {'sklearn': '1.8.0', 'pandas': '3.1.1', 'numpy': '2.5.4', 'stream
 [OK ] 5.1 refrigerada da más riesgo que carga normal  en 100% de los viajes; +22.2 pts mediana
 [OK ] 5.2 500 kg da más riesgo que 9.000 kg  en 100%; +46.5 pts
 [OK ] 5.3 450 km da más riesgo que 100 km  en 100%; +37.2 pts
-[OK ] 6.1 latencia por oferta < 100 ms  mediana 7.1 ms, p95 19.5 ms
-[OK ] 6.2 10.000 ofertas en < 5 s  0.05 s
+[OK ] 6.1 latencia por oferta < 100 ms  mediana 3.4 ms, p95 4.8 ms
+[OK ] 6.2 10.000 ofertas en < 5 s  0.06 s
 [OK ] 6.3 tamaño del modelo < 5 MB  12 KB
 [OK ] 7.1 Bogotá-Medellín usa la distancia oficial SICE-TAC  429.0 km, oficial=True
 [OK ] 7.2 ruta sin distancia oficial se estima  : 884.0 km, oficial=False
@@ -34,7 +34,7 @@ Python 3.12.10 {'sklearn': '1.8.0', 'pandas': '3.1.1', 'numpy': '2.5.4', 'stream
 [OK ] 7.6 CSV con columnas equivocadas -> mensaje claro  Faltan columnas. Usa Origen, Destino, Kilos y Mercancia, o las 6 colum
 [OK ] 7.7 municipio inexistente -> fila rechazada con mensaje  Fila 1: falta o no se reconoce el origen.
 [OK ] 7.8 ejemplo_lote.csv da las mismas probabilidades de siempre  [0.555, 0.619, 0.48, 0.362, 0.119]
-[OK ] 8.1 la app abre  primer render 5.4 s sin excepciones
+[OK ] 8.1 la app abre  primer render 1.4 s sin excepciones
 [OK ] 8.2 muestra el resultado por defecto (semáforo y frase)  
 [OK ] 8.3 umbral 'Recomendado (costo del negoc'  sin excepciones
 [OK ] 8.3 umbral 'Youden (artículo)'  sin excepciones
@@ -45,4 +45,21 @@ Python 3.12.10 {'sklearn': '1.8.0', 'pandas': '3.1.1', 'numpy': '2.5.4', 'stream
 [OK ] 8.6 botón Media carga (5.000 kg)  sin excepciones
 [OK ] 8.6 botón Carga completa (9.000 kg)  sin excepciones
 [OK ] 8.7 comparador de ofertas  sin excepciones
-RESUMEN: 46 de 46 pruebas OK
+[OK ] 9.1 Bogotá-Medellín tiene costo de referencia = COSTO_GENERAL del SICE-TAC  $1.900.050 (429 km, 8 h logísticas, sentido invertido=False)
+[OK ] 9.2 carga refrigerada usa COSTO_REFRIGERADA  $2.558.681
+[OK ] 9.3 Bogotá-Medellín tiene rango de mercado con n >= 5  n=79, $1.500.000 a $2.156.500, base=municipios
+[OK ] 9.4 oferta por debajo del costo -> no cubre  Esta oferta no cubre el costo de referencia: te faltan $250.000 (13 %). Pide al menos $1.910.000.
+[OK ] 9.5 oferta por encima del costo -> cubre  Esta oferta cubre el costo de referencia con $400.000 de margen (21 %). Además está por encima de lo usual par
+[OK ] 9.6 sin oferta no hay veredicto  
+[OK ] 9.7 ruta sin costo -> None y mensaje de 'no hay costo'  par (5002, 54003)
+[OK ] 9.8 si falta el sentido pedido se usa el contrario (y se marca)  Bogotá->Medellín simulado sin dato: usa Medellín->Bogotá $1.890.779; pares en un solo sentido en la tabla: 0
+[OK ] 9.9 tablas de la guía pequeñas (< 2 MB)  7512 rutas con costo, 1255 pares de municipios y 555 grupos depto-km con mercado
+[OK ] 9.10 ofertas_semana_transportador.csv con columna de oferta  5 con valor; cubre_costo {'sin dato': 3, 'No': 3, 'Sí': 2}; posición {'sin dato': 3, 'debajo de lo usual': 3, 'dentro de lo usual': 2}
+[OK ] 9.10 ofertas_cooperativa.csv con columna de oferta  24 con valor; cubre_costo {'sin dato': 16, 'Sí': 15, 'No': 9}; posición {'sin dato': 27, 'dentro de lo usual': 9, 'debajo de lo usual': 4}
+[OK ] 9.11 ejemplo_lote.csv: mismas probabilidades, con o sin columna de oferta  [0.555, 0.619, 0.48, 0.362, 0.119]
+[OK ] 9.12 app: oferta por debajo del costo  dice 'no cubre' sin excepciones
+[OK ] 9.13 app: la oferta no cambia el riesgo  
+[OK ] 9.14 app: oferta por encima del costo  dice 'cubre' sin excepciones
+[OK ] 9.15 comparador con valor ofrecido  marca 'No cubre el costo' sin excepciones
+[OK ] 9.16 comparador: la fila con oferta baja queda marcada  
+RESUMEN: 63 de 63 pruebas OK

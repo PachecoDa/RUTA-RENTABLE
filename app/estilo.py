@@ -144,6 +144,31 @@ h1,h2,h3,h4{font-family:'Sora','Inter',sans-serif !important;letter-spacing:-.01
 .rr-umbral .k{font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--tenue);font-weight:700}
 .rr-umbral .v{font-family:'Sora',sans-serif;font-weight:800;font-size:1.3rem;color:var(--amarillo)}
 
+/* ---------- Guía para negociar ---------- */
+.st-key-tarjeta_guia{border-top:3px solid var(--amarillo) !important}
+.rr-aviso{font-size:.86rem;color:#D5DEE7;background:rgba(245,184,0,.08);border:1px solid rgba(245,184,0,.3);border-radius:12px;
+ padding:9px 13px;margin:.35rem 0 .6rem;line-height:1.4}
+.rr-aviso b{color:var(--amarillo)}
+.rr-guia{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:.2rem 0 .5rem}
+.rr-bloque{background:var(--hundido);border:1px solid var(--borde);border-left:4px solid var(--amarillo);border-radius:14px;padding:12px 15px;
+ animation:rr-entra .4s ease-out both}
+.rr-bloque.merc{border-left-color:#60A5FA}
+.rr-bloque .k{font-size:.7rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--tenue)}
+.rr-bloque .v{font-family:'Sora',sans-serif;font-weight:800;font-size:clamp(1.15rem,2vw,1.55rem);color:var(--texto);line-height:1.25;margin-top:3px}
+.rr-bloque .s{font-size:.8rem;color:var(--tenue);line-height:1.4;margin-top:4px}
+.rr-bloque .s b{color:#C9D3DD}
+.rr-bloque a{color:var(--amarillo)}
+.rr-ver{--c:var(--tenue);border-radius:14px;padding:13px 16px;margin:.4rem 0 .3rem;line-height:1.45;font-size:.98rem;color:var(--texto);
+ background:linear-gradient(120deg,color-mix(in srgb,var(--c) 16%,#141B22),#141B22 75%);border:1px solid color-mix(in srgb,var(--c) 45%,transparent);
+ animation:rr-revela .4s ease-out both}
+.rr-ver.verde{--c:var(--verde)}.rr-ver.ambar{--c:var(--ambar)}.rr-ver.rojo{--c:var(--rojo)}
+.rr-ver .t{font-family:'Sora',sans-serif;font-weight:800;color:var(--c);font-size:1.05rem;margin-bottom:3px}
+.rr-ver ul{margin:.35rem 0 0 1.1rem;padding:0;font-size:.86rem;color:#C9D3DD}
+.rr-of .g{font-size:.82rem;color:var(--tenue);margin-top:4px;line-height:1.4}
+.rr-of .g b{color:#C9D3DD}
+.rr-alerta{display:inline-block;margin-left:8px;border-radius:6px;padding:2px 8px;font-size:.68rem;font-weight:800;letter-spacing:.05em;
+ text-transform:uppercase;background:var(--rojo);color:#fff;vertical-align:2px}
+
 /* ---------- Widgets nativos en oscuro ---------- */
 [data-testid="stWidgetLabel"] p{font-weight:600;color:#D5DEE7}
 [data-baseweb="select"]>div,[data-baseweb="input"],[data-baseweb="base-input"],[data-testid="stNumberInputContainer"]{
@@ -178,11 +203,11 @@ h1,h2,h3,h4{font-family:'Sora','Inter',sans-serif !important;letter-spacing:-.01
 
 @media (max-width:640px){
  .rr-hero-txt{padding:18px 18px 124px}.rr-camion{left:26%;width:150px}.rr-luna{display:none}
- .rr-kpis{grid-template-columns:1fr}.rr-sem{flex-direction:column;align-items:flex-start}.rr-luces{flex-direction:row}
+ .rr-kpis,.rr-guia{grid-template-columns:1fr}.rr-sem{flex-direction:column;align-items:flex-start}.rr-luces{flex-direction:row}
  .rr-of{grid-template-columns:30px 1fr}.rr-of .pa{grid-column:2}
 }
 @media (prefers-reduced-motion:reduce){
- .rr-hero *,.rr-sem,.rr-luces i.on,.rr-picto svg,.rr-fact div,.rr-of{animation:none !important}
+ .rr-hero *,.rr-sem,.rr-luces i.on,.rr-picto svg,.rr-fact div,.rr-of,.rr-bloque,.rr-ver{animation:none !important}
  .rr-ben,.stButton button,.stDownloadButton button{transition:none}
 }
 </style>
@@ -368,12 +393,31 @@ def ranking(filas):
     partes = []
     for i, f in enumerate(filas):
         sello = '<span class="rr-sello">Mejor opción</span>' if i == 0 else ""
+        alerta = f'<span class="rr-alerta">{f["alerta"]}</span>' if f.get("alerta") else ""
+        guia = f'<div class="g">{f["guia"]}</div>' if f.get("guia") else ""
         partes.append(
             f'<div class="rr-of {f["nivel"]}{" mejor" if i == 0 else ""}" style="animation-delay:{70 * i}ms">'
-            f'<div class="pos">{i + 1}</div><div><div class="r">{f["ruta"]}{sello}</div>'
-            f'<div class="d">{f["detalle"]}</div><div class="f">{f["frase"]}</div></div>'
+            f'<div class="pos">{i + 1}</div><div><div class="r">{f["ruta"]}{sello}{alerta}</div>'
+            f'<div class="d">{f["detalle"]}</div><div class="f">{f["frase"]}</div>{guia}</div>'
             f'<div class="pa">{pastilla(f["nivel"])}</div></div>')
     return '<div class="rr-rank">' + "".join(partes) + "</div>"
+
+
+def guia(piso, mercado):
+    """Dos bloques: (titulo, valor, nota) del piso y del mercado."""
+    b = "".join(f'<div class="rr-bloque {c}"><div class="k">{k}</div><div class="v">{v}</div><div class="s">{s}</div></div>'
+                for c, (k, v, s) in (("piso", piso), ("merc", mercado)))
+    return f'<div class="rr-guia">{b}</div>'
+
+
+TITULO_VEREDICTO = {"verde": "Cubre el costo", "ambar": "Ojo con esta oferta", "rojo": "No cubre el costo",
+                    "neutro": "Sin costo para comparar"}
+
+
+def veredicto(nivel, frase, detalles):
+    lis = "".join(f"<li>{d}</li>" for d in detalles)
+    return (f'<div class="rr-ver {nivel}" role="status"><div class="t">{TITULO_VEREDICTO[nivel]}</div>'
+            f'<div>{frase}</div>{f"<ul>{lis}</ul>" if lis else ""}</div>')
 
 
 def caja_umbral(valor):

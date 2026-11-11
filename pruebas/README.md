@@ -17,10 +17,12 @@ Resultado (`salida_reproducibilidad.txt`): los cuatro notebooks corren sin error
 Se ejecuta en un entorno limpio con solo las dependencias de la aplicación:
 
 ```bash
-uv run --no-project --isolated --python 3.12 --with-requirements ../app/requirements.txt -- python pruebas_despliegue.py <ruta a entrega_final> resultado_pruebas.json
+uv run --no-project --isolated --python 3.12 --with-requirements ../app/requirements.txt -- python -I pruebas_despliegue.py <ruta a entrega_final> resultado_pruebas.json [carpeta de datos]
 ```
 
-Resultado (`salida_pruebas_despliegue.txt`): **46 de 46 pruebas correctas**, en ocho grupos:
+La carpeta de datos (con `conjunto_prueba_reservado.csv` y `sicetac_costos_c2_dic2025.csv`) es opcional: si no se da, se usa `<ruta>/datos` y, si no existe, `../3. Entrega 2 (corregida)/datos`.
+
+Resultado (`salida_pruebas_despliegue.txt`, corrida del 11 de noviembre de 2026 sobre `5. Entrega final/`): **63 de 63 pruebas correctas**, en nueve grupos:
 
 | Grupo | Qué comprueba |
 |---|---|
@@ -32,3 +34,4 @@ Resultado (`salida_pruebas_despliegue.txt`): **46 de 46 pruebas correctas**, en 
 | 6. Desempeño | Unos 7 ms por oferta, 10.000 ofertas en 0,05 s, modelo de 12 KB. |
 | 7. Funciones de la app | Distancia oficial, semáforo, frases, archivos de ejemplo, mensajes ante CSV mal formados, predicciones estables. |
 | 8. App completa | Con `streamlit.testing`: abre sin errores, los tres umbrales, carga refrigerada, km fuera de rango con aviso, botones de kilos y comparador. |
+| 9. Guía de negociación | Costo de referencia de Bogotá a Medellín igual al COSTO_GENERAL del SICE-TAC ($1.900.050) y COSTO_REFRIGERADA para carga con frío; uso del sentido contrario si falta uno; mensaje cuando la ruta no tiene costo; rango de mercado con 5 o más viajes (79 viajes); oferta por debajo = no cubre, por encima = cubre; los dos ejemplos con columna de oferta; el valor ofrecido no cambia las predicciones de `ejemplo_lote.csv`; en la app, llenar la oferta no cambia el riesgo y el comparador marca la oferta que no cubre el costo. |

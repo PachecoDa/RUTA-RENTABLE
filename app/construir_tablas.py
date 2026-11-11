@@ -1,9 +1,13 @@
-"""Construye una sola vez las tablas de consulta de la app (no usa pagos ni costos).
+"""Construye una sola vez las tablas de consulta de la app.
+
+Las tablas que usa el modelo (municipios, mercancías, distancias) no usan pagos ni costos. Las de la guía de
+negociación (costos_rutas.csv y mercado_rutas.csv) sí los usan, pero solo se muestran al usuario: nunca entran
+al modelo.
 
 Ejecutar desde la carpeta app:
     uv run --no-project --python 3.12 --with pandas,numpy -- python construir_tablas.py
 
-Salidas: municipios.csv, mercancias.csv, distancias_rutas.csv y ejemplos/*.csv
+Salidas: municipios.csv, mercancias.csv, distancias_rutas.csv, costos_rutas.csv, mercado_rutas.csv y ejemplos/*.csv
 """
 import re
 import unicodedata
@@ -107,7 +111,60 @@ print("rutas con km oficial:", len(dist),
 par = dist.set_index(["origen", "destino"])["km"]
 print("Bogota-Medellin:", par.get((11001, 5001)), "| Medellin-Bogota:", par.get((5001, 11001)))
 print("codigos RNDC sin municipio:", len((set(aud.CODMUNICIPIOORIGEN // 1000) | set(aud.CODMUNICIPIODESTINO // 1000)) - cods))
-for f in ("municipios.csv", "mercancias.csv", "distancias_rutas.csv"):
+
+# ---------------- Guía de negociación (solo se muestra; nunca entra al modelo) ----------------
+# Costo de referencia SICE-TAC por par dirigido de municipios (códigos DIVIPOLA de 5 dígitos)
+# El SICE-TAC trae algunos centros poblados (código que no termina en 000). Se usa la fila de las cabeceras
+# municipales; si un par solo tiene centros poblados, se toma la mediana de esas filas.
+cos = pd.read_csv(F_SICETAC, usecols=["ORIGEN", "DESTINO", "KM_SICETAC", "HORAS_LOGISTICAS",
+                                      "COSTO_GENERAL", "COSTO_REFRIGERADA"]).dropna()
+cos["origen"], cos["destino"] = (cos["ORIGEN"] // 1000).astype(int), (cos["DESTINO"] // 1000).astype(int)
+cos["cabecera"] = (cos["ORIGEN"] % 1000 == 0) & (cos["DESTINO"] % 1000 == 0)
+VAL = ["KM_SICETAC", "HORAS_LOGISTICAS", "COSTO_GENERAL", "COSTO_REFRIGERADA"]
+cab = cos[cos["cabecera"]].drop_duplicates(["origen", "destino"])
+resto = cos[~cos["cabecera"]].groupby(["origen", "destino"], as_index=False)[VAL].median()
+resto = resto[~resto.set_index(["origen", "destino"]).index.isin(cab.set_index(["origen", "destino"]).index)]
+cos = pd.concat([cab[["origen", "destino"] + VAL], resto], ignore_index=True)
+costos = pd.DataFrame({"origen": cos["origen"], "destino": cos["destino"],
+                       "km": cos["KM_SICETAC"].round().astype(int), "horas_logisticas": cos["HORAS_LOGISTICAS"].round().astype(int),
+                       "costo_general": cos["COSTO_GENERAL"].round().astype(int),
+                       "costo_refrigerada": cos["COSTO_REFRIGERADA"].round().astype(int)})
+costos = costos.sort_values(["origen", "destino"]).reset_index(drop=True)
+costos.to_csv(APP / "costos_rutas.csv", index=False)
+
+# Mercado: lo que de verdad se pagó (RNDC) por par de municipios y, de respaldo, por par de departamentos y banda de km
+MIN_VIAJES = 5
+BANDAS_KM = [0, 50, 100, 150, 200, 250, 300, 400, 500, 600, 800, 1000, 1500, 3000]
+pag = pd.read_csv(F_AUDITORIA, usecols=["CODMUNICIPIOORIGEN", "CODMUNICIPIODESTINO", "DEPARTAMENTOORIGEN",
+                                        "DEPARTAMENTODESTINO", "KILOMETROS", "KILOGRAMOS", "VALORESPAGADOS"],
+                  low_memory=False)
+pag["o"] = (pag["CODMUNICIPIOORIGEN"] // 1000).astype(int).astype(str)
+pag["d"] = (pag["CODMUNICIPIODESTINO"] // 1000).astype(int).astype(str)
+pag["banda"] = pd.cut(pag["KILOMETROS"], BANDAS_KM, right=False, labels=False)
+RESUMEN = dict(n=("VALORESPAGADOS", "size"), p25=("VALORESPAGADOS", lambda v: v.quantile(.25)),
+               mediana=("VALORESPAGADOS", "median"), p75=("VALORESPAGADOS", lambda v: v.quantile(.75)),
+               kg_mediana=("KILOGRAMOS", "median"))
+m_mun = pag.groupby(["o", "d"]).agg(**RESUMEN).reset_index().rename(columns={"o": "origen", "d": "destino"})
+m_mun["nivel"], m_mun["km_min"], m_mun["km_max"] = "municipios", np.nan, np.nan
+m_dep = (pag.dropna(subset=["banda"]).groupby(["DEPARTAMENTOORIGEN", "DEPARTAMENTODESTINO", "banda"])
+         .agg(**RESUMEN).reset_index()
+         .rename(columns={"DEPARTAMENTOORIGEN": "origen", "DEPARTAMENTODESTINO": "destino"}))
+m_dep["nivel"] = "departamentos"
+m_dep["km_min"] = [BANDAS_KM[int(b)] for b in m_dep["banda"]]
+m_dep["km_max"] = [BANDAS_KM[int(b) + 1] for b in m_dep["banda"]]
+mercado = pd.concat([m_mun, m_dep.drop(columns="banda")], ignore_index=True)
+mercado = mercado[mercado["n"] >= MIN_VIAJES]
+for c in ("p25", "mediana", "p75", "kg_mediana"):
+    mercado[c] = mercado[c].round().astype(int)
+mercado = mercado[["nivel", "origen", "destino", "km_min", "km_max", "n", "p25", "mediana", "p75", "kg_mediana"]]
+mercado.to_csv(APP / "mercado_rutas.csv", index=False)
+
+print("rutas con costo de referencia:", len(costos))
+n_mun = (mercado["nivel"] == "municipios")
+print("mercado: pares de municipios con >= 5 viajes:", int(n_mun.sum()), "(", round(mercado.loc[n_mun, "n"].sum() / len(pag) * 100, 1),
+      "% de los viajes) | grupos departamento y banda de km:", int((~n_mun).sum()), "(",
+      round(mercado.loc[~n_mun, "n"].sum() / len(pag) * 100, 1), "% de los viajes)")
+for f in ("municipios.csv", "mercancias.csv", "distancias_rutas.csv", "costos_rutas.csv", "mercado_rutas.csv"):
     print(f, round((APP / f).stat().st_size / 1024), "KB")
 
 # ---------------- Archivos de ejemplo (simulados, semilla 42) ----------------
@@ -134,11 +191,28 @@ def simular(n):
 
 
 s = simular(8)
-pd.DataFrame({"Origen": s["o"].map(et), "Destino": s["d"].map(et), "Kilos": s["kg"],
-              "Mercancia": s["mercancia"]}).to_csv(APP / "ejemplos" / "ofertas_semana_transportador.csv",
-                                                   index=False, encoding="utf-8-sig")
 c = simular(40)
+costo_par = costos.set_index(["origen", "destino"])
+
+
+def ofertas(t, con_valor):
+    """Valor ofrecido simulado alrededor del costo de referencia de la ruta (unas por debajo y otras por encima).
+    Se sortea después de las ofertas para no cambiar las filas de los ejemplos."""
+    factor = np.clip(rng.normal(1.08, 0.18, len(t)), 0.7, 1.5)
+    usar = rng.random(len(t)) < con_valor
+    out = []
+    for (o, d, nat), f, u in zip(t[["o", "d", "naturaleza"]].itertuples(index=False), factor, usar):
+        fila = costo_par.loc[(o, d)]
+        base = fila["costo_refrigerada"] if nat == "Refrigerada" else fila["costo_general"]
+        out.append(int(round(base * f / 10000) * 10000) if u else None)
+    return pd.array(out, dtype="Int64")
+
+
+pd.DataFrame({"Origen": s["o"].map(et), "Destino": s["d"].map(et), "Kilos": s["kg"],
+              "Mercancia": s["mercancia"], "Te ofrecen": ofertas(s, 0.75)}).to_csv(
+    APP / "ejemplos" / "ofertas_semana_transportador.csv", index=False, encoding="utf-8-sig")
 pd.DataFrame({"KILOMETROS": c["km"], "KILOGRAMOS": c["kg"], "CAPITULO": c["capitulo"],
               "NATURALEZACARGA": c["naturaleza"], "DEPARTAMENTOORIGEN": c["o"].map(dep),
-              "DEPARTAMENTODESTINO": c["d"].map(dep)}).to_csv(APP / "ejemplos" / "ofertas_cooperativa.csv", index=False)
+              "DEPARTAMENTODESTINO": c["d"].map(dep), "CODMUNICIPIOORIGEN": c["o"], "CODMUNICIPIODESTINO": c["d"],
+              "PAGO_OFRECIDO": ofertas(c, 0.7)}).to_csv(APP / "ejemplos" / "ofertas_cooperativa.csv", index=False)
 print("ejemplos listos:", len(s), len(c))

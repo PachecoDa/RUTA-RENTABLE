@@ -17,7 +17,7 @@ Integrantes: Daniel Pacheco y Harold Burgos.
 | `app/` | Aplicación de Streamlit "RutaRentable" con el modelo final exportado. Ver `app/README.md`. |
 | `presentacion/` | Presentación de la sustentación en HTML interactivo (`sustentacion_rutarentable.html`, se abre con doble clic). Teclas: → avanza, ← retrocede, F pantalla completa, P modo presentador con notas, O vista general. |
 | `video/` | Animación de 30 segundos (`promo_rutarentable.html`) para grabar como video de propuesta de valor. |
-| `pruebas/` | Pruebas de reproducibilidad (notebooks 01 a 04 desde los crudos, resultados idénticos) y de despliegue de la app (46 de 46 correctas). Ver `pruebas/README.md`. |
+| `pruebas/` | Pruebas de reproducibilidad (notebooks 01 a 04 desde los crudos, resultados idénticos) y de despliegue de la app (63 de 63 correctas). Ver `pruebas/README.md`. |
 
 ## Cómo reproducir
 
