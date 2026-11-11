@@ -1,0 +1,3 @@
+cerca_equilibrio,Acierto,Falso negativo,Falso positivo
+False,0.805,0.086,0.109
+True,0.546,0.256,0.198

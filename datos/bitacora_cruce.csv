@@ -1,0 +1,4 @@
+paso,filas_antes,filas_despues,quitadas,por_que
+Cruce con una ruta del SICE-TAC,37643,21094,16549,El SICE-TAC no tiene costo parametrizado para todas las parejas de municipios
+Km del RNDC coherentes con la ruta oficial,21094,21038,56,"Fuera de 0,5 a 2 veces la distancia oficial: ruta distinta o km mal digitados"
+"Pago entre 0,25 y 6 veces el costo",21038,20868,170,Fuera de ese rango casi siempre es un cero de más o de menos en el pago

@@ -1,0 +1,232 @@
+[
+ {
+  "prueba": "1.1 versión de scikit-learn igual a la del entrenamiento",
+  "ok": true,
+  "detalle": "1.8.0 vs 1.8.0"
+ },
+ {
+  "prueba": "2.1 el modelo carga",
+  "ok": true,
+  "detalle": "510 ms, Pipeline con pasos ['pre', 'clf']"
+ },
+ {
+  "prueba": "2.2 AUC en prueba igual al reportado (0,784)",
+  "ok": true,
+  "detalle": "0.7839"
+ },
+ {
+  "prueba": "2.3 matriz de confusión con umbral 0,44 igual a la del informe",
+  "ok": true,
+  "detalle": "[[2280, 544], [531, 818]]"
+ },
+ {
+  "prueba": "2.4 umbral de los metadatos = 0,44",
+  "ok": true,
+  "detalle": "0.44"
+ },
+ {
+  "prueba": "2.5 clases del modelo [0, 1] (0 = no rentable)",
+  "ok": true,
+  "detalle": "[np.int64(0), np.int64(1)]"
+ },
+ {
+  "prueba": "3.1 mismo resultado al repetir",
+  "ok": true,
+  "detalle": ""
+ },
+ {
+  "prueba": "3.2 predicción fila a fila = por lote",
+  "ok": true,
+  "detalle": "dif máx 2.2e-16"
+ },
+ {
+  "prueba": "3.3 orden de columnas no altera el resultado",
+  "ok": true,
+  "detalle": ""
+ },
+ {
+  "prueba": "3.4 probabilidades en [0, 1] y sin NaN",
+  "ok": true,
+  "detalle": "rango 0.001-0.965"
+ },
+ {
+  "prueba": "4. departamento no visto (AMAZONAS)",
+  "ok": true,
+  "detalle": "p = 0.366"
+ },
+ {
+  "prueba": "4. capítulo inexistente (CAP_XX)",
+  "ok": true,
+  "detalle": "p = 0.359"
+ },
+ {
+  "prueba": "4. naturaleza desconocida",
+  "ok": true,
+  "detalle": "p = 0.456"
+ },
+ {
+  "prueba": "4. kilómetros vacíos (NaN)",
+  "ok": true,
+  "detalle": "p = 0.764"
+ },
+ {
+  "prueba": "4. kilos vacíos (NaN)",
+  "ok": true,
+  "detalle": "p = 0.115"
+ },
+ {
+  "prueba": "4. km = 1",
+  "ok": true,
+  "detalle": "p = 0.039"
+ },
+ {
+  "prueba": "4. km = 3000 (fuera de rango)",
+  "ok": true,
+  "detalle": "p = 0.983"
+ },
+ {
+  "prueba": "4. kg = 1",
+  "ok": true,
+  "detalle": "p = 0.034"
+ },
+ {
+  "prueba": "4. kg = 12000",
+  "ok": true,
+  "detalle": "p = 0.009"
+ },
+ {
+  "prueba": "4. falta una columna -> el modelo la rechaza",
+  "ok": true,
+  "detalle": "ValueError"
+ },
+ {
+  "prueba": "5.1 refrigerada da más riesgo que carga normal",
+  "ok": true,
+  "detalle": "en 100% de los viajes; +22.2 pts mediana"
+ },
+ {
+  "prueba": "5.2 500 kg da más riesgo que 9.000 kg",
+  "ok": true,
+  "detalle": "en 100%; +46.5 pts"
+ },
+ {
+  "prueba": "5.3 450 km da más riesgo que 100 km",
+  "ok": true,
+  "detalle": "en 100%; +37.2 pts"
+ },
+ {
+  "prueba": "6.1 latencia por oferta < 100 ms",
+  "ok": true,
+  "detalle": "mediana 7.1 ms, p95 19.5 ms"
+ },
+ {
+  "prueba": "6.2 10.000 ofertas en < 5 s",
+  "ok": true,
+  "detalle": "0.05 s"
+ },
+ {
+  "prueba": "6.3 tamaño del modelo < 5 MB",
+  "ok": true,
+  "detalle": "12 KB"
+ },
+ {
+  "prueba": "7.1 Bogotá-Medellín usa la distancia oficial SICE-TAC",
+  "ok": true,
+  "detalle": "429.0 km, oficial=True"
+ },
+ {
+  "prueba": "7.2 ruta sin distancia oficial se estima",
+  "ok": true,
+  "detalle": ": 884.0 km, oficial=False"
+ },
+ {
+  "prueba": "7.3 semáforo: rojo en el umbral, ámbar justo debajo, verde lejos",
+  "ok": true,
+  "detalle": ""
+ },
+ {
+  "prueba": "7.4 frase de frecuencia en bordes",
+  "ok": true,
+  "detalle": "e, casi ninguno se quedó sin cubrir el costo. | este, unos 6 no alcanzaron a cubrir el costo. |  casi los 10 no alcanzaron a cubrir el costo."
+ },
+ {
+  "prueba": "7.5 archivo de ejemplo ofertas_semana_transportador.csv",
+  "ok": true,
+  "detalle": "8 filas, 8 válidas, errores=[]; semáforos {'Verde': np.int64(6), 'Rojo': np.int64(2)}"
+ },
+ {
+  "prueba": "7.5 archivo de ejemplo ofertas_cooperativa.csv",
+  "ok": true,
+  "detalle": "40 filas, 40 válidas, errores=[]; semáforos {'Verde': np.int64(19), 'Rojo': np.int64(17), 'Amarillo': np.int64(4)}"
+ },
+ {
+  "prueba": "7.6 CSV con columnas equivocadas -> mensaje claro",
+  "ok": true,
+  "detalle": "Faltan columnas. Usa Origen, Destino, Kilos y Mercancia, o las 6 colum"
+ },
+ {
+  "prueba": "7.7 municipio inexistente -> fila rechazada con mensaje",
+  "ok": true,
+  "detalle": "Fila 1: falta o no se reconoce el origen."
+ },
+ {
+  "prueba": "7.8 ejemplo_lote.csv da las mismas probabilidades de siempre",
+  "ok": true,
+  "detalle": "[0.555, 0.619, 0.48, 0.362, 0.119]"
+ },
+ {
+  "prueba": "8.1 la app abre",
+  "ok": true,
+  "detalle": "primer render 5.4 s sin excepciones"
+ },
+ {
+  "prueba": "8.2 muestra el resultado por defecto (semáforo y frase)",
+  "ok": true,
+  "detalle": ""
+ },
+ {
+  "prueba": "8.3 umbral 'Recomendado (costo del negoc'",
+  "ok": true,
+  "detalle": "sin excepciones"
+ },
+ {
+  "prueba": "8.3 umbral 'Youden (artículo)'",
+  "ok": true,
+  "detalle": "sin excepciones"
+ },
+ {
+  "prueba": "8.3 umbral 'Personalizado'",
+  "ok": true,
+  "detalle": "sin excepciones"
+ },
+ {
+  "prueba": "8.4 carga refrigerada",
+  "ok": true,
+  "detalle": "valor interno 'Refrigerada' sin excepciones"
+ },
+ {
+  "prueba": "8.4b la app explica el factor refrigerada",
+  "ok": true,
+  "detalle": ""
+ },
+ {
+  "prueba": "8.5 km fuera de rango (2.900)",
+  "ok": true,
+  "detalle": "con aviso sin excepciones"
+ },
+ {
+  "prueba": "8.6 botón Media carga (5.000 kg)",
+  "ok": true,
+  "detalle": "sin excepciones"
+ },
+ {
+  "prueba": "8.6 botón Carga completa (9.000 kg)",
+  "ok": true,
+  "detalle": "sin excepciones"
+ },
+ {
+  "prueba": "8.7 comparador de ofertas",
+  "ok": true,
+  "detalle": "sin excepciones"
+ }
+]

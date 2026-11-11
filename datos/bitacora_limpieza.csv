@@ -1,0 +1,11 @@
+fuente,paso,filas_antes,filas_despues,quitadas,por_que
+RNDC,Camión rígido de 2 ejes,197548,87741,109807,Es el vehículo del proyecto; el SICE-TAC no costea camionetas
+RNDC,Operación general,87741,80938,6803,"Multiparada, ida y regreso o vacío tienen otra estructura de costo"
+RNDC,Un solo viaje por fila,80938,44197,36741,En filas de varios viajes el pago es la suma; no se puede comparar con el costo de un viaje
+RNDC,"Pago, km y kg mayores que cero",44197,37728,6469,Sin estos valores no hay etiqueta ni predictores
+RNDC,"Peso entre 1 y 12,000 kg",37728,37646,82,Capacidad neta de un C2 según Res. 4100/2004 (mod. Res. 1782/2009); los viajes livianos se conservan
+RNDC,Naturaleza de la carga registrada,37646,37643,3,Sin naturaleza no se sabe qué costo aplicar
+SICE-TAC,Configuración 2 (rígido 2 ejes),1911276,224856,1686420,Mismo vehículo que el RNDC filtrado
+SICE-TAC,Condición cargado,224856,112428,112428,El RNDC registra viajes con carga
+SICE-TAC,Vía estándar,112428,97728,14700,Una sola vía por ruta; las alternas son más largas
+SICE-TAC,Tipo de carga general o refrigerada,97728,40720,57008,Se asigna según la naturaleza de la carga del RNDC

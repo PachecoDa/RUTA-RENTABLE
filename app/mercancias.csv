@@ -1,0 +1,983 @@
+mercancia,capitulo,naturaleza,viajes
+Conjuntos industriales exportados de conformidad con el reglamneto (cee) n? 518/,CAP_98,Carga Normal,793
+Productos varios,CAP_99,Carga Normal,770
+Sin descripcion,CAP_28,Carga Peligrosa,402
+Miscelaneos contenidos en paquetes (paqueteo),CAP_98,Carga Normal,392
+Preparaciones alimenticias no expresadas ni comprendidas en otras partidas,CAP_21,Carga Normal,226
+"Abonos de origen animal o vegetal, incluso mezclados entre si o tratados quim",CAP_31,Carga Normal,214
+"Articulos para el transporte o envasado, de plastico, tapones, tapas, capsu",CAP_39,Carga Normal,209
+Las demas manufacturas de plastico y manufacturas de las demas materias de las p,CAP_39,Carga Normal,202
+"Cajones, cajas, jaulas, tambores y envases similares, de madera, carretes",CAP_44,Carga Normal,193
+Mudanzas,CAP_98,Carga Normal,193
+"Jabon, productos tensoactivos usados como jabon, en barras, panes o trozos",CAP_34,Carga Normal,183
+Las demas manufacturas de hierro o de acero,CAP_73,Carga Normal,181
+"Medicamentos (con exclusion de los productos de las partidas 3002, 3005 o 300",CAP_30,Carga Normal,171
+"Cajas, sacos, bolsas, cucuruchos y demas envases de papel, carton, guata",CAP_48,Carga Normal,155
+Avena,CAP_10,Carga Normal,152
+Preparaciones del tipo de las utilizadas para la alimentacion de los animales,CAP_23,Carga Normal,149
+"Tubos y accesorios de tuberia (por ejemplo juntas, codos o racores), de plas",CAP_39,Carga Normal,146
+"Cafe, incluso tostado o descafeinado, cascara o cascarilla de cafe, sucedaneo",CAP_09,Carga Normal,143
+"Abonos minerales o quimicos, con dos o tres de los elementos fertilizantes ni",CAP_31,Carga Normal,141
+"Carne y despojos comestibles de aves de la partida 0 1, 0 5, frescos, refrigerd",CAP_02,Refrigerada,134
+Arroz,CAP_10,Carga Normal,133
+"Maquinas y aparatos electricos con una funcion propia, no expresados ni compr",CAP_85,Carga Normal,131
+"Aceites esenciales (desterpenados o no), incluidos los <concretos> o <absolut",CAP_33,Carga Normal,125
+"Productos de panaderia, pasteleria o galleteria, incluso con cacao, hostias",CAP_19,Carga Normal,117
+Contenedores (incluidos los contenedores cisterna y los contenedores deposito) e,CAP_86,Carga Normal,105
+Articulos de confiteria sin cacao (incluido el chocolate blanco),CAP_17,Carga Normal,101
+Harina de trigo o morcajo,CAP_11,Carga Normal,101
+"Las demas carnes y despojos comestibles, frescos, refrigerados o congelados",CAP_02,Carga Normal,101
+"Acero inoxidable en lingotes o demas formas primarias, productos intermedios de",CAP_72,Carga Normal,100
+"Aparatos electromecanicos con motor electrico incorporado, de uso domestico",CAP_85,Carga Normal,97
+"Articulos de uso domestico, de higiene o de tocador, y sus partes, de alumi",CAP_76,Carga Normal,97
+Partes y accesorios de vehiculos automoviles de las partidas 8701 a 8705,CAP_87,Carga Normal,97
+"Ladrillos, placas, baldosas y piezas ceramicas analogas de construccion, re",CAP_69,Carga Normal,95
+Los demas muebles y sus partes,CAP_94,Carga Normal,94
+"Articulos para la construccion, de plastico, no expresados ni comprendidos e",CAP_39,Carga Normal,93
+"Carne de animales de la especie bovina, congelada",CAP_02,Carga Normal,91
+"Refrigeradores, congeladores y demas material, maquinas y aparatos para la p",CAP_84,Carga Normal,91
+"Vehiculos automoviles para el transporte de diez personas o mas, conductor in",CAP_87,Carga Normal,87
+"Hierro y acero sin alear, en lingotes u demas formas primarias, excepto el h",CAP_72,Carga Normal,84
+Leche y natas (crema) concentradas o con adcion de azucar u otro edulcorante,CAP_04,Carga Normal,84
+"Transformadores electricos, convertidores electricos estaticos (por ejemplo r",CAP_85,Carga Normal,84
+"Desperdicios y desechos (chatarra), de fundicion, hierro o acero, lingote",CAP_72,Carga Normal,83
+Productos a base de cereales obtenidos porinsuflado o tostado (copos de maiz,CAP_19,Carga Normal,83
+Neumaticos nuevos de caucho,CAP_40,Carga Normal,81
+Maiz,CAP_10,Carga Normal,80
+"Los demas azucares, incluidas la lactosa, lamaltosa, la glucosa y la fructo",CAP_17,Carga Normal,79
+"Sal (incluidas la de mesa y la desnaturalizada) y cloruro de sodio, puro, in",CAP_25,Carga Normal,78
+"Alforfon, mijo y alpiste, los demas cereales",CAP_10,Carga Normal,77
+Menajes,CAP_98,Carga Normal,77
+"Productos laminados planos de hierro o de acero sin alear, de anchura superio",CAP_72,Carga Normal,77
+"Margarina, mezclas o preparaciones alimenticias de grasas o de aceites, anima",CAP_15,Carga Normal,75
+"Acumuladores electricos, incluidos los separadores, aunque sean cuadrados o",CAP_85,Carga Normal,74
+"Leche y nata (crema) sin concentrar, sin adicion de azucar ni otro educolorant",CAP_04,Carga Normal,74
+"Papel del tipo del utilizado para papel higienico, toallitas para desmaquilla",CAP_48,Carga Normal,74
+"Suero de mantequilla (de manteca), leche y nata (crema) cuajadas, yogur, kefi",CAP_04,Carga Normal,74
+"Agentes de superficie organicos (excepto el jabon), preparaciones tensoactivas",CAP_34,Carga Normal,73
+"Almidon y fecula, inulina",CAP_11,Carga Normal,73
+"Extractos, esencias y concentrados de cafe, te o yerba mate y preparaciones",CAP_21,Carga Normal,73
+"Pinturas y barnices a base de polimeros sinteticos o naturales modificados, d",CAP_32,Carga Normal,73
+Alcohol etilico sin desnaturalizar con un grado alcoholico volumetrico inferior...,CAP_22,Carga Normal,72
+"Granos de cereales trabajados de otra forma (por ejemplo mondados, aplastados",CAP_11,Carga Normal,72
+Alcohol etilico sin desnaturalizar con grado alcoholico volumetrico superior o...,CAP_22,Carga Normal,68
+"Motocicletas (incluso con pedales) y ciclos con motor auxiliar, con sidecar",CAP_87,Carga Normal,68
+"Preparaciones para salsas y salsas preparadas, condimentos y sazonadores, com",CAP_21,Carga Normal,68
+Vajilla y demas articulos de uso domestico y articulos de higiene o de tocador,CAP_39,Carga Normal,68
+"Insecticidas, raticidas, fungicidas, herbicidas, inhibidores de germinacio",CAP_38,Carga Normal,67
+Tractores (excepto las carretillas tractor de la partida 8709),CAP_87,Carga Normal,66
+"Papel y carton corrugados (incluso revestidos por encolado), rizados (<crepes",CAP_48,Carga Normal,65
+Preparaciones lubricantes y preparaciones del tipo de las utilizadas para el ens,CAP_34,Carga Normal,65
+"Alambres, varillas, tubos, placas, electrodos y articulos similares, de m",CAP_83,Carga Normal,64
+"Vehiculos automoviles para usos especiales, excepto los proyectados principal",CAP_87,Carga Normal,64
+"Cuadros, paneles, armarios y demas soportes equipados con varios aparatos d",CAP_85,Carga Normal,63
+Las demas manufacturas de madera,CAP_44,Carga Normal,63
+"Carne de animales de la especie porcina, fresca, refrigerada o congelada",CAP_02,Carga Normal,62
+Polimeros de etileno en formas primarias,CAP_39,Carga Normal,61
+"Accesorios de tuberia (por ejemplo empalmes (racores), codos o manguitos), d",CAP_73,Carga Normal,60
+"Partes y accesorios, no expresados ni comprendidos en otra parte de este capi",CAP_90,Carga Normal,60
+"Extracto de malta, preparaciones alimenticiasde harina, semola, almidon, fe",CAP_19,Carga Normal,59
+"Barras de hierro o de acero sin alear, simplemente forjadas, laminadas o ext",CAP_72,Carga Normal,58
+"Papel, carton y textiles, fotograficos, sensibilizados, sin impresionar",CAP_37,Carga Normal,58
+Perfiles de hierro o de acero sin alear,CAP_72,Carga Normal,58
+"Bicicletas y demas ciclos (incluidos los triciclos de reparto), sin motor",CAP_87,Carga Normal,57
+"Estufas, calderas con hogar, cocinas (incluidas las que puedan utilizarse ac",CAP_73,Carga Normal,57
+"Pescado fresco o refrigerado, excepto los filetes y demas carne de pescado de",CAP_03,Carga Normal,57
+"Somieres, articulos de cama y articulos similares (por ejemplo colchones, cub",CAP_94,Carga Normal,57
+Patatas (papas) frescas o refrigeradas,CAP_07,Carga Normal,55
+"Calzado con suela de caucho, plastico, cuero natural, regenerado y parte su",CAP_64,Carga Normal,54
+"Papel del tipo del utilizado para papel higienico y papeles similares, guata",CAP_48,Carga Normal,54
+"Preparaciones y conservas de pescado, caviar y sus sucedaneos preparados con hue",CAP_16,Carga Normal,54
+Las demas manufacturas de ceramica,CAP_69,Carga Normal,53
+"Bombonas, (damajuanas) botellas, frascos, bocales, tarros, envases tubula",CAP_70,Carga Normal,52
+"Objetos de arte o coleccion y antigüedades clasificados por el capítulo 97, de...",CAP_98,Carga Normal,52
+"Paneles, placas, losetas, bloques y articulos similares, de fibra vegetal",CAP_68,Carga Normal,52
+Partes y accesorios de los vehiculos de las partidas 8711 a 8713,CAP_87,Carga Normal,52
+"Preparaciones de belleza, de maquillaje y para el cuidado de la piel, except",CAP_33,Carga Normal,52
+"Goma laca, gomas, resinas, gomorresinas y oleorresinas (balsamos) naturales",CAP_13,Carga Normal,51
+"Los demas juguetes, modelos reducidos a escala y modelos similares para entret",CAP_95,Carga Normal,51
+"Agua, incluidas el agua mineral y la gaseada, con adicion de azucar uotro...",CAP_22,Carga Normal,50
+"Azucar de caña o de remolacha y sacarosa quimicamente pura, en estado solido",CAP_17,Carga Normal,50
+Elementos quimicos radiactivos e isotopos radiactivos (incluidos los elementos q,CAP_28,Carga Normal,50
+Los demas compuestos organicos,CAP_29,Carga Normal,50
+"Aceite de palma y sus fracciones, incluso refinado, pero sin modificar quimi",CAP_15,Carga Normal,48
+"Carne de animales de la especie bovina, fresca o refrigerada",CAP_02,Carga Normal,47
+Animales vivos de la especie bovina,CAP_01,Carga Normal,46
+Cebada,CAP_10,Carga Normal,46
+"Celulosa y sus derivados quimicos, no expresados ni comprendidos en otras par",CAP_39,Carga Normal,46
+"Las demas manufacturas moldeadas, de fundicion, de hierro o de acero",CAP_73,Carga Normal,46
+"Las demas maquinas y aparatos de elevacion, carga, descarga o manipulacion",CAP_84,Carga Normal,46
+"Libros registro, libros de contabilidad, talonarios, agendas, memorandos",CAP_48,Carga Normal,46
+Los demas motores y maquinas motrices,CAP_84,Carga Normal,46
+"Preparaciones antidetonantes, inhibidores de oxidacion, aditivos peptizantes",CAP_38,Carga Normal,46
+"Huevos de aves con cascara(cascaron) frescos, conservados o cocidos",CAP_04,Carga Normal,45
+"Telas sin tejer, incluso impregnadas, recubiertas, revestidas o estratifica",CAP_56,Carga Normal,45
+Abonos minerales o quimicos potasicos,CAP_31,Carga Normal,44
+"Articulos de mesa o de cocina, de madera",CAP_44,Carga Normal,44
+"Cementos, morteros, hormigones y preparaciones similares, refractarios, ex",CAP_38,Carga Normal,44
+Construcciones y partes de construcciones (por ejemplo puentes y sus partes,CAP_76,Carga Normal,44
+"Etiquetas de todas clases, de papel o carton, incluso impresas",CAP_48,Carga Normal,44
+"Grasas y aceites, animales o vegetales, y sus fracciones, parcial o totalme",CAP_15,Carga Normal,44
+"Legumbres y hortalizas, frutas y otros frutos y sus cortezas y demas partes d",CAP_20,Carga Normal,44
+"Harina de cereales, excepto de trigo o de morcajo o tranquillon",CAP_11,Carga Normal,43
+"Hilos, cables (incluidos los coaxiales) y demas conductores aislados para ele",CAP_85,Carga Normal,43
+"Materias vegetales, desperdicios, residuos y subproductos vegetales, inclus",CAP_23,Carga Normal,43
+"Guarniciones, herrajes y articulos similares de metalcomun, para muebles, p",CAP_83,Carga Normal,42
+"Juegos o surtidos de viaje para el aseo personal, la costura, o la limpieza",CAP_96,Carga Normal,42
+"Los demas papeles, cartones, guatas de celulosa y napas de fibras de celulos",CAP_48,Carga Normal,42
+"Placas y baldosas, de ceramica barnizadas o esmaltadas para pavimentacion o r",CAP_69,Carga Normal,42
+"Provitaminas y vitaminas, naturales o reproducidas por sintesis (incluidos lo",CAP_29,Carga Normal,42
+"Maquinas, aparatos y artefactos agricolas, horticolas o silvicolas, para l",CAP_84,Carga Normal,41
+"Placas, hojas, bandas, cintas, peliculas y demas formas planas, autoadhes",CAP_39,Carga Normal,41
+"Tejas, elementos de chimenea, conductos de humo, ornamentos arquitectonico",CAP_69,Carga Normal,41
+"Betunes y asfaltos naturales, pizarras y arenas bituminosas, asfalititas y...",CAP_27,Carga Normal,40
+"Bombas de aire o de vacio, compresores de aire u otros gases y ventiladores",CAP_84,Carga Normal,40
+"Cigarros o puros (incluso despuntados), puritos y cigarrillos, de tabaco o d",CAP_24,Carga Normal,40
+"Escobas, cepillos y brochas, aunque sean partes de maquinas, de aparatos o",CAP_96,Carga Normal,40
+"Los demas papeles y cartones, sin estucar ni recubrir, en bobinas (rollos)",CAP_48,Carga Normal,40
+"Embutidos y productos similares, de carne, de despojos o de sangre, preparac",CAP_16,Carga Normal,39
+"Pastas alimenticias, incluso cocidas o rellenas (de carne u otras sustancias",CAP_19,Carga Normal,39
+"Vehiculos para el mantenimiento o servicio de las vias ferreas o similares, i",CAP_86,Carga Normal,39
+"Articulos de uso domestico y sus partes, de fundicion, de hierro o de acero",CAP_73,Carga Normal,38
+"Castinas, piedras para la fabricacion de cal o de cemento",CAP_25,Carga Normal,38
+Cerveza de malta,CAP_22,Carga Normal,38
+"Desechos, recortes y desperdicios, de plastico",CAP_39,Carga Normal,38
+Maquinas y aparatos para acondicionamiento de aire que comprendan un ventilado,CAP_84,Carga Normal,38
+"Tornillos, pernos, tuercas, tirafondos, escarpias roscadas, remaches, pa",CAP_73,Carga Normal,38
+Tubos de aluminio,CAP_76,Carga Normal,38
+Aceites de petroleo o de minerales bituminosos excepto los aceites crudos...,CAP_27,Carga Normal,37
+"Cables, trenzas y articulos similares, de cobre, sin aislar para electrici",CAP_74,Carga Normal,37
+"Herramientas electromecanicas con motor electrico incorporado, de uso manual",CAP_85,Carga Normal,37
+"Sacos (bolsas) y talegas, para envasar",CAP_63,Carga Normal,37
+Vehiculos automoviles para el transporte de mercancias,CAP_87,Carga Normal,37
+Abrasivos naturales o artificiales en polvo o en granulos con soporte de mater,CAP_68,Carga Normal,36
+Chocolate y demas preparaciones alimenticias que contengan cacao,CAP_18,Carga Normal,36
+Ferroaleaciones,CAP_72,Carga Normal,36
+"Herramientas, monturas y mangos de herramientas, monturas de cepillos, mang",CAP_44,Carga Normal,36
+"Tubos y accesorios de tuberia (por ejemplo racores (empalmes), codos o mangui",CAP_75,Carga Normal,36
+"Fibras opticas y haces de fibras opticas, cables de fibras opticas, excepto l",CAP_90,Carga Normal,35
+"Jugos y extractos vegetales, materias pecticas, pectinatos y pectatos, agar-a",CAP_13,Carga Normal,35
+Mantequilla (manteca) y demas materias grasas de la leche<:pastas lacteas para u,CAP_04,Carga Normal,35
+Polimeros acrilicos en formas primarias,CAP_39,Carga Normal,35
+"Revestimientos de plastico para suelos, incluso autoadhesivos, en rollos o l",CAP_39,Carga Normal,35
+Fibra de vidrio (incluida la lana de vidrio) y manufacturas de esta materia (p,CAP_70,Carga Normal,34
+"Frutas y otros frutos, sin cocer o cocidos en agua o vapor, congelados, inclu",CAP_08,Carga Normal,34
+Helados y productos similares incluso con cacao,CAP_21,Carga Normal,34
+Herramientas de mano (incluidos los diamantes de vidriero) no expresadas ni co,CAP_82,Carga Normal,34
+"Pilas y baterias de pilas, electricas",CAP_85,Carga Normal,34
+"Algarrobas, algas, remolacha azucarera y ca?a de azucar, frescas, refriger",CAP_12,Carga Normal,33
+"Barras y perfiles, de aluminio",CAP_76,Carga Normal,33
+Coches de turismo y demas vehiculos automoviles proyectados principalmente par,CAP_87,Carga Normal,33
+Construcciones y partes de construcciones (por ejemplo puentes y sus partes co,CAP_73,Carga Normal,33
+"Gruas y aparatos de elevacion sobre cable aereo, puentes rodantes, porticos d",CAP_84,Carga Normal,33
+"Las demas placas, hojas, peliculas, bandas y laminas, de plastico",CAP_39,Carga Normal,33
+"Agua, incluidas el agua mineral natural o artificial y la gaseada, sin adicion...",CAP_22,Carga Normal,32
+"Cables, trenzas, eslingas y articulos similares, de hierro o de acero, si",CAP_73,Carga Normal,32
+Materias vegetales de las especies utilizadas principalmente en cesteria o esp,CAP_14,Carga Normal,32
+"Motores y generadores, electricos, con exclusion de los grupos electrogenos",CAP_85,Carga Normal,32
+Abonos minerales o quimicos fosfatados,CAP_31,Carga Normal,31
+Antiguedades de mas de cien a?os,CAP_97,Carga Normal,31
+"Maquinas y aparatos auxiliares para las maquinas de las partidas 8444, 8445",CAP_84,Carga Normal,31
+Polimeros de estireno en formas primarias,CAP_39,Carga Normal,31
+"Pulverizadores de tocador, sus monturas y cabezas de monturas, borlas y simil",CAP_96,Carga Normal,31
+"Tapones y tapas (incluidos los tapas corona, las tapas roscadas y los tapone",CAP_83,Carga Normal,31
+"Tubos flexibles de metal comun, incluso con sus accesorios",CAP_83,Carga Normal,31
+"Arenas naturales de cualquier clase, incluso coloreadas, con exclusion de la",CAP_25,Carga Normal,30
+"Baules, maletas, maletines, incluidos los de aseo y portadocumentos, carte",CAP_42,Carga Normal,30
+"Cacahuates (mani) sin tostar ni cocer de otro modo, incluso sin cascara o queb",CAP_12,Carga Normal,30
+"Carne y despojos comestibles, salados o en salmuera, secos o ahumados, harin",CAP_02,Carga Normal,30
+"Las demas grasas y aceites vegetales fijos (incluido el aceite de jojoba), y",CAP_15,Carga Normal,30
+Los demás tejidos de punto,CAP_60,Carga Normal,30
+"Maquinas y aparatos mecanicos con una funcion propia, no expresados ni compre",CAP_84,Carga Normal,30
+Maquinas y aparatos para trabajar caucho o plasticos o para fabricar producto,CAP_84,Carga Normal,30
+Mezclas de sustancias odoriferas y mezclas a base de una o varias sustancias,CAP_33,Carga Normal,30
+"Polimeros de propileno o de otras olefinas, en formas primarias",CAP_39,Carga Normal,30
+Trigo y morcajo o tranquillon,CAP_10,Carga Normal,30
+"Vino de uvas, incluso encabezado, mosto de uva, excepto el de la partida 200",CAP_22,Carga Normal,30
+"Acetales y semiacetales, incluso con otras funciones oxigenadas, y sus deriv",CAP_29,Carga Normal,29
+"Aparatos electricos de telefonia o telegrafia con hilos, incluidos los telefo",CAP_85,Carga Normal,29
+Materias minerales no expresadas ni comprendidas en otras partidas,CAP_25,Carga Normal,29
+"Preparaciones aglutinantes para moldes o para nucleos de fundicion, productos qu",CAP_38,Carga Normal,29
+"Automotores y tranvias con motor, excepto los de la partida 8604",CAP_86,Carga Normal,28
+"Instrumentos, aparatos y maquinas de medida o control, no expresados ni comp",CAP_90,Carga Normal,28
+Juguetes de ruedas concebidos para que se monten los ni?os (por ejemplo tricic,CAP_95,Carga Normal,28
+Tomates frescos o refrigerados,CAP_07,Carga Normal,28
+Centeno,CAP_10,Carga Normal,27
+"Las demas maquinas y aparatos para explanar, nivelar, traillar (<scraping>",CAP_84,Carga Normal,27
+"Las demas placas, hojas, peliculas, bandas y laminas, de plastico no celul",CAP_39,Carga Normal,27
+"Legumbres, hortalizas, frutos y demas partes comestibles de plantas, prepar",CAP_20,Carga Normal,27
+"Los demas aceros aleados en lingotes o demas formas primarias, productos...",CAP_72,Carga Normal,27
+Los demas acidos inorganicos y los demas compuestos oxigenados inorganicos de lo,CAP_28,Carga Normal,27
+"Marqueteria y taracea, cofres, cajas y estuches para joyeria u orfebreria y m",CAP_44,Carga Normal,27
+"Masilla, cementos de resina y otros mastiques, plastes de relleno utilizados",CAP_32,Carga Normal,27
+Materias vegetales de las especies utilizadas principalmente en la fabricacio,CAP_14,Carga Normal,27
+"Productos de origen animal no expresados ni comprendidos en otra parte, anima",CAP_05,Carga Normal,27
+Productos intermedios de hierro o de acero sin alear,CAP_72,Carga Normal,27
+"Articulos para fiestas, carnaval u otras diversiones, incluidos los de magi",CAP_95,Carga Normal,26
+"Cacao en grano, entero o partido, crudo o tostado",CAP_18,Carga Normal,26
+"Calentadores electricos de agua y calentadores electricos de inmersion, aparat",CAP_85,Carga Normal,26
+"Papel carbon (carbonico), papel autocopia y demas papeles para copiar o trans",CAP_48,Carga Normal,26
+Papel prensa en bobinas o en hojas,CAP_48,Carga Normal,26
+Productos comestibles de origen animal no expresados ni comprendidos en otra par,CAP_04,Carga Normal,26
+"Aparatos receptores de television, incluso con un aparato receptor de radiodi",CAP_85,Carga Normal,25
+"Carbonatos, peroxocarbonatos (percarbonatos), carbonato de amonio comercial que",CAP_28,Carga Normal,25
+"Frutos y demas partes comestibles de plantas, preparados o conservados de otr",CAP_20,Carga Normal,25
+"Grasas y aceites, animales o vegetales, y sus fracciones, cocidos, oxidado",CAP_15,Carga Normal,25
+"Madera (incluidas las tablillas y frisos para parques, sin ensamblar) perfila",CAP_44,Carga Normal,25
+"Mobiliario para la medicina, cirugia, odontologia o veterinaria (por ejempl",CAP_94,Carga Normal,25
+Papel o carton para reciclar (desperdicios y desechos),CAP_47,Carga Normal,25
+"Papel y carton, sin estucar ni recubrir, del tipo de los utilizados para esc",CAP_48,Carga Normal,25
+"Productos laminados planos de los demas aceros aleados, de anchura inferior",CAP_72,Carga Normal,25
+"Resinas aminicas, resinas fenolicas y poliuretanos, en formas primarias",CAP_39,Carga Normal,25
+"Cementos hidraulicos (incluidos los cementos sin pulverizar o clinker), aunqu",CAP_25,Carga Normal,24
+"Gluten de trigo, incluso seco",CAP_11,Carga Normal,24
+"Herramientas de dos o mas de las partidas 8202 a 8205, acondicionadas en jueg",CAP_82,Carga Normal,24
+"Hidroxido de sodio (sosa caustica), hidroxido de potasio (potasa caustica), pero",CAP_28,Carga Normal,24
+"Partes identificables como destinadas, exclusiva o principalmente, a las maq",CAP_84,Carga Normal,24
+Productos vegetales no expresados ni comprendidos en otras partidas,CAP_14,Carga Normal,24
+Vinagre comestible y sucedaneos comestibles del vinagre obtenidos con acido acet,CAP_22,Carga Normal,24
+"Aceites de girasol, de cartamo o de algodon, y sus fracciones, incluso refi",CAP_15,Carga Normal,23
+Animales vivos de la especie porcina,CAP_01,Carga Normal,23
+"Cajas de fundicion, placas de fondo para moldes, modelos para moldes, moldes p",CAP_84,Carga Normal,23
+"Crustaceos, moluscos y demas invertebrados acuaticos, preparados o conservad",CAP_16,Carga Normal,23
+"Frutas y otros frutos, conservados provisionalmente con gas sulfuroso o con ag",CAP_08,Carga Normal,23
+Las demas manufacturas de aluminio,CAP_76,Carga Normal,23
+Perfumes y aguas de tocador,CAP_33,Carga Normal,23
+"Tortas y demas residuos solidos de la extraccion del aceite de cacahuete, inc",CAP_23,Carga Normal,23
+Albumes o libros de estampas para ni?os y cuadernos infantiles para dibujar o co,CAP_49,Carga Normal,22
+"Articulos de higiene o de farmacia (incluidas las tetinas), de caucho vulcani",CAP_40,Carga Normal,22
+"Barras y perfiles, de acero inoxidable",CAP_72,Carga Normal,22
+"Ladrillos de construccion, bovedillas, cubrevigas y articulos similares, d",CAP_69,Carga Normal,22
+"Ladrillos, placas, baldosas y otras piezas ceramicas de harinas siliceas fos",CAP_69,Carga Normal,22
+Los demas calzados con suela y parte superior de caucho o de plastico,CAP_64,Carga Normal,22
+"Maquinas, aparatos y material (excepto las maquinas herramienta de las partid",CAP_84,Carga Normal,22
+"Neumaticos recauchutados o usados, de caucho, bandajes, bandas de rodadura i",CAP_40,Carga Normal,22
+Preparaciones y articulos farmaceuticos a que se refiere la nota 4 del capitulo,CAP_30,Carga Normal,22
+"Accesorios de tuberias (por ejemplo racores (empalmes), codos o manguitos)",CAP_76,Carga Normal,21
+"Aceite de soja(soya) y sus fracciones, incluso refinado, pero sin modificar",CAP_15,Carga Normal,21
+"Aparatos de alumbrado (incluidos los proyectores) y sus partes, no expresado",CAP_94,Carga Normal,21
+"Aparatos y articulos, de ceramica para usos quimicos o demas usos tecnicos, a",CAP_69,Carga Normal,21
+"Guatas, gasas, vendas y articulos analogos (por ejemplo apositos, esparadra",CAP_30,Carga Normal,21
+"Herramientas neumaticas, hidraulicas o con motor incorporado que no sea elect",CAP_84,Carga Normal,21
+"Los demas compuestos inorganicos (incluida el agua destilada, de conductibili",CAP_28,Carga Normal,21
+"Manufacturas de amianto-cemento, celulosa-cemento o similares",CAP_68,Carga Normal,21
+"Maquinas automaticas para la venta de productos (por ejemplo sellos, cigarril",CAP_84,Carga Normal,21
+"Tubos y perfiles huecos, sin soldadura, (sin costura) de hierro o de acero",CAP_73,Carga Normal,21
+"[cermets]y sus manufacturas, incluidos los desperdicios y desechos",CAP_81,Carga Normal,21
+"Aceite de oliva y sus fracciones, incluso refinado, pero sin modificar quimi",CAP_15,Carga Normal,20
+Aparatos electricos de se?alizacion (excepto los de transmision de mensajes),CAP_85,Carga Normal,20
+Aparatos electricos de se?alizacion acustica o visual (por ejemplo sonerias,CAP_85,Carga Normal,20
+"Articulos y material para cultura fisica, gimnasia, atletismo y demas deport",CAP_95,Carga Normal,20
+Lamparas electricas portatiles que funcionen con su propia fuente de energia (,CAP_85,Carga Normal,20
+Los demas calzados,CAP_64,Carga Normal,20
+"Madera contrachapada, madera chapada y madera estratificada similar",CAP_44,Carga Normal,20
+"Máquinas y aparatos utilizados, exclusiva o principalmente, para la fabricación...",CAP_84,Carga Normal,20
+"Partes de maquinas o de aparatos, no expresadas ni comprendidas en otra part",CAP_84,Carga Normal,20
+Partes y accesorios de los articulos de las partidas 9301 a 9304,CAP_93,Carga Normal,20
+Abonos minerales o quimicos nitrogenados,CAP_31,Carga Normal,19
+Alambre de los demas aceros aleados,CAP_72,Carga Normal,19
+Alambron de hierro o de acero sin alear,CAP_72,Carga Normal,19
+Aparatos electricos de alumbrado o de se?alizacion (con exclusion de los artic,CAP_85,Carga Normal,19
+"Aparatos no electricos de coccion o de calefaccion, de los tipos domesticos",CAP_74,Carga Normal,19
+"Azucares quimicamente puros, con excepcion de la sacarosa, lactosa, maltosa",CAP_29,Carga Normal,19
+Ceras artificiales y ceras preparadas,CAP_34,Carga Normal,19
+"Coches, sillas y vehiculos similares para el transporte de ni?os, y sus part",CAP_87,Carga Normal,19
+"Colas y demas adhesivos preparados, no expresados ni comprendidos en otras pa",CAP_35,Carga Normal,19
+"Depositos, barriles, tambores, bidones, latas o botes, cajas y recipiente",CAP_73,Carga Normal,19
+"Isotopos, excepto los de la partida 2844, sus compuestos inorganicos u organi",CAP_28,Carga Normal,19
+Las demas frutas u otros frutos frescos,CAP_08,Carga Normal,19
+Polimeros naturales (por ejemplo acido alginico) y polimeros naturales modific,CAP_39,Carga Normal,19
+"Preparaciones para afeitar o para antes o despues del afeitado, desodorantes",CAP_33,Carga Normal,19
+"Sulfatos, alumbres, peroxosulfatos (persulfatos)",CAP_28,Carga Normal,19
+"Utiles intercambiables para herramientas de mano, incluso mecanicas, o para",CAP_82,Carga Normal,19
+"Acido nitrico, acidos sulfonitricos",CAP_28,Carga Normal,18
+"Alambre de puas de hierro o acero, alambre (simple o doble) y fleje, torcido",CAP_73,Carga Normal,18
+"Albuminas (incluidos los concentrados de varias proteinas de lactosuero, con",CAP_35,Carga Normal,18
+"Articulos de higiene o de tocador, y sus partes, de fundicion, de hierro o",CAP_73,Carga Normal,18
+"Bloques y placas, filtrantes, de pasta de papel -",CAP_48,Carga Normal,18
+"Bombas para liquidos, incluso con dispositivo medidor incorporado, elevadore",CAP_84,Carga Normal,18
+"Depositos, barriles, tambores, bidones, cajas, botes y recipientes simila",CAP_76,Carga Normal,18
+"Despojos comestibles de animales de las especies bovina, porcina, ovina, capri",CAP_02,Carga Normal,18
+"Lamparas, tubos y valvulas electronicos de catodo caliente, de catodo frio",CAP_85,Carga Normal,18
+Las demas manufacturas de vidrio,CAP_70,Carga Normal,18
+"Las demas maquinas herramienta para trabajar metales, <cermets>, que no trab",CAP_84,Carga Normal,18
+"Las demas pinturas y barnices, pigmentos al agua preparados del tipo de los util",CAP_32,Carga Normal,18
+"Manufacturas de cemento, hormigon o de piedra artificial, incluso armadas",CAP_68,Carga Normal,18
+"Manzanas, peras, y menbrillos frescos",CAP_08,Refrigerada,18
+"Maquinas para lavar vajilla, maquinas y aparatos para limpiar o secar botella",CAP_84,Carga Normal,18
+"Maquinas y aparatos, no expresados ni comprendidos en otras partes de este ca",CAP_84,Carga Normal,18
+"Maquinas, aparatos y artefactos para cosechar o trillar, incluidas las prens",CAP_84,Carga Normal,18
+"Partes y accesorios identificables como destinados, exclusiva o principalment",CAP_84,Carga Normal,18
+"Preparaciones para sopas, potajes o caldos, sopas",CAP_21,Carga Normal,18
+"Productos textiles acolchados en pieza, constituidos por una o varias capas d",CAP_58,Carga Normal,18
+"Tambores, bobinas, canillas y soportes similares, de pasta de papel, pape",CAP_48,Carga Normal,18
+"Cadenas y sus partes, de fundicion, de hierro o de acero",CAP_73,Carga Normal,17
+"Caolin y demas arcillas caolinicas, incluso calcinadas",CAP_25,Carga Normal,17
+"Filetes y demas carne de pescado (incluso picada), frescos, refrigerados o co",CAP_03,Carga Normal,17
+"Las demas materias colorantes, preparaciones a que se refiere la nota 3 de est",CAP_32,Carga Normal,17
+"Levaduras (vivas o muertas), los demas microorganismos monocelulares muertos (co",CAP_21,Carga Normal,17
+"Madera densificada en bloques, planchas, tablas o perfiles",CAP_44,Carga Normal,17
+"Prendas de vestir confeccionadas con productos de las partidas 5602, 5603, 5",CAP_62,Carga Normal,17
+"Puntas, clavos, chinchetas (chinches), grapas apuntadas y articulos similar",CAP_74,Carga Normal,17
+Tableros de particulas y tableros similares de madera o de otras materias le?o,CAP_44,Carga Normal,17
+Amianto (asbesto),CAP_25,Carga Normal,16
+"Aparatos y dispositivos electricos de encendido o de arranque, para motores d",CAP_85,Carga Normal,16
+Canela y flores del canelero,CAP_09,Carga Normal,16
+"Disolventes o diluyentes organicos compuestos, no expresados ni comprendidos",CAP_38,Carga Normal,16
+"Elementos quimicos impurificados para uso en electronica, en discos, plaquit",CAP_38,Carga Normal,16
+"Instrumentos y aparatos de medicina, cirugia, odontologia o veterinaria, in",CAP_90,Carga Normal,16
+"Las demas bebidas fermentadas (por ejemplo: sidra, perada, aguamiel), mezclas...",CAP_22,Carga Normal,16
+"Las demas prendas de vestir, de punto",CAP_61,Carga Normal,16
+"Madera aserrada o desbastada longitudinalmente, cortada o desenrollada, incl",CAP_44,Carga Normal,16
+"Maquinas (incluidas las prensas) para forjar o estampar, martillos pilon y ot",CAP_84,Carga Normal,16
+"Partes de máquinas o aparatos, no expresadas ni comprendidas en otra parte de...",CAP_84,Carga Normal,16
+"Recipientes para gases comprimidos o licuados, de fundicion, de hierro o de",CAP_73,Carga Normal,16
+"Salvados, moyuelos y demas residuos del cernido, de la molienda o de otros t",CAP_23,Carga Normal,16
+"Tubos y perfiles huecos, de fundicion",CAP_73,Carga Normal,16
+Alambre de acero inoxidable,CAP_72,Carga Normal,15
+"Aparatos receptores de radiotelefonia, radiotelegrafia o radiodifusion, incl",CAP_85,Carga Normal,15
+"Cal viva, cal apagada y cal hidraulica, con exclusion del oxido y del hidrox",CAP_25,Carga Normal,15
+Dextrina y demas almidones y feculas modificados (por ejemplo almidones y fecu,CAP_35,Carga Normal,15
+"Las demas grasas y aceites animales, y sus fracciones, incluso refinados, p",CAP_15,Carga Normal,15
+"Las demas maquinas y aparatos, para la agricultura, horticultura, silvicult",CAP_84,Carga Normal,15
+"Material fijo de vias ferreas o similares, aparatos mecanicos (incluso electro",CAP_86,Carga Normal,15
+"Pescado congelado, excepto los filetes y demas carne de pescado de la partid",CAP_03,Carga Normal,15
+"Poliacetales, los demas polieteres y resinas epoxi, en formas primarias, pol",CAP_39,Carga Normal,15
+Aluminio en bruto,CAP_76,Carga Normal,14
+"Aparatos emisores de radiotelefonia, radiotelegrafia, radiodifusion o televi",CAP_85,Carga Normal,14
+"Azufre de cualquier clase, con exclusion del sublimado, del precipitado y de",CAP_25,Carga Normal,14
+Cables de filamentos artificiales,CAP_55,Carga Normal,14
+"Crustaceos, incluso pelados, vivos, frescos, refrigerados, congelados, secos",CAP_03,Carga Normal,14
+"Harina, polvo y <pellets>, de carne, de despojos, de pescado o de crustace",CAP_23,Carga Normal,14
+Las demas manufacturas de caucho vulcanizado sin endurecer,CAP_40,Carga Normal,14
+"Libros, folletos e impresos similares, incluso en hojas sueltas",CAP_49,Carga Normal,14
+"Los demas articulos ceramicos refractarios (por ejemplo retortas, crisoles",CAP_69,Carga Normal,14
+"Madera en bruto, incluso descortezada, desalburada o escuadrada",CAP_44,Carga Normal,14
+"Maquinas herramienta para trabajar la piedra, ceramica, hormigon, amiantoce",CAP_84,Carga Normal,14
+"Materias colorantes organicas sinteticas, aunque sean de constitucion quimic",CAP_32,Carga Normal,14
+Melaza de la extraccion o del refinado del azucar,CAP_17,Carga Normal,14
+Siliconas en formas primarias,CAP_39,Carga Normal,14
+Acidos carboxilicos con funciones oxigenadas suplementarias y sus anhidridos,CAP_29,Carga Normal,13
+"Acidos monocarboxilicos aciclicos saturados y sus anhidridos, halogenuros, p",CAP_29,Carga Normal,13
+"Aldehidos, incluso con otras funciones oxigenadas, polimeros ciclicos de los",CAP_29,Carga Normal,13
+Clase 1 - explosivos,CAP_00,Carga Peligrosa,13
+"Colores para la pintura artistica, la ense?anza, la pintura de letreros, pa",CAP_32,Carga Normal,13
+"Cucharas, tenedores, cucharones, espumaderas, palas para tarta, cuchillo",CAP_82,Carga Normal,13
+"Gallos, gallinas, patos, gansos, pavos y pintadas de las especies domesticas",CAP_01,Carga Normal,13
+"Harina, semola, polvo, copos, granulos y <pellets> de patatas (papas)",CAP_11,Carga Normal,13
+"Jengibre, azafran, curcuma, tomillo, hojas de laurel, curry y demas especias",CAP_09,Carga Normal,13
+"Los demas articulos confeccionados, incluidos los patrones para prendas de ve",CAP_63,Carga Normal,13
+"Los demas impresos, incluidas las estampas, grabados y fotografias",CAP_49,Carga Normal,13
+Los demas minerales y sus concentrados,CAP_26,Carga Normal,13
+"Los demas tubos (por ejemplo soldados o remachados), de seccion circular, co",CAP_73,Carga Normal,13
+Materias vegetales de las especies utilizadas principalmente para relleno (po,CAP_14,Carga Normal,13
+"Placas y baldosas, de ceramica, sin barnizar ni esmaltar para pavimentacion",CAP_69,Carga Normal,13
+Quesos y requeson,CAP_04,Refrigerada,13
+"Ropa de cama, de mesa, tocador o cocina",CAP_63,Carga Normal,13
+Vermut y demas vinos de uvas frescas preparados con plantas o sustancias aromati,CAP_22,Carga Normal,13
+"Chasis de vehiculos automoviles de las partidas 8701 a 8705, con el motor",CAP_87,Carga Normal,12
+"Diodos, transistores y dispositivos semiconductores similares, dispositivos s",CAP_85,Carga Normal,12
+"Fosfinatos (hipofosfitos), fosfonatos (fosfitos), fosfatos y polifosfatos",CAP_28,Carga Normal,12
+"Fosforos (cerillas), excepto los articulos de pirotecnia de la partida 3604",CAP_36,Carga Normal,12
+"Gra?ones, semola y <pellets>, de cereales",CAP_11,Carga Normal,12
+"Lactosuero incluso concentrado o con adicion de azucar u otro edulcorante, pr",CAP_04,Carga Normal,12
+"Lamparas y tubos electricos de incandescencia o de descarga, incluidos los fa",CAP_85,Carga Normal,12
+"Las demas preparaciones y conservas de carne, de despojos o de sangre",CAP_16,Carga Normal,12
+"Locomotoras y locotractores, electricos (de energia exterior o de acumuladore",CAP_86,Carga Normal,12
+Los demas tejidos de algodon,CAP_52,Carga Normal,12
+"Maquinas herramienta (incluidas las de clavar, grapar, encolar o ensamblar d",CAP_84,Carga Normal,12
+"Motores de embolo (piston) alternativo y motores rotativos, de encendido por",CAP_84,Carga Normal,12
+"Papel, carton, guata de celulosa y napas de fibras de celulosa, estucados",CAP_48,Carga Normal,12
+"Productos laminados planos de hierro o de acero sin alear, de anchura inferio",CAP_72,Carga Normal,12
+"Recipientes para gases comprimidos o licuados, de aluminio",CAP_76,Carga Normal,12
+"Redes de mallas anudadas, en pa?os o en piezas, fabricadas con cordeles, cu",CAP_56,Carga Normal,12
+"Silicatos, silicatos comerciales de los metales alcalinos",CAP_28,Carga Normal,12
+"Topadoras frontales (<bulldozers>), topadoras angulares (<angledozers>)",CAP_84,Carga Normal,12
+"Adoquines, baldosas, ladrillos, placas, tejas y demas articulos, de vidri",CAP_70,Carga Normal,11
+Aisladores electricos de cualquier materia,CAP_85,Carga Normal,11
+Alambre de aluminio,CAP_76,Carga Normal,11
+"Alfombras de nudo de materias textiles, incluso confeccionadas",CAP_57,Carga Normal,11
+Articulos de prenderia,CAP_63,Carga Normal,11
+"Articulos de uso domestico, de higiene o de tocador, y sus partes, de cobre",CAP_74,Carga Normal,11
+"Cables, trenzas y similares, de aluminio, sin aislar para electricidad",CAP_76,Carga Normal,11
+Cacao en polvo sin azucarar ni edulcorar de otro modo,CAP_18,Carga Normal,11
+"Calandrias y laminadores, excepto para metal o vidrio, y cilindros para esta",CAP_84,Carga Normal,11
+"Calderas de vapor (generadores de vapor), excepto las de calefaccion central",CAP_84,Carga Normal,11
+"Cintas para maquinas de escribir y cintas similares, entintadas o preparadas",CAP_96,Carga Normal,11
+"Conos de lupulo frescos o secos, incluso quebrantados, molidos o en <pellets",CAP_12,Carga Normal,11
+"Granito, porfido, basalto, arenisca y demas piedras de talla o de construcc",CAP_25,Carga Normal,11
+"Grasas de animales de las especies bovina, ovina o caprina, excepto las de l",CAP_15,Carga Normal,11
+"Huevos de aves sin cascara (cascaron) y yemas de huevos frescos, secos, cocid",CAP_04,Carga Normal,11
+Las demas barras de hierro o de acero sin alear,CAP_72,Carga Normal,11
+"Las demas formas (por ejemplo varillas, tubos o perfiles) y articulos (por ej",CAP_40,Carga Normal,11
+Liquidos para frenos hidraulicos y demas preparaciones liquidas para transmisi,CAP_38,Carga Normal,11
+Manufacturas de yeso fraguable o de preparaciones a base de yeso,CAP_68,Carga Normal,11
+"Maquinas y aparatos para ensayos de dureza, traccion, compresion, elasticid",CAP_90,Carga Normal,11
+"Marmol, travertinos, ecaussines y demas piedrascalizas de talla o de constru",CAP_25,Carga Normal,11
+"Microfonos y sus soportes, altavoces, incluso montados en sus cajas, auricula",CAP_85,Carga Normal,11
+"Objetos de vidrio para el servicio de mesa, de cocina, de tocador, de ofici",CAP_70,Carga Normal,11
+Partes de vehiculos para vias ferreas o similares,CAP_86,Carga Normal,11
+Preparaciones capilares,CAP_33,Carga Normal,11
+"Preparaciones para la higiene bucal o dental, incluidos los polvos y cremas p",CAP_33,Carga Normal,11
+"Rodamientos de bolas, de rodillos o de agujas",CAP_84,Carga Normal,11
+"Vajillas y demas articulos de uso domestico, higiene o tocador, de porcela",CAP_69,Carga Normal,11
+"Alcoholes aciclicos y sus derivados halogenados, sulfonados, nitrados o nitr",CAP_29,Carga Normal,10
+"Aparatos para el corte, seccionamiento, proteccion, derivacion, empalme o",CAP_85,Carga Normal,10
+"Asientos (con exclusion de los de la partida 9402), incluso los transformable",CAP_94,Carga Normal,10
+"Barras y perfiles, de los demas aceros aleados, barras huecas para perforacio",CAP_72,Carga Normal,10
+"Carbones activados, materias minerales naturales activadas, negro de origen an",CAP_38,Carga Normal,10
+"Clasificadores, ficheros, cajas de clasificacion, bandejas de correspondenc",CAP_83,Carga Normal,10
+"Desperdicios y desechos de pilas, baterias de pilas o acumuladores electricos",CAP_85,Carga Normal,10
+"Desperdicios y desechos, de aluminio",CAP_76,Carga Normal,10
+"Harina, semola y polvo de las legumbres secas de la partida 0713, de sagu o",CAP_11,Carga Normal,10
+"Jugos de frutas (incluido el mosto de uva) o de legumbres u hortalizas, sin f",CAP_20,Carga Normal,10
+Laminadores para metal y sus cilindros,CAP_84,Carga Normal,10
+Los demas articulos de cuchilleria (por ejemplo maquinas de cortar el pelo o d,CAP_82,Carga Normal,10
+"Mangueras para bombas y tubos similares, de materias textiles, incluso con a",CAP_59,Carga Normal,10
+"Maquinas para montar lamparas, tubos o valvulas electricos o electronicos o l",CAP_84,Carga Normal,10
+Pasta de fibras obtenidas de papel o carton reciclados (desperdicios y desechos),CAP_47,Carga Normal,10
+Poliamidas en formas primarias,CAP_39,Carga Normal,10
+"Prendas y complementos (accesorios) de vestir, de punto, para bebes",CAP_61,Carga Normal,10
+Sorgo de grano,CAP_10,Carga Normal,10
+"Acidos grasos monocarboxilicos industriales, aceites acidos del refinado, alcoho",CAP_38,Carga Normal,9
+"Articulos para juegos de sociedad, incluidos los juegos con motor o mecanismo",CAP_95,Carga Normal,9
+"Articulos y aparatos de ortopedia, incluidas las fajas y bandas medicoquirurg",CAP_90,Carga Normal,9
+"Carretillas apiladoras, las demas carretillas de manipulacion con un...",CAP_84,Carga Normal,9
+"Cebollas, chalotes, ajos, puerros y demas hortalizas(incluso silvestres) alia",CAP_07,Carga Normal,9
+"Cocos, nueces del brazil y nueces de mara?on, frescos o secos, incluso con c",CAP_08,Carga Normal,9
+Construcciones prefabricadas,CAP_94,Carga Normal,9
+"Cortezas de agrios(citricos), melones, sandias frescas, congeladas, secas o p",CAP_08,Carga Normal,9
+"Fregaderos, lavabos, pedestales de lavabo, bañeras, bides, inodoros, cis",CAP_69,Carga Normal,9
+"Fundicion en bruto y fundicion especular, en lingotes, bloques u otras forma",CAP_72,Carga Normal,9
+"Grasa de lana y sustancias grasas derivadas, incluida la lanolina",CAP_15,Carga Normal,9
+"Hilo de coser de filamentos sinteticos o artificiales, incluso acondicionado",CAP_54,Carga Normal,9
+"Las demas legumbres y hortalizas, preparadas o conservadas (excepto en vinagr",CAP_20,Carga Normal,9
+"Los demas tubos y perfiles huecos (por ejemplo soldados, remachados, grapado",CAP_73,Carga Normal,9
+"Maquinas de tricotar, de coser por cadeneta, de entorchar, de fabricar tul",CAP_84,Carga Normal,9
+"Mechas de materias textiles tejidas, trenzadas o de punto, para lamparas, h",CAP_59,Carga Normal,9
+"Nuez moscada, macis, amomos y cardamomos",CAP_09,Carga Normal,9
+"Polimeros de acetato de vinilo o de otros esteres vinilicos, en formas primar",CAP_39,Carga Normal,9
+"Polimeros de cloruro de vinilo o de otras olefinas halogenadas, en formas pri",CAP_39,Carga Normal,9
+"Productos laminados planos de los demas aceros aleados, de anchura superior",CAP_72,Carga Normal,9
+"Puntas, clavos, chinchetas(chinches), grapas apuntadas, grapas onduladas",CAP_73,Carga Normal,9
+"Residuos de la industria del almidon y residuos similares, pulpa de remolacha",CAP_23,Carga Normal,9
+Sales de los acidos oxometalicos o peroxometalicos,CAP_28,Carga Normal,9
+"Tableros de fibra de madera u otras materias le?osas, incluso aglomerados co",CAP_44,Carga Normal,9
+Tejidos de algodon con un contenido de algodon superior o igual al 85 % en pes,CAP_52,Carga Normal,9
+"Tejidos de las demas fibras textiles vegetales, tejidos de hilados de papel",CAP_53,Carga Normal,9
+Vidrieras aislantes de paredes multiples,CAP_70,Carga Normal,9
+Vidrio de seguridad constituido por vidrio templado o contrachapado,CAP_70,Carga Normal,9
+"Vidrio flotado y vidrio desbastado o pulido por una de las dos caras, en plac",CAP_70,Carga Normal,9
+"Yeso natural, anhidrita, yesos calcinados, incluso coloreados o con peque?as",CAP_25,Carga Normal,9
+"[tall oil], incluso refinado",CAP_38,Carga Normal,9
+Alambre de hierro o de acero sin alear,CAP_72,Carga Normal,8
+Alambron de los demas aceros,CAP_72,Carga Normal,8
+Antibioticos,CAP_29,Carga Normal,8
+"Aparatos mecanicos, accionados a mano, de peso inferior o igual a 10 kg uti",CAP_82,Carga Normal,8
+"Aparatos y dispositivos, aunque se calienten electricamente, para el tratami",CAP_84,Carga Normal,8
+"Articulos de griferia y organos similares para tuberias, calderas, depositos",CAP_84,Carga Normal,8
+"Barcos faro, barcos bomba, dragas, pontones grua y demas barcos en los que",CAP_89,Carga Normal,8
+"Bordados en piezas, tiras o motivos",CAP_58,Carga Normal,8
+Cables de filamentos sinteticos,CAP_55,Carga Normal,8
+"Centrifugadoras incluidas las secadoras centrifugas, aparatos para filtrar o dep",CAP_84,Carga Normal,8
+"Cloruros, oxicloruros e hidroxicloruros, bromuros y oxibromuros, yoduros y ox",CAP_28,Carga Normal,8
+"Condensadores electricos fijos, variables o ajustables",CAP_85,Carga Normal,8
+"Frutos y otros frutos secos, excepto los de las partidas 0 8, 0 1 a 0 8, 0 6",CAP_08,Carga Normal,8
+Hilados de filamentos sinteticos (excepto el hilo de coser) sin acondicionar p,CAP_54,Carga Normal,8
+"Hilo de coser de algodon, incluso acondicionado para la venta al por menor",CAP_52,Carga Normal,8
+"Instrumentos y aparatos para analisis fisicos o quimicos (polarimetros, refra",CAP_90,Carga Normal,8
+"Magnetofonos y demas aparatos de grabacion de sonido, incluso con dispositiv",CAP_85,Carga Normal,8
+"Maquinas de cepillar, limar, mortajar, brochar, tallar o acabar los engrana",CAP_84,Carga Normal,8
+Maquinas herramienta que trabajen por arranque de cualquier materia mediante l,CAP_84,Carga Normal,8
+"Maquinas y aparatos para imprimir, incluidas las maquinas para imprimir por c",CAP_84,Carga Normal,8
+"Obras y piezas de carpinteria para construcciones, incluidos los tableros cel",CAP_44,Carga Normal,8
+"Partes identificables como destinadas, exclusiva o principalmente, a los apa",CAP_85,Carga Normal,8
+"Partes y accesorios (excepto los estuches, fundas y similares) identificable",CAP_84,Carga Normal,8
+"Radiadores para la calefaccion central, de calentamiento no electrico, y su",CAP_73,Carga Normal,8
+"Remolques y semirremolques para cualquier vehiculo, los demas vehiculos no autom",CAP_87,Carga Normal,8
+"Resinas de petroleo, resinas de cumarona-indeno, politerpenos, polisulfuros",CAP_39,Carga Normal,8
+"Tejidos de punto de anchura inferior o igual a 30 cm, con un contenido de hilos...",CAP_60,Carga Normal,8
+Telas metalicas (incluidas las continuas o sin fin)redes y rejas de alambre d,CAP_74,Carga Normal,8
+"Telas recubiertas de cola o materias amilaceas, del tipo de los utilizados pa",CAP_59,Carga Normal,8
+"Termos y demas recipientes isotermicos, montados y aislados por vacio, asi c",CAP_96,Carga Normal,8
+"Tintas de imprenta, tintas para escribir o dibujar y demas tintas, incluso c",CAP_32,Carga Normal,8
+Tortas y demas residuos solidos de la extraccion de grasas o aceites vegetales,CAP_23,Carga Normal,8
+"Tortas y demas residuos solidos de la extraccion del aceite de soja, incluso",CAP_23,Carga Normal,8
+Tratamiento especial motocicletas (incluso con pedales) y ciclos con motor...,CAP_98,Carga Normal,8
+"Tubos, canalones y accesorios de tuberia, de ceramica",CAP_69,Carga Normal,8
+"Turbinas hidraulicas, ruedas hidraulicas y sus reguladores",CAP_84,Carga Normal,8
+"Aceite de cacahuete (mani) y sus fracciones, incluso refinado, pero sin modi",CAP_15,Carga Normal,7
+"Acidos nucleicos y sus sales, los demas compuestos heterociclicos",CAP_29,Carga Normal,7
+"Aparatos de grabacion o de reproduccion de imagen y sonido (videos), incluso",CAP_85,Carga Normal,7
+"Aparatos e instrumentos para pesar, incluidas las basculas y balanzas para l",CAP_84,Carga Normal,7
+"Aparatos mecanicos (incluso manuales) para proyectar, dispersar o pulverizar",CAP_84,Carga Normal,7
+Articulos de talabarteria y guarnicioneria para todos los animales (incluidos,CAP_42,Carga Normal,7
+Bananas o platanos frescos o secos,CAP_08,Carga Normal,7
+"Barras, perfiles y alambre, de cinc",CAP_79,Carga Normal,7
+"Cajas de caudales, puertas blindadas y compartimientos para camaras acorazada",CAP_83,Carga Normal,7
+Cajas y similares para aparatos de relojeria y sus partes,CAP_91,Carga Normal,7
+"Calzado impermeable con suela y parte superior de caucho o de plastico, cuya",CAP_64,Carga Normal,7
+"Compotas, jaleas y mermeladas, pures y pastas de frutos, obtenidos por cocc",CAP_20,Carga Normal,7
+"Cuchillas y hojas cortantes, para maquinas o para aparatos mecanicos",CAP_82,Carga Normal,7
+"Datiles, higos, pi?as tropicales8ananas), aguacates(paltas), guayabas, mangos",CAP_08,Carga Normal,7
+"Desperdicios y desechos, de cobre",CAP_74,Carga Normal,7
+"Encendedores y mecheros, incluso mecanicos o electricos y sus partes, except",CAP_96,Carga Normal,7
+Energia electrica,CAP_27,Carga Normal,7
+"Flores y capullos, cortados para ramos o adornos, frescos, secos, blanqueados",CAP_06,Carga Normal,7
+"Guarniciones de friccion (por ejemplo hojas, rollos, tiras, segmentos, dis",CAP_68,Carga Normal,7
+"Hilos y cuerdas, de caucho vulcanizado",CAP_40,Carga Normal,7
+Las demas hortalizas (incluso silvestres) frescas o refrigeradas,CAP_07,Carga Normal,7
+Las demas manufacturas de plomo,CAP_78,Carga Normal,7
+"Los demas frutos de cascara frescos o secos, incluso sin cascara o mondados",CAP_08,Carga Normal,7
+"Maquinas (incluidas las unidades de mecanizado de correderas) de taladrar, es",CAP_84,Carga Normal,7
+"Placas y peliculas planas, fotograficas, sensibilizadas, sin impresionar",CAP_37,Carga Normal,7
+Productos ferreos obtenidos por reduccion directa de minerales de hierro y dem,CAP_72,Carga Normal,7
+"Productos laminados planos de acero inoxidable, de anchura inferior a 600 mm",CAP_72,Carga Normal,7
+"Sobres, sobres-carta, tarjetas postales sin ilustrar y tarjetas para corresp",CAP_48,Carga Normal,7
+"Tapioca y sus sucedaneos con fecula, en copos, grumos, granos perlados, ce",CAP_19,Carga Normal,7
+Tejidos de algodon mezclado exclusiva o principalmente con fibras sinteticas,CAP_52,Carga Normal,7
+Tejidos de fibras artificiales discontinuas,CAP_55,Carga Normal,7
+"Tejidos de hilados de filamentos sinteticos, incluidos los tejidos fabricado",CAP_54,Carga Normal,7
+"Telas cauchutadas, excepto las de la partida 5902",CAP_59,Carga Normal,7
+"Telas impregnadass, recubiertas, revestidas o estratificadas con plastico",CAP_59,Carga Normal,7
+"Arboles de transmision, cajas de cojinetes y cojinetes, engranajes y ruedas d",CAP_84,Carga Normal,6
+"Betunes y cremas para el calzado, encausticos, abrillantadores para carrocer",CAP_34,Carga Normal,6
+"Caballos, asnos, mulos y burdeganos, vivos",CAP_01,Carga Normal,6
+"Caucho endurecido (por ejemplo ebonita) en cualquier forma, incluidos los des",CAP_40,Carga Normal,6
+"Caucho sintetico y caucho facticio derivado de los aceites, en formas primari",CAP_40,Carga Normal,6
+"Cobre sin refinar, anodos de cobre para refinado electrolitico",CAP_74,Carga Normal,6
+"Conjuntos de abrigo para entrenamiento o deporte, monos (overoles) y conjun",CAP_62,Carga Normal,6
+"Depositos, cisternas, cubas y recipientes similares para cualquier materia (",CAP_73,Carga Normal,6
+"Extractos curtientes de origen vegetal, taninos y sus sales, eteres, estere",CAP_32,Carga Normal,6
+"Fibras sinteticas discontinuas, cardadas, peinadas o transformadas de otro m",CAP_55,Carga Normal,6
+"Fosfatos de calcio naturales, fosfatos aluminocalcicos naturales y cretas fos",CAP_25,Carga Normal,6
+"Habas(porotos, frijoles) de soja (soya) incluso quebrantadas",CAP_12,Carga Normal,6
+"Heterosidos, naturales o reproducidos por sintesis, sus sales, eteres, est",CAP_29,Carga Normal,6
+"Hilos y cuerdas de caucho, revestidos de textiles, hilados textiles, tiras",CAP_56,Carga Normal,6
+"Hipocloritos, hipoclorito de calcio comercial, cloritos, hipobromitos",CAP_28,Carga Normal,6
+"Hornos electricos industriales o de laboratorio, incluidos los de induccion",CAP_85,Carga Normal,6
+Instrumentos y aparatos automaticos para la regulacion y el control,CAP_90,Carga Normal,6
+"Juntas metaloplasticas, juegos o surtidos de juntas de distinta composicion pr",CAP_84,Carga Normal,6
+"Lapices, minas, pasteles, carboncillos, tizas para escribir o dibujar y ja",CAP_96,Carga Normal,6
+"Las demas locomotoras y locotractores, tenderes",CAP_86,Carga Normal,6
+"Las demas maquinas y aparatos para el trabajo de la pasta de papel, del pape",CAP_84,Carga Normal,6
+"Las demas telas impregnadas, recubiertas o revestidas, lienzos pintados para",CAP_59,Carga Normal,6
+"Los demas complementos (accesorios) de vestir, partes de prendas o de compleme",CAP_62,Carga Normal,6
+Los demas compuestos organo-inorganicos,CAP_29,Carga Normal,6
+"Minerales de hierro y sus concentrados, incluidas las piritas de hierro, tos",CAP_26,Carga Normal,6
+"Papel carbon, papel autocopia y demas papeles para copiar o transferir (excep",CAP_48,Carga Normal,6
+"Papel y carton kraft, sin estucar ni recubrir, en bobinas o en hojas, excep",CAP_48,Carga Normal,6
+"Papel y carton sulfurizado, papel resistente a las grasas, papel vegetal",CAP_48,Carga Normal,6
+Partes (por ejemplo mecanismos de cajas de musica) y accesorios de instrumento,CAP_92,Carga Normal,6
+Partes de calzado (incluso las partes superiores fijadas a las palmillas dist,CAP_64,Carga Normal,6
+"Peroxido de hidrogeno (agua oxigenada), incluso solidificado con urea",CAP_28,Carga Normal,6
+Piezas aislantes totalmente de materia aislante o con simples piezas metalica,CAP_85,Carga Normal,6
+"Pigmentos, opacificantes y colores preparados, composiciones vitrificables",CAP_32,Carga Normal,6
+"Prendas, complementos de vestir y demas articulos de peleteria",CAP_43,Carga Normal,6
+Productos y articulos textiles para usos tecnicos mencionados en la nota 7 de es,CAP_59,Carga Normal,6
+"Sulfitos, tiosulfatos",CAP_28,Carga Normal,6
+"Te, incluso aromatizado",CAP_09,Carga Normal,6
+Tejidos de punto por urdimbre (incluidos los obtenidos en telares de...,CAP_60,Carga Normal,6
+Telas metalicas (incluidas las continuas o sin fin)redes y rejas de alambre,CAP_73,Carga Normal,6
+"Vajillas y demas articulos de uso domestico, higiene o tocador, de ceramica",CAP_69,Carga Normal,6
+"Acidos policarboxilicos, sus anhidridos, halogenuros, peroxidos y peroxiaci",CAP_29,Carga Normal,5
+Agrios (citricos) frescos o secos,CAP_08,Carga Normal,5
+Aparatos auxiliares para las calderas de las partidas 8402 u 8403 (por ejempl,CAP_84,Carga Normal,5
+Bisuteria,CAP_71,Carga Normal,5
+Carretillas automovil sin dispositivo de elevacion del tipo de las utilizadas,CAP_87,Carga Normal,5
+"Caucho natural, balata, gutapercha, guayule, chicle y gomas naturales anal",CAP_40,Carga Normal,5
+Clavo(frutos clavillos y pedunculos),CAP_09,Carga Normal,5
+"Correas transportadoras o de transmision, de caucho vulcanizado",CAP_40,Carga Normal,5
+"Extractos y jugos de carne, de pescado o de crustaceos, de moluscos o de otr",CAP_16,Carga Normal,5
+"Grasas y aceites, de pescado o de mamiferos marinos, y sus fracciones, incl",CAP_15,Carga Normal,5
+"Harina de semillas o de frutos oleaginosos, excepto la harina de mostaza",CAP_12,Carga Normal,5
+"Hilados de fibras artificiales sinteticas o artificiales, discontinuas (excep",CAP_55,Carga Normal,5
+"Hortalizas (incluso silvestres), de vaina secas desvainadas aunque esten mond",CAP_07,Carga Normal,5
+"Hullas: briquetas, ovoides y combustibles solidos similares, obtenidos de la...",CAP_27,Carga Normal,5
+Instrumentos musicales en los que el sonido se produzca o tenga que amplificar,CAP_92,Carga Normal,5
+"Lacas colorantes, preparaciones a que se refiere la nota 3 de este capitulo a ba",CAP_32,Carga Normal,5
+"Lana (viruta) de madera, harina de madera",CAP_44,Carga Normal,5
+"Las demas sales de los acidos o peroxoacidos inorganicos, con exclusion de lo",CAP_28,Carga Normal,5
+Manufacturas de piedra o demas materias minerales (incluidas las fibras de car,CAP_68,Carga Normal,5
+"Maquinas automaticas para tratamiento de informacion y sus unidades, lectores",CAP_84,Carga Normal,5
+"Maquinas para lavar ropa, incluso con dispositivo de secado",CAP_84,Carga Normal,5
+Maquinas para orde?ar y maquinas y aparatos para la industria lechera,CAP_84,Carga Normal,5
+"Mezclas bituminosas a base de asfalto o de betun naturales, de betun de petro",CAP_27,Carga Normal,5
+"Moluscos, incluso separados de sus valvas, vivos, frescos, refrigerados, conge",CAP_03,Carga Normal,5
+Motores de embolo (piston) de encendido por compresion (motores diesel o semidie,CAP_84,Carga Normal,5
+"Muelles (resortes), ballestas y sus hojas, de hierro o de acero",CAP_73,Carga Normal,5
+"Paracaidas (incluidos los paracaidas dirigibles, planeadores o giratorios), s",CAP_88,Carga Normal,5
+"Partes indentificables como destinadas, exclusiva o principalmente, a los mo",CAP_84,Carga Normal,5
+"Pimienta secos, triturados o pulverizados",CAP_09,Carga Normal,5
+"Prendas confeccionadas con tejidos de punto de las partidas 5903, 5906 o 5907",CAP_61,Carga Normal,5
+"Preparaciones quimicas para uso fotografico, excepto los barnices, colas y p",CAP_37,Carga Normal,5
+"Productos laminados planos de acero inoxidable, de anchura superior o igual",CAP_72,Carga Normal,5
+"Relojes de tablero de instrumentos y relojes similares para automoviles, aero",CAP_91,Carga Normal,5
+"Sombreros y demas tocados, de punto, o confeccionados con encaje, fieltro",CAP_65,Carga Normal,5
+"Sulfato de bario natural (baritina), carbonato de bario natural (witherita)",CAP_25,Carga Normal,5
+"Tejidos con bucles del tipo para toallas, excepto los productos de la partid",CAP_58,Carga Normal,5
+Tejidos de lino,CAP_53,Carga Normal,5
+Tomates preparados o conservados (excepto en vinagre o en acido acetico),CAP_20,Carga Normal,5
+"Yute y demas fibras textiles del liber (con exclusion del lino, ca?amo y rami",CAP_53,Carga Normal,5
+"Abrigos, chaquetones, capas, anoraks, cazadoras y articulos similares, d",CAP_61,Carga Normal,4
+"Alfombras y demas revestimientos para el suelo, de materias textiles tejidas",CAP_57,Carga Normal,4
+Algodon sin cardar ni peinar,CAP_52,Carga Normal,4
+"Articulos de vidrio para laboratorio, higiene o farmacia, incluso graduados",CAP_70,Carga Normal,4
+"Articulos para fuegos artificiales, cohetes de se?ales o granifugos y similar",CAP_36,Carga Normal,4
+"Ba?eras, duchas, lavabos, bides, inodoros y sus asientos y tapas, cistern",CAP_39,Carga Normal,4
+"Calderas para calefaccion central, excepto las de la partida 8402",CAP_84,Carga Normal,4
+"Camisas, blusas y blusas camiseras, para mujeres o ni?as",CAP_62,Carga Normal,4
+"Candados, cerraduras y cerrojos (de llaves, de combinacion o electricos), d",CAP_83,Carga Normal,4
+"Carbonato de magnesio natural (magnesita), magnesia electrofundida, magnesia c",CAP_25,Carga Normal,4
+"Carne de animales de las especies caballar, asnal o mular fresca, refrigerada",CAP_02,Refrigerada,4
+"Caucho regenerado en formas primarias o en placas, hojas o bandas",CAP_40,Carga Normal,4
+"Cloratos y percloratos, bromatos y perbromatos, yodatos y peryodatos",CAP_28,Carga Normal,4
+"Compresas y tampones higiénicos, pañales para bebés y artículos similares, de...",CAP_96,Carga Normal,4
+"Cuadros, pinturas y dibujos, hechos totalmente a mano, con exclusion de lo",CAP_97,Carga Normal,4
+"Diarios y publicaciones periodicas, impresos, incluso ilustrados o con publi",CAP_49,Carga Normal,4
+"Electrodos y escobillas de carbon, carbon para lamparas o para pilas y demas",CAP_85,Carga Normal,4
+"Enzimas, preparaciones enzimaticas no expresadas ni comprendidas en otras partid",CAP_35,Carga Normal,4
+"Explosivos preparados, excepto las polvoras",CAP_36,Carga Normal,4
+"Fibras sinteticas discontinuas, sin cardar, peinar ni transformar de otro mo",CAP_55,Carga Normal,4
+"Fieltro, incluso impregnado, recubierto, revestido o estratificado",CAP_56,Carga Normal,4
+"Flejes de madera, rodrigones hendidos, estacas de madera, apuntadas, sin ase",CAP_44,Carga Normal,4
+"Glicerol en bruto, aguas y lejias glicerinosas",CAP_15,Carga Normal,4
+"Granallas y polvo, de fundicion en bruto, de fundicion especular, de hierr",CAP_72,Carga Normal,4
+"Hilados metalicos e hilados metalizados, incluso entorchados, constituidos p",CAP_56,Carga Normal,4
+"Hortalizas(incluso silvestres) secas, bien cortads en trozos o en rodajas o bi",CAP_07,Carga Normal,4
+"Lana de escoria, de roca y lanas minerales similares, vermiculita dilatada",CAP_68,Carga Normal,4
+Las demas arcillas (con exclusion de las arcillas dilatadas de la partida 6806,CAP_25,Carga Normal,4
+Las demas armas de fuego y artefactos similares que utilicen la deflagracion d,CAP_93,Carga Normal,4
+Las demas manufacturas de cuero natural o de cuero artificial o regenerado,CAP_42,Carga Normal,4
+"Lechuga(lactuca sativa) y achicorias, comprendidas la escarola y la endibia fr",CAP_07,Carga Normal,4
+"Limas, escofinas, alicates (incluso cortantes), tenazas, pinzas, cizalla",CAP_82,Carga Normal,4
+"Los demas complementos (accesorios) de vestir confeccionados, de punto, par",CAP_61,Carga Normal,4
+"Manteca, grasa y aceite de cacao",CAP_18,Carga Normal,4
+Manufacturas de asfalto o de productos similares (por ejemplo pez de petroleo,CAP_68,Carga Normal,4
+"Maquinas y aparatos para clasificar, cribar, separar, lavar, quebrantar",CAP_84,Carga Normal,4
+Maquinas y aparatos para la fabricacion de pasta de materias fibrosas celulosica,CAP_84,Carga Normal,4
+Materias colorantes de origen vegetal o animal(incluidos los extractos tintore,CAP_32,Carga Normal,4
+"Obras originales de estatuaria o de escultura, de cualquier materia",CAP_97,Carga Normal,4
+"Oxido de cinc, peroxido de cinc",CAP_28,Carga Normal,4
+Oxidos de titanio,CAP_28,Carga Normal,4
+"Oxidos e hidroxidos de hierro, tierras colorantes con un contenido de hierro c",CAP_28,Carga Normal,4
+"Papel y carton obtenidos por pegado de hojas planas, sin estucar ni recubrir",CAP_48,Carga Normal,4
+"Papel y carton, estucado por una o las dos caras exclusivamente con caolin u",CAP_48,Carga Normal,4
+"Peptonas y sus derivados, las demas materias proteicas y sus derivados, no ex",CAP_35,Carga Normal,4
+Pigmentos (incluidos el polvo y las laminillasmetalicos) dispersos en medios n,CAP_32,Carga Normal,4
+"Placas, peliculas, papel, carton y textiles, fotograficos, impresionados",CAP_37,Carga Normal,4
+"Prendas, guantes y demas complementos de vestir, para cualquier uso, de cau",CAP_40,Carga Normal,4
+"Sales e hidroxidos de amonio cuaternario, lecitinas y otros fosfoaminolipidos",CAP_29,Carga Normal,4
+"Soportes preparados para grabar sonido o para grabaciones analogas, sin graba",CAP_85,Carga Normal,4
+Tejidos de fibras sinteticas discontinuas con un contenido de estas fibras inf,CAP_55,Carga Normal,4
+Tejidos de yute o demas fibras textiles del liber de la partida 5303,CAP_53,Carga Normal,4
+"Terciopelo y felpa excepto los de punto, y tejidos de chenilla, excepto los",CAP_58,Carga Normal,4
+Tocino sin partes magras y grasa de cerdo o de ave sin fundir ni extraer de ot,CAP_02,Carga Normal,4
+"Tubos de caucho vulcanizado sin endurecer, incluso con sus accesorios (por ej",CAP_40,Carga Normal,4
+Yerbamate,CAP_09,Carga Normal,4
+"Accesorios de tuberia (por ejemplo racores (empalmes), codos o manguitos), d",CAP_74,Carga Normal,3
+"Acido sulfurico, oleum",CAP_28,Carga Normal,3
+"Acordeones e instrumentos similares, armonicas",CAP_92,Carga Normal,3
+"Afeitadoras, maquinas cortadoras de pelo o de esquilar y aparatos de depilar",CAP_85,Carga Normal,3
+"Alcoholes ciclicos y sus derivados halogenados, sulfonados, nitrados o nitro",CAP_29,Carga Normal,3
+Algodon cardado o peinado,CAP_52,Carga Normal,3
+"Anclas, rezones y sus partes, de fundicion, hierro o acero",CAP_73,Carga Normal,3
+Animales vivos de las especies ovina o caprina,CAP_01,Carga Normal,3
+"Aparatos de mecanoterapia, aparatos para masajes, aparatos de sicotecnia, apar",CAP_90,Carga Normal,3
+"Aprestos y productos de acabado, aceleradores de tintura o de fijacion de mat",CAP_38,Carga Normal,3
+"Articulos de hilados, tiras o formas similares de las partidas 5404 o 5405",CAP_56,Carga Normal,3
+"Articulos de orfebreria y sus partes, de metal precioso o de chapados de meta",CAP_71,Carga Normal,3
+"Bulbos, cebollas, tuberculos, raices y bulbos tuberosos, turiones o rizomas",CAP_06,Carga Normal,3
+"Cabello en bruto, icluso lavado o desgrasado, desperdicios de cabello",CAP_05,Carga Normal,3
+Camaras de caucho,CAP_40,Carga Normal,3
+"Carrocerias de vehiculos de las partidas 8701 a 8705, incluso las cabinas",CAP_87,Carga Normal,3
+"Cascara, peliculas y demas residuos de cacao",CAP_18,Carga Normal,3
+"Caucho mezclado sin vulcanizar, en formas primarias o en placas, hojas o ban",CAP_40,Carga Normal,3
+"Cetonas y quinonas, incluso con otras funciones oxigenadas, y sus derivados",CAP_29,Carga Normal,3
+Cierres de cremallera (cierres de relampago) y sus partes,CAP_96,Carga Normal,3
+"Cierres, monturas cierre, hebillas, hebillas cierre, corchetes, ganchos",CAP_83,Carga Normal,3
+"Cintas, excepto los articulos de la partida 5807, cintas sin trama, de hilad",CAP_58,Carga Normal,3
+Circuitos integrados y microestructuras electronicas,CAP_85,Carga Normal,3
+"Coches de viajeros, furgones de equipajes, coches correo y demas coches espe",CAP_86,Carga Normal,3
+Compuestos heterociclicos con heteroatomo(s) de nitrogeno exclusivamente,CAP_29,Carga Normal,3
+"Compuestos inorganicos u organicos, de los metales de las tierras raras, de",CAP_28,Carga Normal,3
+"Contadores de gases, de liquidos o de electricidad, incluidos los de calibra",CAP_90,Carga Normal,3
+Contenedor vacio,CAP_99,Carga Normal,3
+"Cordeles, cuerdas y cordajes, trenzados o no, incluso impregnados, recubie",CAP_56,Carga Normal,3
+"Derivados sulfonados, nitrados o nitrosados de los hidrocarburos, incluso ha",CAP_29,Carga Normal,3
+"Desperdicios y desechos de vidrio, vidrio en masa",CAP_70,Carga Normal,3
+"Ferrocerio y demas aleaciones piroforicas en cualquier forma, articulos de mater",CAP_36,Carga Normal,3
+"Gafas correctoras, protectoras u otras, y articulos similares",CAP_90,Carga Normal,3
+"Gelatinas (aunque se presenten en hojas cuadradas o rectangulares, incluso tr",CAP_35,Refrigerada,3
+"Grasa de cerdo (incluida la manteca de cerdo), y grasa de ave, excepto las d",CAP_15,Carga Normal,3
+"Guantes, mitones y manoplas",CAP_62,Carga Normal,3
+"Guata de materias textiles y articulos de esta guata, fibras textiles de longi",CAP_56,Carga Normal,3
+"Hilados de algodon (excepto el hilo de coser) con un contenido de algodon, e",CAP_52,Carga Normal,3
+"Hilados de fibras sinteticas discontinuas (excepto el hilo de coser), sin aco",CAP_55,Carga Normal,3
+"Instrumentos y aparatos para la medida o control del caudal, nivel, presion",CAP_90,Carga Normal,3
+"Las demas semillas y frutos oleaginosos, incluso quebrantados",CAP_12,Carga Normal,3
+Los demas tejidos de fibras sinteticas discontinuas,CAP_55,Carga Normal,3
+Malta (de cebada u otros cereales) incluso tostada,CAP_11,Carga Normal,3
+Mantas,CAP_63,Carga Normal,3
+"Maquinas de desbarbar, afilar, amolar, rectificar, lapear(bru?ir), puli",CAP_84,Carga Normal,3
+"Maquinas de escribir, excepto las impresoras de la partida 8471, maquinas par",CAP_84,Carga Normal,3
+"Maquinas y aparatos para soldar (aunque puedan cortar), electricos, de laser",CAP_85,Carga Normal,3
+Partes de los aparatos de las partidas 8801 a 8802,CAP_88,Carga Normal,3
+Pepinos y pepinillos frescos o refrigerados,CAP_07,Carga Normal,3
+"Piedra pomez, esmeril, corindon natural, granate natural y demas abrasivos na",CAP_25,Carga Normal,3
+"Pieles y demas partes de ave con plumas o su plumon, plumas y partes de plumas",CAP_05,Carga Normal,3
+"Plaquitas, varillas, puntas y articulos similares para utiles, sin montar",CAP_82,Carga Normal,3
+"Prendas y complementos de vestir, de cuero natural o de cuero artificial o re",CAP_42,Carga Normal,3
+"Productos curtientes organicos sinteticos, productos curtientes inorganicos, p",CAP_32,Carga Normal,3
+"Semillas, frutos y esporas, para siembra",CAP_12,Carga Normal,3
+"Setas y demas hongos, y trufas preparados o conservados(excepto en vinagre o",CAP_20,Carga Normal,3
+Sulfonamidas,CAP_29,Carga Normal,3
+"Tablestacas de hierro o de acero, incluso perforadas o hechas con elementos e",CAP_73,Carga Normal,3
+Tejidos de fibras sinteticas discontinuas con un contenido de fibras sinteticas,CAP_55,Carga Normal,3
+Trafico postal y envios de entrega rapida o mensajeria expresa,CAP_98,Carga Normal,3
+"Trenzas y articulos similares, de materias trenzables, materias trenzables",CAP_46,Carga Normal,3
+Vagones para el transporte de mercancias sobre carriles,CAP_86,Carga Normal,3
+Vainilla,CAP_09,Carga Normal,3
+"Vaselina, parafina cera de petroleo microcritalina, slack wax, ozoquerita, cera...",CAP_27,Carga Normal,3
+"Velas, cirios y articulos similares",CAP_34,Carga Normal,3
+"Vidrio colado en placas, hojas o perfiles, incluso con capa absorbente, ref",CAP_70,Carga Normal,3
+"Abrigos, chaquetones, capas, anoraks, cazadoras y articulos similares, pa",CAP_62,Carga Normal,2
+"Aceite de nabo(nababina), colza o mostaza y sus fracciones, incluso refinados",CAP_15,Carga Normal,2
+"Aceleradores de vulcanizacion preparados, plastificantes compuestos para cauch",CAP_38,Carga Normal,2
+Acidos monocarboxilicos aciclicos no saturados y acidos monocarboxilicos cicli,CAP_29,Carga Normal,2
+Alambre de cobre,CAP_74,Carga Normal,2
+Alambron de acero inoxidable,CAP_72,Carga Normal,2
+"Albaricoques(damascos, chabacanos), cerezas, melocotones(duraznos), (incluido",CAP_08,Carga Normal,2
+"Alfombras y demas revestimientos para el suelo, de materias textiles, con me",CAP_57,Carga Normal,2
+Alquitranes y demas productos de la destilacion de los alquitranes de hulla de...,CAP_27,Carga Normal,2
+"Ambar gris, castoreo, angalia y almizcle, cantaridas, bilis, incluso desecada",CAP_05,Carga Normal,2
+"Aparatos de rayos x y aparatos que utilicen las radiaciones alfa, beta o gamm",CAP_90,Carga Normal,2
+"Balanzas sensibles a un peso inferior o igual a 5 cg, incluso con pesas",CAP_90,Carga Normal,2
+"Bastones, bastones asiento, latigos, fustas y articulos similares",CAP_66,Carga Normal,2
+"Boligrafos, rotuladores y marcadores con punta de fieltro u otra punta porosa",CAP_96,Carga Normal,2
+"Botones y botones de presion, formas para botones y demas partes de botones o de",CAP_96,Carga Normal,2
+"Cajas de musica, orquestriones, organillos, pajaros cantores y demas instru",CAP_92,Carga Normal,2
+"Calzas, <pantimedias>, leotardos, medias, calcetines y demas articulos de",CAP_61,Carga Normal,2
+"Camaras y proyectores cinematograficos, incluso con grabadores o reproductore",CAP_90,Carga Normal,2
+Carbono (negros de humo y otras formas de carbono no expresadas ni comprendidas,CAP_28,Carga Normal,2
+"Carne de animales de las especies ovina o caprina, fresca, refrigerada o conge",CAP_02,Carga Normal,2
+"Cascos sin forma ni acabado, platos (discos) y cilindros, aunque esten corta",CAP_65,Carga Normal,2
+"Ceras vegetales (excepto los trigliceridos), cera de abejas o de otros insect",CAP_15,Carga Normal,2
+"Chapas y tiras de aluminio, de espesor superior a 0, 2 mm",CAP_76,Carga Normal,2
+"Cobre refinado y aleaciones de cobre, en bruto",CAP_74,Carga Normal,2
+"Cristales para relojes y cristales analogos, cristales para gafas (anteojos",CAP_70,Carga Normal,2
+Cueros y pieles agamuzados (incluido el agamuzado combinado al aceite),CAP_41,Carga Normal,2
+"Cueros y pieles, de bovino y de equino, depilados, preparados, excepto lo",CAP_41,Carga Normal,2
+"Cueros y pieles, en bruto, de bovino o de equino (frescos o salados, secos",CAP_41,Carga Normal,2
+"Degras, residuos del tratamiento de las grasas o de las ceras animales o vegetal",CAP_15,Carga Normal,2
+Derivados organicos de la hidrazina o de la hidroxilamina,CAP_29,Carga Normal,2
+"Desperdicios de fibras sinteticas o artificiales (incluidas las borras, los d",CAP_55,Carga Normal,2
+"Desperdicios de lana o de pelo fino u ordinario, incluidos los desperdicios d",CAP_51,Carga Normal,2
+"Discos, cintas y demas soportes para grabar sonido o para grabaciones analoga",CAP_85,Carga Normal,2
+Ditionitos y sulfoxilatos,CAP_28,Carga Normal,2
+"Electroimanes, imanes permanentes y similares, platos y dispositivos magnetic",CAP_85,Carga Normal,2
+"Elementos para vias ferreas, de fundicion, hierro o acero: carriles, (rie",CAP_73,Carga Normal,2
+"Estatuillas y demas articulos para adorno, de ceramica",CAP_69,Carga Normal,2
+"Eteres, eteres-alcoholes, eteres-fenoles, eteres-alcoholes-fenoles, peroxi",CAP_29,Carga Normal,2
+"Etiquetas, escudos y articulos similares, de materias textiles, en pieza",CAP_58,Carga Normal,2
+"Fechadores, sellos, numeradores, timbradores y articulos similares (incluid",CAP_96,Carga Normal,2
+"Fluoruros, fluorosilicatos, fluoroaluminatos y demas sales complejas de fluor",CAP_28,Carga Normal,2
+"Follajes, hajas, ramas y demas partes de plantas sin flores ni capullos, y hi",CAP_06,Carga Normal,2
+"Generadores de gas pobre (de gas de aire) o de gas de agua, incluso con los d",CAP_84,Carga Normal,2
+Hidrocarburos ciclicos,CAP_29,Carga Normal,2
+"Hidrogeno, gases nobles y demas elementos no metalicos",CAP_28,Carga Normal,2
+"Hidroxido y peroxido de magnesio, oxidos, hidroxidos y peroxidos, de estronc",CAP_28,Carga Normal,2
+"Hilados de filamentos artificiales (excepto el hilo de coser), sin acondicion",CAP_54,Carga Normal,2
+Hilados de pelo ordinario o de crin (incluidos los hilados de crin entorchados,CAP_51,Carga Normal,2
+Hilados de yute o demas fibras textiles del liber de la partida 5303,CAP_53,Carga Normal,2
+"Hilo de coser de fibras sinteticas o artificiales, discontinuas, incluso aco",CAP_55,Carga Normal,2
+Hojas para chapado y contrachapado (incluso unidas) y demas maderas aserradas,CAP_44,Carga Normal,2
+"Hornos industriales o de laboratorio, incluidos los incineradores, que no se",CAP_84,Carga Normal,2
+"Hortalizas(incluso silvestres) de vaina, aunque esten desvainadas, frescas",CAP_07,Carga Normal,2
+"Huesos y nucleos corneos enbruto desgrasados, simplemente preparados (pero si",CAP_05,Carga Normal,2
+"Iniciadores y aceleradores, de reaccion, y preparaciones cataliticas, no ex",CAP_38,Carga Normal,2
+"Instrumentos de dibujo, trazado o calculo (por ejemplo maquinas de dibujar",CAP_90,Carga Normal,2
+"Las demas armas (por ejemplo armas largas y pistolas de muelle, (resortes)",CAP_93,Carga Normal,2
+Las demas manufacturas de metal precioso o de chapados de metal precioso (plaqu,CAP_71,Carga Normal,2
+Las demas maquinas y aparatos de oficina (por ejemplo copiadoras hectografica,CAP_84,Carga Normal,2
+Las demas partes de relojeria,CAP_91,Carga Normal,2
+"Los demas aceites obtenidos exclusivamente de la aceituna, y sus fracciones",CAP_15,Carga Normal,2
+"Los demas articulos de tapiceria, excepto los de la partida 9404",CAP_63,Carga Normal,2
+"Magnesio y sus manufacturas, incluidos los desperdicios y desechos",CAP_81,Carga Normal,2
+"Manufacturas cartograficas de todas clases, incluidos los mapas murales, lo",CAP_49,Carga Normal,2
+"Maquinas de calculador y maquinas de bolsillo registradoras, reproductoras y",CAP_84,Carga Normal,2
+"Maquinas de coser, excepto las de coser pliegos de la partida 8440, muebles",CAP_84,Carga Normal,2
+"Maquinas y aparatos (excepto las maquinas de la partida 8450) para lavar, lim",CAP_84,Carga Normal,2
+"Mecanismos de encuadernacion de hojas intercambiables o para clasificadores, s",CAP_83,Carga Normal,2
+Monturas de gafas o de articulos similares y sus partes,CAP_90,Carga Normal,2
+"Muelas y articulos similares, sin bastidor, para moler, desfibrar, tritura",CAP_68,Carga Normal,2
+"Nabos forrajeros, remolachas forrajeras, raices forrajeras, heno, alfalfa",CAP_12,Carga Normal,2
+"Osciloscopios, analizadores de espectro y demas instrumentos y aparatos para",CAP_90,Carga Normal,2
+"Oxidos de boro, acidos boricos",CAP_28,Carga Normal,2
+"Pastas para modelar, incluidas las presentadas para entretenimiento de los ni",CAP_34,Carga Normal,2
+Peleteria artificial o facticia y articulos de peleteria artificial o facticia,CAP_43,Carga Normal,2
+"Pentaoxido de difosforo, acido fosforico y acidos polifosforicos",CAP_28,Carga Normal,2
+"Pescado seco, salado o en salmuera, pescado ahumado incluso cocido antes o dur",CAP_03,Refrigerada,2
+Piedras de tallas o de construccion trabajadas (excepto la pizarra) y sus manu,CAP_68,Carga Normal,2
+"Placas, hojas, bandas, varillas y perfiles, de caucho vulcanizado sin endu",CAP_40,Carga Normal,2
+"Polipastos, tornos y cabrestantes, gatos",CAP_84,Carga Normal,2
+"Prendas y complementos de vestir, para bebes",CAP_62,Carga Normal,2
+"Prensas, estrujadoras y maquinas y aparatos analogos para la produccion de vi",CAP_84,Carga Normal,2
+"Quemadores para la alimentacion de hogares, de combustibles liquidos, solido",CAP_84,Carga Normal,2
+Reactivos de diagnostico o de laboratorio sobre cualquier soporte y reactivos,CAP_38,Carga Normal,2
+"Sellos (estampillas) de correos, timbres fiscales, marcas postales, sobres",CAP_97,Carga Normal,2
+"Semilla de girasol, incluso quebrantada",CAP_12,Carga Normal,2
+"Semillas de anis, badiana, hinojo, cilantro, comino o alcaravea, bayas de eneb",CAP_09,Carga Normal,2
+"Sierras de mano, hojas de sierra de cualquier clase (incluso las fresas-sierra y",CAP_82,Carga Normal,2
+"Sueteres(jerseis), <pullovers>, <cardigans>, chalecos y articulos similar",CAP_61,Carga Normal,2
+"Tamices, cedazos y cribas, de mano",CAP_96,Carga Normal,2
+"Tejidos de hilados de filamentos artificiales, incluidos los fabricados con p",CAP_54,Carga Normal,2
+"Tejidos de punto de anchura superior a 30 cm, con un contenido de hilados de...",CAP_60,Carga Normal,2
+Tejidos de seda o de desperdicios de seda,CAP_50,Carga Normal,2
+Telares,CAP_84,Carga Normal,2
+"Terciopelo, felpa (incluidos los tejidos de punto <de pelo largo>) y tejidos",CAP_60,Carga Normal,2
+"Tiovivos, columpios, casetas de tiro y demas atracciones de feria, circos",CAP_95,Carga Normal,2
+"Trajes sastre, conjuntos, chaquetas (sacos), vestidos, faldas, faldas p",CAP_61,Carga Normal,2
+"Trajes sastre, conjuntos, chaquetas, (sacos) vestidos, faldas, faldas pant",CAP_62,Carga Normal,2
+Tratamiento especial aviones de peso maximo de despegue inferior o igual a 5700...,CAP_98,Carga Normal,2
+Tubos de cobre,CAP_74,Carga Normal,2
+"Tul, tul-bobinot y tejidos de mallas anudadas, encajes en piezas, tiras o mo",CAP_58,Carga Normal,2
+"Turba, incluida la utilizada para cama de animales y la aglomerada",CAP_27,Carga Normal,2
+"Visillos y cortinas, guardamalletas y rodapies de cama",CAP_63,Carga Normal,2
+"Adoquines, encintado (bordillos) y losas para pavimentos, de piedra natura",CAP_68,Carga Normal,1
+"Agujas de coser, de tejer, pasacintas, agujas de ganchillo (croche), punzo",CAP_73,Carga Normal,1
+"Alcaloides vegetales, naturales o reproducidos por sintesis, sus sales, ete",CAP_29,Carga Normal,1
+"Alfombras y demas revestimientos para el suelo, de fieltro, excepto los de m",CAP_57,Carga Normal,1
+"Alquitranes de hulla, de lignito o de turba y demas alquitranes minerales...",CAP_27,Carga Normal,1
+Ampollas de vidrio para termos o demas recipientes isotermicos aislados por vaci,CAP_70,Carga Normal,1
+"Ampollas y envolturas tubulares, abiertas, y sus partes, de vidrio, sin gu",CAP_70,Carga Normal,1
+"Antimonio y sus manufacturas, incluidos los desperdicios y desechos",CAP_81,Carga Normal,1
+"Aparatos fotograficos, aparatos y dispositivos, incluidos las lamparas y tubo",CAP_90,Carga Normal,1
+Aparatos y material para laboratorios fotograficos o cinematograficos (incluid,CAP_90,Carga Normal,1
+"Artefactos flotantes (por ejemplo balsas, depositos, cajones, incluso de am",CAP_89,Carga Normal,1
+Articulos de cesteria obtenidos directamente en su forma con materias trenzables,CAP_46,Carga Normal,1
+Articulos para usos tecnicos de cuero natural o de cuero artificial o regenerado,CAP_42,Carga Normal,1
+"Azufre sublimado o precipitado, azufre coloidal -",CAP_28,Carga Normal,1
+"Barras y perfiles, de cobre",CAP_74,Carga Normal,1
+"Berilio, cromo, germanio, vanadio, galio, hafnio (celtio), indio, niobi",CAP_81,Carga Normal,1
+"Biodiésel y sus mezclas, sin aceites de petróleo o de mineral bituminoso o con...",CAP_38,Carga Normal,1
+"Boratos, peroxoboratos (perboratos)",CAP_28,Carga Normal,1
+"Brea y coque de brea, de alquitran de hulla o de otros alquitranes minerales",CAP_27,Carga Normal,1
+"Ca?amo (cannabis sativa l,) en bruto o trabajado, pero sin hilar, estopas y d",CAP_53,Carga Normal,1
+Cajas de los relojes de las partidas 9101 o 9102 y sus partes,CAP_91,Carga Normal,1
+"Calendarios de cualquier clase impresos, incluidos los tacos de calendario",CAP_49,Carga Normal,1
+"Calzoncillos (slips), camisones, pijamas, albornoces, batas y articulos",CAP_61,Carga Normal,1
+Camisas de punto para hombres o ni?os,CAP_61,Carga Normal,1
+Camisas para hombres o niños,CAP_62,Carga Normal,1
+"Camisetas interiores, combinaciones, enaguas, bragas, (bombachas, calzones",CAP_62,Carga Normal,1
+"Cantos, grava, piedras machacadas, de los tipos generalmente utilizados par",CAP_25,Carga Normal,1
+Capullos de seda aptos para el devanado,CAP_50,Carga Normal,1
+"Carbon vegetal (incluido el de cascaras o de huesos de frutas), aunque este a",CAP_44,Carga Normal,1
+"Carburos, aunque no sean de constitucion quimica definida",CAP_28,Carga Normal,1
+"Carros y automoviles blindados de combate, incluso armados, partes",CAP_87,Carga Normal,1
+"Centros de mecanizado, maquinas de puesto fijo y maquinas de puestos multiple",CAP_84,Carga Normal,1
+"Cerdas de cerdo o de jabali, pelo de tejon y demas pelos de cepilleria, desper",CAP_05,Carga Normal,1
+"Chapas, hojas y tiras, de cinc",CAP_79,Carga Normal,1
+Circuitos impresos,CAP_85,Carga Normal,1
+"Colofonias y acidos resinicos, y sus derivados, esencia y aceite, de colofon",CAP_38,Carga Normal,1
+Compuestos aminados con funciones oxigenadas,CAP_29,Carga Normal,1
+"Compuestos con funcion carboxiamida, compuestos con funcion amida del acido carb",CAP_29,Carga Normal,1
+Compuestos heterociclicos con heteroatomo(s) de oxigeno exclusivamente,CAP_29,Carga Normal,1
+"Convertidores, cucharas de colada, lingoteras y maquinas de colar (moldear)",CAP_84,Carga Normal,1
+"Coque de petroleo, betum de petroleo y demas residuos de los aceites de...",CAP_27,Carga Normal,1
+"Coral y materias similares en bruto o simplemente preparadas, pero sin otro tr",CAP_05,Carga Normal,1
+Corbatas y lazos similares,CAP_62,Carga Normal,1
+"Corcho natural, descortezado o simplemente escuadrado o en cubos, planchas",CAP_45,Carga Normal,1
+"Cuero artificial o regenerado a base de cuero o de fibras de cuero, en planch",CAP_41,Carga Normal,1
+"Cueros y pieles barnizados o revestidos, cueros y pieles metalizados",CAP_41,Carga Normal,1
+"Derivados halogenados, sulfonados, nitrados o nitrosados, de los fenoles o",CAP_29,Carga Normal,1
+"Desechos, desperdicios y recortes, de caucho sin endurecer, incluso en polv",CAP_40,Carga Normal,1
+Desperdicios de algodon (incluidos los desperdicios de hilados y las hilachas),CAP_52,Carga Normal,1
+Desperdicios y deshechos de metal precioso o de chapado de metal precioso (plaq,CAP_71,Carga Normal,1
+Despertadores y demas relojes con peque?o mecanismo de relojeria,CAP_91,Carga Normal,1
+"Diamantes, incluso trabajados, sin montar ni engarzar",CAP_71,Carga Normal,1
+"Dolomita, incluso sinterizada o calcinada, dolomita desbastada o simplemente",CAP_25,Carga Normal,1
+Escorias granuladas (arena de escorias) de la siderurgia,CAP_26,Carga Normal,1
+"Espejos de vidrio enmarcados o no, incluidos los espejos retrovisores",CAP_70,Carga Normal,1
+Esponjas naturales de origen animal,CAP_05,Carga Normal,1
+Esta?o en bruto,CAP_80,Carga Normal,1
+"Estearina solar, aceite de manteca de cerdo, oleoestearina, oleomargarina",CAP_15,Carga Normal,1
+"Fenoles, fenoles-alcoholes",CAP_29,Carga Normal,1
+"Fibras artificiales discontinuas, cardadas, peinadas o transformadas de otr",CAP_55,Carga Normal,1
+"Grafito artificial, grafito coloidal o semicoloidal, preparaciones a base de g",CAP_38,Carga Normal,1
+Hilados de algodon (excepto el hilo de coser) acondicionado para la venta al por,CAP_52,Carga Normal,1
+"Hilados de lana o de pelo fino, acondicionados para la venta al por menor",CAP_51,Carga Normal,1
+"Hilados de las demas fibras vegetales, hilados de papel",CAP_53,Carga Normal,1
+Hilados de lino,CAP_53,Carga Normal,1
+"Hilados de seda o de desperdicios de seda, acondicionados para la venta al po",CAP_50,Carga Normal,1
+"Hojas y bandas delgadas, de esta?o (incluso impresas o fijadas sobre papel",CAP_80,Carga Normal,1
+Hortalizas (incluos silvestres) conservadas provisionalemente(con gas sulffuro,CAP_07,Carga Normal,1
+"Hortalizas (incluso silvestres), aunque esten cocidas en agua o vapor, congel",CAP_07,Carga Normal,1
+"Instrumentos musicales de percusion (por ejemplo tambores, cajas, xilofonos",CAP_92,Carga Normal,1
+"Juegos constituidos por piezas de tejido e hilados, incluso con accesorios",CAP_63,Carga Normal,1
+"Las demas escorias y cenizas, incluidas las cenizas de algas",CAP_26,Carga Normal,1
+Las demas manufacturas de cobre,CAP_74,Carga Normal,1
+"Las demas plantas vivas(incluidas sus raices) esquejes e injertos, blanco de",CAP_06,Carga Normal,1
+"Lejias residuales de la fabricacion de pastas de celulosa, aunque esten conce",CAP_38,Carga Normal,1
+"Lentes, prismas, espejos y demas elementos de optica de cualquier materia",CAP_90,Carga Normal,1
+"Lino en bruto o trabajado, pero sin hilar, estopas y desperdicios de lino (in",CAP_53,Carga Normal,1
+Los demas animales vivos,CAP_01,Carga Normal,1
+"Los demas aparatos respiratorios y mascaras antigas, con exclusion de las mas",CAP_90,Carga Normal,1
+"Los demas barcos, incluidos los navios de guerra y los barcos de salvamento q",CAP_89,Carga Normal,1
+"Los demas instrumentos musicales de cuerda (por ejemplo guitarras, violines",CAP_92,Carga Normal,1
+"Los demas sombreros y tocados, incluso guarnecidos",CAP_65,Carga Normal,1
+"Los demas tabacos y sucedaneos del tabaco, elaborados, tabaco homogeneizado",CAP_24,Carga Normal,1
+"Maquinas para la limpieza, clasificacion o cribado de semillas, granos u hor",CAP_84,Carga Normal,1
+"Maquinas y aparatos para la preparacion, el curtido l trabajo de cuero o piel",CAP_84,Carga Normal,1
+"Maquinas y aparatos para soldar, aunque puedan cortar, excepto los de la par",CAP_84,Carga Normal,1
+"Marcos de madera para cuadros, fotografias, espejos u objetos similares",CAP_44,Carga Normal,1
+"Mezclas de alquilbencenos y mezclas de alquilnaftalenos, excepto las de las p",CAP_38,Carga Normal,1
+"Mica trabajada y manufacturas de mica, incluida la mica aglomerada o reconsti",CAP_68,Carga Normal,1
+"Microscopios opticos, incluidos los de fotomicrografia o cinefotomicrografia",CAP_90,Carga Normal,1
+Miel natural,CAP_04,Carga Normal,1
+Minerales de cinc y sus concentrados,CAP_26,Carga Normal,1
+Minerales de cobre y sus concentrados,CAP_26,Carga Normal,1
+Minerales de estaño y sus concentrados,CAP_26,Carga Normal,1
+Minerales de los metales preciosos y sus concentrados,CAP_26,Carga Normal,1
+Minerales de plomo y sus concentrados,CAP_26,Carga Normal,1
+Minerales de titanio y sus concentrados,CAP_26,Carga Normal,1
+Monofilamentos cuya mayor dimension del corte transversal sea superior a 1 mm,CAP_39,Carga Normal,1
+Monofilamentos sinteticos de 67 decitex o mas y cuya mayor dimension de la sec,CAP_54,Carga Normal,1
+Navajas y maquinas de afeitar y sus hojas (incluidos los esbozos en fleje),CAP_82,Carga Normal,1
+Oxidos e hidroxidos de cromo,CAP_28,Carga Normal,1
+"Partes, guarniciones y accesorios para los articulos de las partidas 6601 o 6",CAP_66,Carga Normal,1
+"Pasta de cacao, incluso desgrasada",CAP_18,Carga Normal,1
+"Peines, peinetas, pasadores y articulos similares, horquillas, rizadores, b",CAP_96,Carga Normal,1
+"Peleteria en bruto (incluidas las cabezas, colas, patas y trozos utilizable",CAP_43,Carga Normal,1
+"Peliculas fotograficas en rollos, sensibilizadas, sin impresionar, excepto",CAP_37,Carga Normal,1
+"Pianos, incluso automaticos, clavicordios y demas instrumentos de cuerda con",CAP_92,Carga Normal,1
+"Pizarras y tableros para escribir o dibujar, incluso con enmarcados",CAP_96,Carga Normal,1
+"Plantas, partes de plantas, semillas y frutos de las especies utilizadas pri",CAP_12,Carga Normal,1
+"Plata, incluida la plata dorada y la platinada, en bruto, semilabrada o en",CAP_71,Carga Normal,1
+"Platino en bruto, semilabrado o en polvo",CAP_71,Carga Normal,1
+"Polvo y escamillas, de aluminio",CAP_76,Carga Normal,1
+"Polvo y escamillas, de cinc",CAP_79,Carga Normal,1
+"Polvo y escamillas, de niquel",CAP_75,Carga Normal,1
+Preparaciones anticongelantes y liquidos preparados para descongelar,CAP_38,Carga Normal,1
+"Preparaciones y cargas para aparatos extintores, granadas y bombas extintoras",CAP_38,Carga Normal,1
+"Productos residuales de la industria química o de las industrias concexas, no...",CAP_38,Carga Normal,1
+"Proyectores de imagen fija, ampliadoras o reductoras, fotograficas",CAP_90,Carga Normal,1
+"Raices de mandioca (yuca), arrurruz o salep, aguaturmas(patacas), batatas (bon",CAP_07,Carga Normal,1
+"Recortes y demas desperdicios de cuero o de pieles, preparados, o de cuero a",CAP_41,Carga Normal,1
+"Relojes de pulsera, de bolsillo y relojes similares (incluidos los contadore",CAP_91,Carga Normal,1
+"Resistencias electricas, excepto las de calentamiento (incluidos los reostato",CAP_85,Carga Normal,1
+Revestimientos de materias textiles para paredes,CAP_59,Carga Normal,1
+"Sangre humana, sangre animal preparada para usos terapeuticos, profilacticos",CAP_30,Carga Normal,1
+Secativos preparados,CAP_32,Carga Normal,1
+"Sellos de correos, timbres fiscales y analogos, sin obliterar, que tengan",CAP_49,Carga Normal,1
+Sombreros y demas tocados de fieltro fabricados con cascos o platos de la part,CAP_65,Carga Normal,1
+"Tejidos de gasa de vuelta, excepto los productos de la partida 5806",CAP_58,Carga Normal,1
+Tejidos de hilos de metal y tejidos de hilados metalicos o de hilados textile,CAP_58,Carga Normal,1
+Tejidos de lana cardada o de pelo fino cardado,CAP_51,Carga Normal,1
+"Tejidos de punto de anchura inferior o igual a 30 cm, excepto los de las...",CAP_60,Carga Normal,1
+Tiocompuestos organicos,CAP_29,Carga Normal,1
+Tornos (incluidos los centros de torneado) que trabajen por arranque de metal,CAP_84,Carga Normal,1
+"Trajes (ambos o ternos), conjuntos, chaquetas, (sacos) pantalones, pantalo",CAP_62,Carga Normal,1
+Turbinas de vapor,CAP_84,Carga Normal,1
+"Uvas frescas o secas, incluidas las pasas",CAP_08,Carga Normal,1
+Vidrio para se?alizacion y elementos de optica de vidrio (excepto los de la pa,CAP_70,Carga Normal,1

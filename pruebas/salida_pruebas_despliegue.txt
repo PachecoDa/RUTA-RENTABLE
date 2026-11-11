@@ -1,0 +1,48 @@
+Python 3.12.10 {'sklearn': '1.8.0', 'pandas': '3.1.1', 'numpy': '2.5.4', 'streamlit': '1.67.0', 'plotly': '7.1.0', 'pydeck': '0.9.3', 'joblib': '1.6.0'}
+[OK ] 1.1 versión de scikit-learn igual a la del entrenamiento  1.8.0 vs 1.8.0
+[OK ] 2.1 el modelo carga  510 ms, Pipeline con pasos ['pre', 'clf']
+[OK ] 2.2 AUC en prueba igual al reportado (0,784)  0.7839
+[OK ] 2.3 matriz de confusión con umbral 0,44 igual a la del informe  [[2280, 544], [531, 818]]
+[OK ] 2.4 umbral de los metadatos = 0,44  0.44
+[OK ] 2.5 clases del modelo [0, 1] (0 = no rentable)  [np.int64(0), np.int64(1)]
+[OK ] 3.1 mismo resultado al repetir  
+[OK ] 3.2 predicción fila a fila = por lote  dif máx 2.2e-16
+[OK ] 3.3 orden de columnas no altera el resultado  
+[OK ] 3.4 probabilidades en [0, 1] y sin NaN  rango 0.001-0.965
+[OK ] 4. departamento no visto (AMAZONAS)  p = 0.366
+[OK ] 4. capítulo inexistente (CAP_XX)  p = 0.359
+[OK ] 4. naturaleza desconocida  p = 0.456
+[OK ] 4. kilómetros vacíos (NaN)  p = 0.764
+[OK ] 4. kilos vacíos (NaN)  p = 0.115
+[OK ] 4. km = 1  p = 0.039
+[OK ] 4. km = 3000 (fuera de rango)  p = 0.983
+[OK ] 4. kg = 1  p = 0.034
+[OK ] 4. kg = 12000  p = 0.009
+[OK ] 4. falta una columna -> el modelo la rechaza  ValueError
+[OK ] 5.1 refrigerada da más riesgo que carga normal  en 100% de los viajes; +22.2 pts mediana
+[OK ] 5.2 500 kg da más riesgo que 9.000 kg  en 100%; +46.5 pts
+[OK ] 5.3 450 km da más riesgo que 100 km  en 100%; +37.2 pts
+[OK ] 6.1 latencia por oferta < 100 ms  mediana 7.1 ms, p95 19.5 ms
+[OK ] 6.2 10.000 ofertas en < 5 s  0.05 s
+[OK ] 6.3 tamaño del modelo < 5 MB  12 KB
+[OK ] 7.1 Bogotá-Medellín usa la distancia oficial SICE-TAC  429.0 km, oficial=True
+[OK ] 7.2 ruta sin distancia oficial se estima  : 884.0 km, oficial=False
+[OK ] 7.3 semáforo: rojo en el umbral, ámbar justo debajo, verde lejos  
+[OK ] 7.4 frase de frecuencia en bordes  e, casi ninguno se quedó sin cubrir el costo. | este, unos 6 no alcanzaron a cubrir el costo. |  casi los 10 no alcanzaron a cubrir el costo.
+[OK ] 7.5 archivo de ejemplo ofertas_semana_transportador.csv  8 filas, 8 válidas, errores=[]; semáforos {'Verde': np.int64(6), 'Rojo': np.int64(2)}
+[OK ] 7.5 archivo de ejemplo ofertas_cooperativa.csv  40 filas, 40 válidas, errores=[]; semáforos {'Verde': np.int64(19), 'Rojo': np.int64(17), 'Amarillo': np.int64(4)}
+[OK ] 7.6 CSV con columnas equivocadas -> mensaje claro  Faltan columnas. Usa Origen, Destino, Kilos y Mercancia, o las 6 colum
+[OK ] 7.7 municipio inexistente -> fila rechazada con mensaje  Fila 1: falta o no se reconoce el origen.
+[OK ] 7.8 ejemplo_lote.csv da las mismas probabilidades de siempre  [0.555, 0.619, 0.48, 0.362, 0.119]
+[OK ] 8.1 la app abre  primer render 5.4 s sin excepciones
+[OK ] 8.2 muestra el resultado por defecto (semáforo y frase)  
+[OK ] 8.3 umbral 'Recomendado (costo del negoc'  sin excepciones
+[OK ] 8.3 umbral 'Youden (artículo)'  sin excepciones
+[OK ] 8.3 umbral 'Personalizado'  sin excepciones
+[OK ] 8.4 carga refrigerada  valor interno 'Refrigerada' sin excepciones
+[OK ] 8.4b la app explica el factor refrigerada  
+[OK ] 8.5 km fuera de rango (2.900)  con aviso sin excepciones
+[OK ] 8.6 botón Media carga (5.000 kg)  sin excepciones
+[OK ] 8.6 botón Carga completa (9.000 kg)  sin excepciones
+[OK ] 8.7 comparador de ofertas  sin excepciones
+RESUMEN: 46 de 46 pruebas OK

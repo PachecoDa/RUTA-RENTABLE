@@ -1,0 +1,22 @@
+01_limpieza.ipynb: OK en 20 s
+02_cruce_rndc_sicetac.ipynb: OK en 7 s
+03_modelamiento.ipynb: OK en 244 s
+04_modelo_final.ipynb: OK en 76 s
+== Comparación con lo entregado
+dataset_modelo_dic2025.csv: IDÉNTICO (contenido)
+dataset_auditoria_dic2025.csv: IDÉNTICO (contenido)
+conjunto_prueba_reservado.csv: IDÉNTICO (contenido)
+bitacora_limpieza.csv: IDÉNTICO (contenido)
+bitacora_cruce.csv: IDÉNTICO (contenido)
+sicetac_costos_c2_dic2025.csv: IDÉNTICO (contenido)
+tabla_comparacion.csv: diferencia numérica máxima 2.31e-03
+tabla_umbrales.csv: diferencia numérica máxima 0.00e+00
+tabla_splines.csv: diferencia numérica máxima 0.00e+00
+tabla_decision_modelo.csv: diferencia numérica máxima 0.00e+00
+tabla_umbrales_costo.csv: diferencia numérica máxima 0.00e+00
+tabla_prueba_final.csv: diferencia numérica máxima 0.00e+00
+Modelo re-entrenado vs entregado: diferencia máxima de probabilidad 0.00e+00
+Umbral costo: 0.44 vs 0.44 | AUC prueba: 0.7839 vs 0.7839
+Resumen ejecución: {'01_limpieza': True, '02_cruce_rndc_sicetac': True, '03_modelamiento': True, '04': True}
+
+[exited with code 0]
