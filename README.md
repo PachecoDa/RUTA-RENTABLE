@@ -1,6 +1,6 @@
 # RutaRentable · Riesgo de que una oferta de carga no cubra su costo (Colombia)
 
-**App en línea:** _(enlace pendiente)_
+**App en línea:** https://ruta-rentable.streamlit.app
 
 
 Machine Learning I, Universidad Externado de Colombia. Entrega final: modelo final, evaluación en prueba, interpretación y despliegue.
